@@ -1,3 +1,21 @@
+
+console.log(
+  '  ---------------------\n' +
+  '< 少壮不努力，老大学程序 >\n' +
+  '< 开发多测试，上线少修bug >\n' +
+  '  ---------------------\n' +
+  '        \\   ^__^\n' +
+  '         \\  (oo)\\_______\n' +
+  '            (__)\\       )\\/\\\n' +
+  '                ||----w |\n' +
+  '                ||     ||\n' +
+  '\n'
+);
+
+
+const projectName = process.env.PROJECT_NAME || 'shop';
+const buildType = process.env.TARO_BUILD_TYPE || 'default';
+
 const config = {
   projectName: 'taro-demo',
   date: '2019-6-20',
@@ -8,7 +26,7 @@ const config = {
     '828': 1.81 / 2
   },
   sourceRoot: 'src',
-  outputRoot: 'dist',
+  outputRoot: `dist_${projectName}_${buildType}`,
   plugins: {
     babel: {
       sourceMap: true,

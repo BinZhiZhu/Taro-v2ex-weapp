@@ -101,7 +101,7 @@ class Index extends Taro.Component {
             {notice}
           </AtNoticebar>
         </View>
-        <View className=''>
+        <View className='pages-index-index__search-bar'>
           <AtSearchBar
             value={value}
             onChange={this.onChange.bind(this)}
@@ -109,7 +109,7 @@ class Index extends Taro.Component {
         </View>
         <View className='pages-index-index__swiper'>
           <Swiper
-            className='test-h'
+            className='pages-index-index__swiper__inner'
             indicatorColor='#999'
             indicatorActiveColor='#333'
             vertical
