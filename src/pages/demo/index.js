@@ -3,6 +3,7 @@ import {Image, Swiper, SwiperItem, View} from '@tarojs/components'
 import {AtButton, AtDrawer, AtGrid, AtImagePicker, AtNoticebar, AtSearchBar, AtTimeline} from "taro-ui"
 import './index.scss'
 import navigateTo from "../../helper/navigateTo";
+import showAlert from "../../utils/showAlert";
 
 class Index extends Taro.Component {
 
@@ -65,6 +66,11 @@ class Index extends Taro.Component {
     drawerList: ['幕帘', '菜单2']
   }
 
+
+  componentWillMount() {
+    showAlert('功能正在开发中哦~~');
+    return
+  }
 
   onClose = ()=>{
 

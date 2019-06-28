@@ -49,7 +49,7 @@ class App extends Component {
         {
           'iconPath': './asserts/tabbar/hotest.png',
           'selectedIconPath': './asserts/tabbar/hotest_on.png',
-          pagePath: 'pages/demo/index',
+          pagePath: 'pages/curtain/index',
           text: '热门'
         },
         {

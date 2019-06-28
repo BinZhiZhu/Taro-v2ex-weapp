@@ -1,6 +1,7 @@
 import Taro from "@tarojs/taro"
 import {Image, View} from "@tarojs/components";
 import { AtCurtain,AtButton} from 'taro-ui'
+import showAlert from "../../utils/showAlert";
 import './index.scss'
 
 class Index extends Taro.Component{
@@ -9,9 +10,18 @@ class Index extends Taro.Component{
     super(...arguments)
     this.state = {
       isOpened: false,
-      curtainPng: 'https://taro-ui.aotu.io/h5/static/images/curtain.png'
+      curtainPng: 'http://img.binzhizhu.top/imgs/2019/06/faeef9212980d525.gif'
     }
   }
+
+  componentWillMount() {
+    showAlert('功能开发中,客官敬请期待~').then(()=>{
+      this.setState({
+        isOpened: true
+      })
+    })
+  }
+
   handleChange () {
     this.setState({
       isOpened: true
@@ -24,7 +34,6 @@ class Index extends Taro.Component{
   }
 
   render() {
-
     const {curtainPng,isOpened} = this.state;
 
     return (
@@ -38,12 +47,12 @@ class Index extends Taro.Component{
             src={curtainPng}
           />
         </AtCurtain>
-        <AtButton
-          type='primary'
-          onClick={this.handleChange.bind(this)}
-        >
-          右上关闭幕帘
-        </AtButton>
+        {/*<AtButton*/}
+          {/*type='primary'*/}
+          {/*onClick={this.handleChange.bind(this)}*/}
+        {/*>*/}
+          {/*右上关闭幕帘*/}
+        {/*</AtButton>*/}
       </View>
     );
   }
