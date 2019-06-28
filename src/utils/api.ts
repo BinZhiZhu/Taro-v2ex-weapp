@@ -14,6 +14,8 @@ const HOT_TOPIC = 'topics/hot.json'
 // 获取主题信息  :id | (:username | :node_id | :node_name)
 const GET_TOPICS = 'topics/show.json'
 
+
+//  exp : https://www.v2ex.com/api/replies/show.json?topic_id=578459
 // 获取回复 :topic_id (:page , :page_size)?
 const GET_REPLIES = 'replies/show.json'
 

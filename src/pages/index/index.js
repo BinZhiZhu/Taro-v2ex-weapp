@@ -1,4 +1,4 @@
-import Taro, {showToast} from '@tarojs/taro'
+import Taro, {navigateTo, showToast} from '@tarojs/taro'
 import {AtAvatar, AtTag} from "taro-ui";
 import {connect} from "@tarojs/redux";
 import {Text, View} from '@tarojs/components'
@@ -68,6 +68,13 @@ class Index extends Taro.Component {
     });
   }
 
+
+  goDetail = (topic_id)=>{
+    navigateTo({
+      url:`/pages/detail/index?topic_id=${topic_id}`
+    })
+  }
+
   render() {
     const {latestTopicList} = this.props;
     console.log('latestTopicList', latestTopicList);
@@ -81,6 +88,7 @@ class Index extends Taro.Component {
             <View
               className='pages-index-index__block'
               key={`${i}-${item.id}`}
+              onClick={this.goDetail.bind(this,item.id)}
             >
               <View className='pages-index-index__block__left'>
                 <View className='pages-index-index__block__left__thumb'>

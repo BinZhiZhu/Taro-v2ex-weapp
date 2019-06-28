@@ -30,6 +30,7 @@ class App extends Component {
       'pages/index/index',
       'pages/curtain/index',
       'pages/demo/index',
+      'pages/detail/index',
     ],
     // window: {
     //   backgroundTextStyle: 'light',
