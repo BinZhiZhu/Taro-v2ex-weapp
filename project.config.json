@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "taro-demo",
-  "description": "demo版本",
+  "projectname": "taro-v2ex",
+  "description": "v2ex小程序",
   "appid": "wx7cd804234c63b7b3",
   "setting": {
     "urlCheck": true,

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/taro-demo.iml" filepath="$PROJECT_DIR$/.idea/taro-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taro-v2ex/.idea/taro-v2ex.iml" filepath="$PROJECT_DIR$/../taro-v2ex/.idea/taro-v2ex.iml" />
     </modules>
   </component>
 </project>
