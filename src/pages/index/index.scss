@@ -1,31 +1,78 @@
-@import "~taro-ui/dist/style/components/button.scss";
-@import "~taro-ui/dist/style/components/grid.scss";
-@import "~taro-ui/dist/style/components/noticebar.scss";
-@import "~taro-ui/dist/style/components/divider.scss";
+@import "../../theme";
+@import "~taro-ui/dist/style/components/avatar.scss";
 @import "~taro-ui/dist/style/components/icon.scss";
-@import "~taro-ui/dist/style/components/image-picker.scss";
-@import "~taro-ui/dist/style/components/timeline.scss";
-@import "~taro-ui/dist/style/components/search-bar.scss";
-@import "~taro-ui/dist/style/components/drawer.scss";
-@import "~taro-ui/dist/style/components/list.scss";
+//@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/tag.scss";
 
 .pages-index-index{
-  @include display-flex;
-  flex-direction: column;
-  &__swiper{
-    &__item{
-      &__img{
-        width: 100%;
-        height: 360px;
+  &__block{
+    width: 100%;
+    padding: $spacing-md;
+    @include flex-direction(row);
+    align-items: center;
+    &__left{
+      width: 85%;
+      @include flex-direction(row);
+      &__thumb{
+        &__img{
+        }
+      }
+      &__info{
+        padding-left: $spacing-md;
+        @include flex-direction;
+        justify-content: space-between;
+        &__title{
+          color: $color-text-base;
+          @include line(2);
+          @include font-size($font-size-base);
+        }
+        &__subtitle{
+          @include flex-direction(row);
+          color: $color-border-grey;
+          align-items: center;
+          @include font-size($font-size-sm);
+          &__node-title{
+
+          }
+          &__username{
+            font-weight: bold;
+          }
+          &__dot,&__last_reply_icon{
+            @include padding-horizontal($spacing-sm);
+            &__inner{
+              font-size: 12px;
+            }
+          }
+          &__text{
+            @include padding-horizontal($spacing-sm);
+            color: $color-text-base;
+            @include font-size($font-size-base);
+          }
+
+          &__last_reply_by{
+            color: $color-text-placeholder;
+            &__username{
+              padding-left: $spacing-sm;
+              color: $color-text-base;
+            }
+          }
+        }
       }
     }
-  }
-  &__button{
-    margin-top: $spacing-h-xl;
-  }
-  &__timeline{
-    @include display-flex;
-    flex-direction: row;
-    justify-content: space-around;
+    &__right{
+      width: 15%;
+      @include flex-direction(row);
+      justify-content: center;
+      &__inner{
+        &__tag{
+          @include display-flex;
+          align-items: center;
+          background-color: $color-grey-4;
+          color: $color-text-base-inverse;
+          @include font-size($spacing-md)
+        }
+      }
+
+    }
   }
 }

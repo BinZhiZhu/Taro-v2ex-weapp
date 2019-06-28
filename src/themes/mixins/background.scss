@@ -1,0 +1,7 @@
+
+@mixin background-image-brand {
+  background-color: $color-brand-light;
+  /*postcss-pxtransform rn eject enable*/
+  background-image: linear-gradient(to bottom right, $color-brand-light, $color-brand-base);
+  /*postcss-pxtransform rn eject disable*/
+}

@@ -1,0 +1,20 @@
+
+@mixin visibility-visible {
+  /*  #ifdef  rn  */
+  display: flex;
+  /*  #endif  */
+
+  /*postcss-pxtransform rn eject enable*/
+  visibility: visible;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin visibility-hidden {
+  /*  #ifdef  rn  */
+  display: none;
+  /*  #endif  */
+
+  /*postcss-pxtransform rn eject enable*/
+  visibility: hidden;
+  /*postcss-pxtransform rn eject disable*/
+}

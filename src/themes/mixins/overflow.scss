@@ -1,0 +1,16 @@
+
+@mixin overflow-auto {
+  /*postcss-pxtransform rn eject enable*/
+  overflow: auto;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin overflow-hidden {
+  overflow: hidden;
+}
+
+@mixin text-overflow-ellipsis {
+  /*postcss-pxtransform rn eject enable*/
+  text-overflow: ellipsis;
+  /*postcss-pxtransform rn eject disable*/
+}

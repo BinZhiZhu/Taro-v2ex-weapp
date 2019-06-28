@@ -1,0 +1,31 @@
+@import "../theme";
+
+.at-grid {
+  &.page-goods-category-index-grid {
+    .content-inner__img {
+      width: 80px !important;
+      height: 80px !important;
+    }
+  }
+}
+
+.at-card {
+  &.full-extra {
+    .at-card-header__extra {
+      max-width: 100%;
+    }
+  }
+}
+
+.at-radio{
+  &__padding-left{
+    padding-left: $spacing-md;
+  }
+}
+
+.at-load-more {
+  .at-button--full {
+    border-top: 0;
+    border-bottom: 0;
+  }
+}

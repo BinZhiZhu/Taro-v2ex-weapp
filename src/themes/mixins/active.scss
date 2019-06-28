@@ -1,0 +1,13 @@
+/**
+ * 点击态
+ */
+@mixin active {
+  /*postcss-pxtransform rn eject enable*/
+  transition: background-color 0.3s;
+  /*postcss-pxtransform rn eject disable*/
+
+  &:active {
+    background-color: $color-bg-light;
+    border-radius: $mixin-active-border-radius;
+  }
+}

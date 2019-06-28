@@ -1,0 +1,1 @@
+export const LATEST_TOPIC_LIST = 'LATEST_TOPIC_LIST'

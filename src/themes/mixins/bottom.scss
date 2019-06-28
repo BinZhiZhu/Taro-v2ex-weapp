@@ -1,0 +1,16 @@
+
+
+/**
+ * 固定的底部按钮
+ */
+@mixin bottom-fixed-menu {
+  width: 100%;
+  height: $bottom-menu-height;
+  background-color: $at-bottom-fixed-menu-bg-color;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-float-layout;
+  /*postcss-pxtransform rn eject enable*/
+  position: fixed;
+  /*postcss-pxtransform rn eject disable*/
+}

@@ -1,0 +1,219 @@
+/**
+ * 默认主题，请不要直接引入该文件！！！
+ */
+
+@import './mixins/tint';
+@import './mixins/eject';
+
+$hd: 1.8 !default; // 基本单位
+
+// 满屏宽度
+$full-width: 750px !default;
+
+// 一像素
+
+/*  #ifdef  h5  */
+$one-pixel-width: 1PX;
+/*  #endif  */
+$one-pixel-width: 1px !default;
+
+/* 主颜色 */
+$color-brand-base: #6190E8 !default;
+$color-brand-light: #78A4F4 !default;
+$color-brand-dark: #346FC2 !default;
+$color-brand-blue: #2370C3 !default;
+$color-brand-yellow: #F3A936 !default;
+$color-brand-red:#fd5555 !default;
+$color-brand-line:rgba(0,0,0,0) !default;
+$color-brand-blue: #2370C3 !default;
+
+/* Color */
+$color-success: #13CE66 !default;
+$color-error: #FF4949 !default;
+$color-warning: #FFC82C !default;
+$color-info: #78A4FA !default;
+
+/* Color Palette */
+$color-black-0: #000 !default;
+$color-black-1: #333 !default;
+$color-black-2: #7F7F7F !default;
+$color-black-3: #B2B2B2 !default;
+
+$color-grey-0: #333 !default;
+$color-grey-1: #666 !default;
+$color-grey-2: #999 !default;
+$color-grey-3: #CCC !default;
+$color-grey-4: #E5E5E5 !default;
+$color-grey-5: #F0F0F0 !default;
+$color-grey-6: #F7F7F7 !default;
+
+$color-white: #fff !default;
+
+/* Text Color */
+$color-text-base: #222327 !default; // 文字的基本色
+$color-text-base-inverse: #FFF !default; // 反色
+$color-text-secondary: #80858c !default; // 辅助色
+$color-text-placeholder: #C9C9C9 !default;
+$color-text-input-placeholder:$color-text-placeholder !default;
+$color-text-disabled: #CCC !default;
+$color-text-title: #2C405A !default; // 文章标题
+$color-text-paragraph: #3F536E !default; // 文章段落
+$color-text-yellow: #FFC02A !default; // 黄色字体
+$color-text-blue:#4FCEFF !default; //淡蓝色字体
+$color-text-deep-blue:#6397F0 !default; //深蓝色字体
+$color-text-green:#11A858 !default;
+$color-text-brown: #D06A62 !default;
+
+/* Link */
+$color-link: #6190E8 !default;
+$color-link-hover: #79A1EB !default;
+$color-link-active: #4F7DE2 !default;
+$color-link-disabled: #BFBFBF !default;
+
+/* 背景色 */
+$color-bg: #e4e4e4 !default;
+$color-bg-base: #f4f4f4 !default;
+$color-bg-light: #f5f6f7 !default;
+$color-bg-lighter: tint($color-bg-light, 50%) !default;
+$color-bg-grey: #F7F7F7 !default;
+
+/* 边框颜色 */
+$color-border-base: #DCDFE6 !default;
+$color-border-split: #DCDFE6 !default; // 分割线
+$color-border-light: #E4E7ED !default;
+$color-border-lighter: #EBEEF5 !default;
+$color-border-lightest: #F2F6FC !default;
+$color-border-grey: #CCC !default;
+
+/* 图标颜色 */
+$color-icon-base: #CCC !default;
+
+/* 渐变类型 */
+$color-shades-left:360deg !default;
+$color-shades-middle:$color-bg !default;
+$color-shades-right:$color-bg !default;
+
+/* Border Radius */
+$border-radius-sm: 4px * $hd !default;
+$border-radius-md: 8px * $hd !default;
+$border-radius-lg: 16px * $hd !default;
+
+/* 透明度 */
+$opacity-active: 0.6 !default; // Button 等组件点击态额透明度
+$opacity-disabled: 0.3 !default; // Button 等组件禁用态的透明度
+
+/* Font */
+$font-size-xs: 10px * $hd !default; // 非常用字号，用于标签
+$font-size-sm: 12px * $hd !default; // 用于辅助信息
+$font-size-base: 14px * $hd !default; // 常用字号
+$font-size-md: 16px * $hd !default; // 常用字号
+$font-size-lg: 18px * $hd !default; // 常规标题
+$font-size-xl: 24px * $hd !default; // 大标题
+$font-size-xxl: 32px * $hd !default; // 用于大号的数字
+$font-size-xxxl: 44px * $hd !default;
+
+/* Line Height */
+$line-height-base: 1 !default; // 单行
+$line-height-en: 1.3 !default; // 英文多行
+$line-height-zh: 1.5 !default; // 中文多行
+
+/* 间距 */
+$spacing-xs: 3px * $hd !default;
+$spacing-sm: 8px * $hd !default;
+$spacing-md: 21px !default;
+$spacing-lg: 18px * $hd !default;
+$spacing-xl: 40px !default;
+$spacing-xxl: 64px !default;
+
+/* 图标尺寸 */
+$icon-size-sm: 18px * $hd !default;
+$icon-size-md: 22px * $hd !default;
+$icon-size-lg: 36px * $hd !default;
+
+/* z-index */
+$zindex-divider: 100 !default;
+$zindex-steps: 500 !default;
+$zindex-tab: 600 !default;
+$zindex-form: 700 !default;
+$zindex-nav: 800 !default;
+$zindex-indexes: 805 !default;
+$zindex-float-layout: 820 !default;
+$zindex-float-button: 830 !default;
+$zindex-drawer: 900 !default;
+$zindex-modal: 1000 !default;
+$zindex-action-sheet: 1010 !default;
+$zindex-picker: 1010 !default;
+$zindex-toast: 1090 !default;
+
+/* timing function */
+$timing-func: cubic-bezier(0.36, 0.66, 0.04, 1) !default;
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+$ease-in-quad: cubic-bezier(0.550, 0.085, 0.680, 0.530) !default;
+$ease-in-cubic: cubic-bezier(0.550, 0.055, 0.675, 0.190) !default;
+$ease-in-quart: cubic-bezier(0.895, 0.030, 0.685, 0.220) !default;
+$ease-in-quint: cubic-bezier(0.755, 0.050, 0.855, 0.060) !default;
+$ease-in-sine: cubic-bezier(0.470, 0.000, 0.745, 0.715) !default;
+$ease-in-expo: cubic-bezier(0.950, 0.050, 0.795, 0.035) !default;
+$ease-in-circ: cubic-bezier(0.600, 0.040, 0.980, 0.335) !default;
+$ease-in-back: cubic-bezier(0.600, -0.280, 0.735, 0.045) !default;
+
+$ease-out-quad: cubic-bezier(0.250, 0.460, 0.450, 0.940) !default;
+$ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000) !default;
+$ease-out-quart: cubic-bezier(0.165, 0.840, 0.440, 1.000) !default;
+$ease-out-quint: cubic-bezier(0.230, 1.000, 0.320, 1.000) !default;
+$ease-out-sine: cubic-bezier(0.390, 0.575, 0.565, 1.000) !default;
+$ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000) !default;
+$ease-out-circ: cubic-bezier(0.075, 0.820, 0.165, 1.000) !default;
+$ease-out-back: cubic-bezier(0.175, 0.885, 0.320, 1.275) !default;
+
+$ease-in-out-quad: cubic-bezier(0.455, 0.030, 0.515, 0.955) !default;
+$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1.000) !default;
+$ease-in-out-quart: cubic-bezier(0.770, 0.000, 0.175, 1.000) !default;
+$ease-in-out-quint: cubic-bezier(0.860, 0.000, 0.070, 1.000) !default;
+$ease-in-out-sine: cubic-bezier(0.445, 0.050, 0.550, 0.950) !default;
+$ease-in-out-expo: cubic-bezier(1.000, 0.000, 0.000, 1.000) !default;
+$ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.150, 0.860) !default;
+$ease-in-out-back: cubic-bezier(0.680, -0.550, 0.265, 1.550) !default;
+
+// 按钮高度
+$at-button-height: 92px !default;
+$at-button-height-sm: 60px !default;
+
+// 浮动块的高度
+$bottom-menu-height: 100px !default;
+
+
+//统一引入mixins
+
+@import './mixins/base';
+@import './mixins/position';
+@import './mixins/line';
+@import './mixins/overlay';
+@import './mixins/shade';
+@import './mixins/flex';
+@import './mixins/border';
+@import './mixins/active';
+@import './mixins/disabled';
+@import './mixins/placeholder';
+@import './mixins/hairline';
+@import './mixins/background';
+@import './mixins/bottom';
+@import './mixins/box-shadow';
+@import './mixins/overflow';
+@import './mixins/padding';
+@import './mixins/text';
+@import './mixins/display';
+@import './mixins/visibility';
+@import './mixins/outline';
+
+
+
+
+//v2ex
+
+$normal-thumb-width: 48px !default;
+$normal-thumb-height: 48px !default;

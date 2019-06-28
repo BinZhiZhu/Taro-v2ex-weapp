@@ -1,0 +1,15 @@
+
+@mixin white-space-nowrap {
+  /*postcss-pxtransform rn eject enable*/
+  white-space: nowrap;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+/**
+ * 声明字体大小，并自动加上行高
+ */
+@mixin font-size($size, $line-height: $line-height-zh) {
+  font-size: $size;
+  line-height: $line-height * $size;
+  // TODO 是否需要再补充个高度？
+}

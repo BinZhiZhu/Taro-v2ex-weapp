@@ -1,0 +1,8 @@
+
+@mixin common-box-shadow {
+  /*postcss-pxtransform rn eject enable*/
+  -webkit-box-shadow: 0 8px 6px -6px $color-brand-base;
+  -moz-box-shadow: 0 8px 6px -6px $color-brand-base;
+  box-shadow: 0 8px 6px -6px $color-brand-base;
+  /*postcss-pxtransform rn eject disable*/
+}

@@ -1,0 +1,20 @@
+
+@mixin padding-vertical($num: 0) {
+  padding-top: $num;
+  padding-bottom: $num;
+}
+
+@mixin padding-horizontal($num: 0) {
+  padding-left: $num;
+  padding-right: $num;
+}
+
+@mixin margin-vertical($num: 0) {
+  margin-top: $num;
+  margin-bottom: $num;
+}
+
+@mixin margin-horizontal($num: 0) {
+  margin-left: $num;
+  margin-right: $num;
+}

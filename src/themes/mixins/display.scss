@@ -1,0 +1,29 @@
+@mixin display-inline {
+  /*postcss-pxtransform rn eject enable*/
+  display: inline;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin display-inline-block {
+  /*postcss-pxtransform rn eject enable*/
+  display: inline-block;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin display-inline-flex {
+  /*postcss-pxtransform rn eject enable*/
+  display: inline-flex;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin display-block {
+  /*postcss-pxtransform rn eject enable*/
+  display: block;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin display-none {
+  /*postcss-pxtransform rn eject enable*/
+  display: none;
+  /*postcss-pxtransform rn eject disable*/
+}

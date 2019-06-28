@@ -1,0 +1,26 @@
+
+/**
+ * 元素居中定位
+ */
+@mixin absolute-center($pos: absolute) {
+  position: $pos;
+  top: 50%;
+  left: 50%;
+  /*postcss-pxtransform rn eject enable*/
+  transform: translate(-50%, -50%);
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin position-fixed {
+  /*postcss-pxtransform rn eject enable*/
+  position: fixed;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin position-absolute ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

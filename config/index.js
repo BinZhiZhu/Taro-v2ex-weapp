@@ -12,12 +12,11 @@ console.log(
   '\n'
 );
 
-
-const projectName = process.env.PROJECT_NAME || 'shop';
+const projectName = process.env.PROJECT_NAME || process.env.TARO_ENV ;
 const buildType = process.env.TARO_BUILD_TYPE || 'default';
 
 const config = {
-  projectName: 'taro-demo',
+  projectName: 'V2EX_WEAPP',
   date: '2019-6-20',
   designWidth: 750,
   deviceRatio: {

@@ -1,0 +1,6 @@
+
+@mixin eject($attr, $value) {
+  /*postcss-pxtransform rn eject enable*/
+  #{$attr}: $value;
+  /*postcss-pxtransform rn eject disable*/
+}

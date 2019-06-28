@@ -1,0 +1,28 @@
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+$breakpoints: (
+  'sm': 'only screen and  (min-width: 480px)',
+  'md': 'only screen and ( min-width: 768px)',
+  'lg': 'only screen and ( min-width: 992px)'
+) !default;
+
+
+@mixin respond-to($breakpoint) {
+  $query: map-get($breakpoints, $breakpoint);
+
+  @if not $query {
+    @error 'No value found for `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
+  }
+
+  @media #{if(type-of($query) == 'string', unquote($query), inspect($query))} {
+    @content;
+  }
+}

@@ -1,6 +1,6 @@
 import '@tarojs/async-await'
-import Taro, { Component, Config } from '@tarojs/taro'
-import { Provider } from '@tarojs/redux'
+import Taro, {Component, Config} from '@tarojs/taro'
+import {Provider} from '@tarojs/redux'
 
 import Index from './pages/index'
 
@@ -10,9 +10,9 @@ import './app.scss'
 
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
-// if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
-//   require('nerv-devtools')
-// }
+if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
+  require('nerv-devtools')
+}
 
 const store = configStore()
 
@@ -29,32 +29,68 @@ class App extends Component {
     pages: [
       'pages/index/index',
       'pages/curtain/index',
+      'pages/demo/index',
     ],
+    // window: {
+    //   backgroundTextStyle: 'light',
+    //   navigationBarBackgroundColor: '#fff',
+    //   navigationBarTitleText: 'WeChat',
+    //   navigationBarTextStyle: 'black'
+    // }
+    tabBar: {
+      list: [
+        {
+          'iconPath': './asserts/tabbar/latest.png',
+          'selectedIconPath': './asserts/tabbar/lastest_on.png',
+          pagePath: 'pages/index/index',
+          text: '最新'
+        },
+        {
+          'iconPath': './asserts/tabbar/hotest.png',
+          'selectedIconPath': './asserts/tabbar/hotest_on.png',
+          pagePath: 'pages/demo/index',
+          text: '热门'
+        },
+        {
+          'iconPath': './asserts/tabbar/node.png',
+          'selectedIconPath': './asserts/tabbar/node_on.png',
+          pagePath: 'pages/curtain/index',
+          text: '节点'
+        }
+      ],
+      'color': '#000',
+      'selectedColor': '#56abe4',
+      'backgroundColor': '#fff',
+      'borderStyle': 'white'
+    },
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
+      navigationBarTitleText: 'V2EX',
       navigationBarTextStyle: 'black'
     }
   }
 
-  componentDidMount () {}
+  componentDidMount() {
+  }
 
-  componentDidShow () {}
+  componentDidShow() {
+  }
 
-  componentDidHide () {}
+  componentDidHide() {
+  }
 
-  componentDidCatchError () {}
+  componentDidCatchError() {
+  }
 
-  // 在 App 类中的 render() 函数没有实际作用
-  // 请勿修改此函数
-  render () {
+
+  render() {
     return (
       <Provider store={store}>
-        <Index />
+        <Index/>
       </Provider>
     )
   }
 }
 
-Taro.render(<App />, document.getElementById('app'))
+Taro.render(<App/>, document.getElementById('app'))

@@ -1,0 +1,69 @@
+@mixin display-flex {
+  display: flex;
+}
+
+@mixin flex-direction($value: column) {
+  display: flex;
+  flex-direction: $value;
+}
+
+@mixin flex-wrap($value: nowrap) {
+  /*postcss-pxtransform rn eject enable*/
+  flex-wrap: $value;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin align-items($value: stretch) {
+  align-items: $value;
+
+  /*postcss-pxtransform rn eject enable*/
+  @if $value == flex-start {
+    -webkit-box-align: start;
+  } @else if $value == flex-end {
+    -webkit-box-align: end;
+  } @else {
+    -webkit-box-align: $value;
+  }
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin align-content($value: flex-start) {
+  align-content: $value;
+}
+
+@mixin justify-content($value: flex-start) {
+  justify-content: $value;
+
+  /*postcss-pxtransform rn eject enable*/
+  @if $value == flex-start {
+    -webkit-box-pack: start;
+  } @else if $value == flex-end {
+    -webkit-box-pack: end;
+  } @else if $value == space-between {
+    -webkit-box-pack: justify;
+  } @else {
+    -webkit-box-pack: $value;
+  }
+  /*postcss-pxtransform rn eject disable*/
+}
+
+/* Flex Item */
+@mixin flex($fg: 1, $fs: null, $fb: null) {
+  flex: $fg $fs $fb;
+
+  /*postcss-pxtransform rn eject enable*/
+  -webkit-box-flex: $fg;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin flex-order($n) {
+  order: $n;
+
+  /*postcss-pxtransform rn eject enable*/
+  -webkit-box-ordinal-group: $n;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+@mixin align-self($value: auto) {
+  align-self: $value;
+}
