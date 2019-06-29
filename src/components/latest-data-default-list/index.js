@@ -64,9 +64,10 @@ class LatestDataDefaultList extends Taro.Component{
       url: api.getLatestTopic()
     }).then((result) => {
       Taro.hideLoading();
+      if(result.status === 'error'){
+        showToast(result.message);
+      }
       console.log('获取最新节点', result);
-      const {latestTopicsList} = this.props;
-      console.log('LatestTopicsList', latestTopicsList)
       this.props.dispatch({
         type: LATEST_TOPIC_LIST,
         data: result.data

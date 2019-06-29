@@ -95,6 +95,9 @@ class Index extends Taro.Component{
       }),
     }).then((result) => {
       Taro.hideLoading();
+      if(result.status === 'error'){
+        showToast(result.message);
+      }
       console.log('获取帖子详情', result);
       this.props.dispatch({
         type: TOPIC_DETAIL_DATA,

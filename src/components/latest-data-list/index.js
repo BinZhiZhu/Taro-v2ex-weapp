@@ -18,26 +18,28 @@ import {HOT_TOPIC_DATA} from "../../constants";
 )
 class LatestDataList extends Taro.Component{
 
-  static defaultProps = {
-    latestTopicList: {
-      last_reply_by: '',//最新回复者
-      last_modified: '', //最新回复时间戳
-      replies: 0, //回复数
-      title: '',
-      member: {
-        avatar_normal: '', //默认头像
-        username: '',//昵称
-      },
-      node: {
-        title: '',  //节点
-      }
-    }
-  }
-
-
-  static propTypes = {
-    latestTopicList: propTypes.array
-  }
+  // static defaultProps = {
+  //   latestTopicList: [
+  //     {
+  //       last_reply_by: '',//最新回复者
+  //       last_modified: '', //最新回复时间戳
+  //       replies: 0, //回复数
+  //       title: '',
+  //       member: {
+  //         avatar_normal: '', //默认头像
+  //         username: '',//昵称
+  //       },
+  //       node: {
+  //         title: '',  //节点
+  //       }
+  //     }
+  //   ]
+  // }
+  //
+  //
+  // static propTypes = {
+  //   latestTopicList: propTypes.array
+  // }
 
 
   componentWillMount() {
@@ -62,9 +64,10 @@ class LatestDataList extends Taro.Component{
       url: api.getHotNodes()
     }).then((result) => {
       Taro.hideLoading();
+      if(result.status === 'error'){
+        showToast(result.message);
+      }
       console.log('获取最热节点', result);
-      const {latestTopicsList} = this.props;
-      console.log('LatestTopicsList', latestTopicsList)
       this.props.dispatch({
         type: HOT_TOPIC_DATA,
         data: result.data

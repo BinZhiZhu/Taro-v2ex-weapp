@@ -55,7 +55,13 @@ class App extends Component {
           "selectedIconPath": "./asserts/tabbar/node_on.png",
           "pagePath": "pages/nodes/index/index",
           "text": "节点"
-        }
+        },
+        // {
+        //   "iconPath": "./asserts/tabbar/member.png",
+        //   "selectedIconPath": "./asserts/tabbar/member_on.png",
+        //   "pagePath": "pages/member/index",
+        //   "text": "自己"
+        // }
       ],
       'backgroundColor': '#fff',
       'borderStyle': 'white'

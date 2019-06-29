@@ -14,6 +14,10 @@ import './index.scss'
 class Index extends Taro.Component{
 
 
+  config = {
+    navigationBarTitleText: '个人主页'
+  }
+
   state = {
     username: ''
   }

@@ -40,6 +40,9 @@ class Index extends Taro.Component{
       })
     }).then((result) => {
       Taro.hideLoading();
+      if(result.status === 'error'){
+        showToast(result.message);
+      }
       console.log('获取节点信息', result);
       this.props.dispatch({
         type: NODE_INFO_DATA,
