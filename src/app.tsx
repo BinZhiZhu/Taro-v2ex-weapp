@@ -28,8 +28,6 @@ class App extends Component {
   config: Config = {
     pages: [
       'pages/index/index',
-      // 'pages/curtain/index',
-      // 'pages/demo/index',
       'pages/detail/index',
       'pages/hot/index',
       'pages/nodes/index/index',
