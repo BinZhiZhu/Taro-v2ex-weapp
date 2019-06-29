@@ -37,11 +37,10 @@
 
         }
         &__header{
-          flex: 1;
           @include flex-direction;
-          align-items: center;
+          align-items: flex-start;
+          padding-left: $spacing-md;
           &__title{
-            padding-left: $spacing-md;
             color: $color-text-base;
             @include font-size($font-size-base);
           }

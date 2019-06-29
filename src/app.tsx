@@ -28,8 +28,8 @@ class App extends Component {
   config: Config = {
     pages: [
       'pages/index/index',
-      'pages/curtain/index',
-      'pages/demo/index',
+      // 'pages/curtain/index',
+      // 'pages/demo/index',
       'pages/detail/index',
       'pages/hot/index',
       'pages/nodes/index/index',
@@ -42,8 +42,8 @@ class App extends Component {
         {
           "iconPath": "./asserts/tabbar/latest.png",
           "selectedIconPath": "./asserts/tabbar/lastest_on.png",
-          pagePath: "pages/index/index",
-          text: '最新'
+          "pagePath": "pages/index/index",
+          "text": '最新'
         },
         {
           "iconPath": "./asserts/tabbar/hotest.png",

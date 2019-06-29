@@ -36,6 +36,11 @@ class Index extends Taro.Component{
   handleClose = ()=>{
     this.setState({
       isShow: false
+    },()=>{
+      this.props.dispatch({
+        type: NODE_INFO_DATA,
+        data: null
+      });
     })
   }
 

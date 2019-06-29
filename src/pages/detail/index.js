@@ -131,21 +131,26 @@ class Index extends Taro.Component{
               />
             ) : null}
 
-            <View className='pages-detail-index__topic__top__left__info'>
-              <Text className='pages-detail-index__topic__top__left__info__username'>{data.member.username}</Text>
-              <View className='pages-detail-index__topic__top__left__info__subtitle'>
-                <Text className='pages-detail-index__topic__top__left__info__subtitle__text'>at {difftime}，{data.replies}回复</Text>
+            {data && difftime ? (
+              <View className='pages-detail-index__topic__top__left__info'>
+                <Text className='pages-detail-index__topic__top__left__info__username'>{data.member.username}</Text>
+                <View className='pages-detail-index__topic__top__left__info__subtitle'>
+                  <Text className='pages-detail-index__topic__top__left__info__subtitle__text'>at {difftime}，{data.replies}回复</Text>
+                </View>
               </View>
-            </View>
+            ) : null}
+
           </View>
             <View className='pages-detail-index__topic__top__right'>
-              <AtTag
-                className='pages-detail-index__topic__top__right__title'
-                size='small'
-                type='primary'
-              >
-                {data.node.title}
-              </AtTag>
+              {data ? (
+                <AtTag
+                  className='pages-detail-index__topic__top__right__title'
+                  size='small'
+                  type='primary'
+                >
+                  {data.node.title}
+                </AtTag>
+              ) : null}
             </View>
           </View>
 
