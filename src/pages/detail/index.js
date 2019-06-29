@@ -165,7 +165,9 @@ class Index extends Taro.Component{
                   className='pages-detail-index__topic__bottom__content__text'
                   nodes={data.content}
                 />
-                <View className='pages-detail-index__topic__bottom__content__line' />
+                {data.content && (
+                  <View className='pages-detail-index__topic__bottom__content__line' />
+                )}
               </View>
             </View>
           )}
