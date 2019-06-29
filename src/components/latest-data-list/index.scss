@@ -1,0 +1,82 @@
+@import "../../theme";
+
+.pages-index-index-homepage__block{
+    width: 100%;
+    padding: $spacing-md;
+    @include flex-direction(row);
+    align-items: center;
+    &__left{
+      width: 85%;
+      @include flex-direction(row);
+      &__thumb{
+        &__img{
+        }
+      }
+      &__info{
+        padding-left: $spacing-md;
+        @include flex-direction;
+        justify-content: space-between;
+        &__title{
+          color: $color-text-base;
+          @include line(2);
+          @include font-size($font-size-base);
+        }
+        &__subtitle{
+          @include flex-direction(row);
+          @include line(1);
+          color: $color-border-grey;
+          align-items: center;
+          @include font-size($font-size-sm);
+          &__node-title{
+
+          }
+          &__username{
+            font-weight: bold;
+          }
+          &__dot,&__last_reply_icon{
+            @include flex-direction(row);
+            align-items: center;
+            @include padding-horizontal($spacing-xs);
+            &__inner{
+              @include font-size(12px);
+            }
+            &__username{
+              color: $color-text-placeholder;
+            }
+          }
+          &__text{
+            @include padding-horizontal($spacing-sm);
+            color: $color-text-base;
+            @include font-size($font-size-base);
+          }
+
+          &__last_reply_by{
+            width: 220px;
+            @include text-overflow-ellipsis;
+            @include white-space-nowrap;
+            @include overflow-hidden;
+            color: $color-text-placeholder;
+            &__username{
+              padding-left: $spacing-xs;
+              color: $color-text-base;
+            }
+          }
+        }
+      }
+    }
+    &__right{
+      width: 15%;
+      @include flex-direction(row);
+      justify-content: center;
+      &__inner{
+        &__tag{
+          //@include display-flex;
+          //align-items: center;
+          //background-color: $color-grey-4;
+          //color: $color-text-base-inverse;
+          //@include font-size($spacing-md)
+        }
+      }
+
+    }
+  }

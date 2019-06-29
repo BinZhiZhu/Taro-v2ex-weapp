@@ -32,43 +32,38 @@ class App extends Component {
       'pages/demo/index',
       'pages/detail/index',
     ],
-    // window: {
-    //   backgroundTextStyle: 'light',
-    //   navigationBarBackgroundColor: '#fff',
-    //   navigationBarTitleText: 'WeChat',
-    //   navigationBarTextStyle: 'black'
-    // }
     tabBar: {
+      'color': '#000',
+      'selectedColor': '#56abe4',
       list: [
         {
-          'iconPath': './asserts/tabbar/latest.png',
-          'selectedIconPath': './asserts/tabbar/lastest_on.png',
-          pagePath: 'pages/index/index',
+          "iconPath": "./asserts/tabbar/latest.png",
+          "selectedIconPath": "./asserts/tabbar/lastest_on.png",
+          pagePath: "pages/index/index",
           text: '最新'
         },
         {
-          'iconPath': './asserts/tabbar/hotest.png',
-          'selectedIconPath': './asserts/tabbar/hotest_on.png',
-          pagePath: 'pages/curtain/index',
-          text: '热门'
+          "iconPath": "./asserts/tabbar/hotest.png",
+          "selectedIconPath": "./asserts/tabbar/hotest_on.png",
+          "pagePath": "pages/curtain/index",
+          "text": "热门"
         },
         {
-          'iconPath': './asserts/tabbar/node.png',
-          'selectedIconPath': './asserts/tabbar/node_on.png',
-          pagePath: 'pages/curtain/index',
-          text: '节点'
+          "iconPath": "./asserts/tabbar/node.png",
+          "selectedIconPath": "./asserts/tabbar/node_on.png",
+          "pagePath": "pages/curtain/index",
+          "text": "节点"
         }
       ],
-      'color': '#000',
-      'selectedColor': '#56abe4',
       'backgroundColor': '#fff',
       'borderStyle': 'white'
     },
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'V2EX',
-      navigationBarTextStyle: 'black'
+      navigationBarTitleText: '首页',
+      navigationBarTextStyle: 'black',
+      enablePullDownRefresh: true,
     }
   }
 

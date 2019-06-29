@@ -1,0 +1,129 @@
+@import "../../theme";
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/tag.scss";
+
+.pages-detail-index{
+  padding: $spacing-md;
+  &__empty{
+    padding-left: $spacing-md;
+    color: $color-text-base;
+    @include font-size($font-size-base);
+  }
+  &__topic{
+    @include flex-direction;
+    &__top{
+      @include flex-direction(row);
+      align-items: center;
+      &__left{
+        @include flex-direction(row);
+        align-items: center;
+        &__thumb{
+
+        }
+        &__info{
+          @include flex-direction;
+          padding-left: $spacing-md;
+          align-items: baseline;
+          &__username{
+            color: $color-text-base;
+            @include font-size($font-size-base);
+          }
+          &__subtitle{
+            &__text{
+              color: $color-text-placeholder;
+              @include font-size($font-size-base);
+            }
+          }
+        }
+      }
+      &__right{
+        flex: 1;
+        @include flex-direction(row);
+        justify-content: flex-end;
+        &__title{
+          @include font-size($font-size-base);
+        }
+      }
+    }
+    &__bottom{
+      padding: $spacing-md;
+      &__line{
+        @include padding-vertical($spacing-xs);
+        @include border-thin-bottom;
+      }
+      &__title{
+        &__text{
+          color: $color-text-base;
+          @include font-size($font-size-lg);
+        }
+      }
+      &__content{
+        padding-top: $spacing-md;
+        &__line{
+          padding-top: $spacing-md;
+          @include border-thin-bottom;
+        }
+        &__text{
+          @include font-size($font-size-base);
+        }
+      }
+    }
+  }
+  &__reply{
+    @include flex-direction(row);
+    align-items: center;
+    @include padding-vertical($spacing-md);
+    //@include border-thin-bottom;
+    &__left{
+      width: 90%;
+      @include flex-direction(row);
+      &__thumb{
+
+      }
+      &__info{
+        @include flex-direction;
+        padding-left: $spacing-md;
+        &__top{
+          @include flex-direction;
+          justify-content: space-between;
+          &__username{
+            @include flex-direction(row);
+            color: $color-text-secondary;
+            @include font-size($font-size-base);
+          }
+          &__subtitle{
+            @include flex-direction(row);
+            &__time{
+              color: $color-text-placeholder;
+              @include font-size($font-size-base);
+            }
+            &__count{
+              padding-left: $spacing-lg;
+              color: $color-text-placeholder;
+              @include font-size($font-size-base);
+            }
+          }
+        }
+        &__bottom{
+          @include flex-direction;
+          padding-top: $spacing-md;
+          @include font-size($font-size-base);
+          &__content{
+            color: $color-text-base;
+            @include font-size($font-size-base);
+          }
+        }
+      }
+    }
+    &__right{
+      width: 10%;
+      @include flex-direction(row);
+      justify-content: flex-end;
+      &__text{
+        color: $color-text-placeholder;
+        @include font-size($font-size-base);
+      }
+
+    }
+  }
+}

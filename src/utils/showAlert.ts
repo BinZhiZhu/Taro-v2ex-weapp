@@ -13,8 +13,8 @@ const showAlert = (content) => {
       title: '提示',
       content: content,
       showCancel: false,
-      success: (res) => {
-        if (res.confirm) {
+      success: (result) => {
+        if (result.confirm) {
           resolve();
         } else {
           reject();

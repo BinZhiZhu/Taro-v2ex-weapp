@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux'
 import {
   LATEST_TOPIC_LIST,
-  TOPIC_DETAIL_DATA
+  TOPIC_DETAIL_DATA,
+  TOPIC_REPLIES_DATA
 } from "./constants";
 
 // getLatestTopic
@@ -17,7 +18,17 @@ function latestTopicList (state = {}, action) {
   }
 }
 
-function getTopicDetail(state = {},action) {
+function topicReplies(state = {},action) {
+  switch (action.type) {
+    case TOPIC_REPLIES_DATA:
+      return action.data;
+    default:
+      return state;
+  }
+}
+
+
+function topicDetail(state = {},action) {
   switch (action.type) {
     case TOPIC_DETAIL_DATA:
       return action.data;
@@ -30,5 +41,6 @@ function getTopicDetail(state = {},action) {
 
 export default combineReducers({
   latestTopicList,
-  getTopicDetail
+  topicReplies,
+  topicDetail
 })

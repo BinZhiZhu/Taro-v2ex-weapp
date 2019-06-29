@@ -2,7 +2,7 @@ import Taro from '@tarojs/taro'
 import {Image, Swiper, SwiperItem, View} from '@tarojs/components'
 import {AtButton, AtDrawer, AtGrid, AtImagePicker, AtNoticebar, AtSearchBar, AtTimeline} from "taro-ui"
 import './index.scss'
-import navigateTo from "../../helper/navigateTo";
+import navigateTo from "../../utils/navigateTo";
 import showAlert from "../../utils/showAlert";
 
 class Index extends Taro.Component {

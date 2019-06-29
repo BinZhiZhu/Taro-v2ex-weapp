@@ -21,9 +21,7 @@ const navigateTo = (url: string, params = {}): void => {
     if (process.env.TARO_ENV === 'h5') {
       window.location.href = url;
     } else {
-      navigateTo('/pages/web/index', {
-        url: url,
-      });
+      // TODO 补充跳转webview
     }
     return;
   }

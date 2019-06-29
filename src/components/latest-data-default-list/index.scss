@@ -1,0 +1,73 @@
+@import "../../theme";
+
+.pages-index-index-homepage__block{
+    padding: $spacing-md;
+    @include flex-direction;
+    &__top{
+      width: 100%;
+      @include flex-direction;
+      &__left{
+        @include flex-direction(row);
+        &__thumb{
+
+        }
+        &__info{
+          @include flex-direction;
+          padding-left: $spacing-md;
+          justify-content: space-between;
+          @include font-size($font-size-base);
+          &__username{
+            color: $color-text-base;
+          }
+          &__subtitle{
+            color: $color-border-grey;
+            @include flex-direction(row);
+            align-items: center;
+            @include font-size($font-size-sm);
+            &__time{
+
+            }
+            &__dot{
+              color: $color-border-grey;
+              @include padding-horizontal($spacing-sm);
+            }
+            &__text{
+              color: $color-border-grey;
+              padding-right: $spacing-sm;
+            }
+            &__username{
+
+            }
+          }
+        }
+        &__right{
+          flex: 1;
+          @include flex-direction;
+          align-items: flex-end;
+          &__top{
+            @include flex-direction(row);
+            align-items: center;
+            @include padding-horizontal($spacing-sm);
+            color: $color-border-grey;
+            @include font-size($font-size-base);
+            &__node{
+              padding-right: $spacing-sm;
+              &__title{
+              }
+            }
+            &__icon{
+            }
+            &__reply{
+              padding-left: $spacing-sm;
+            }
+          }
+        }
+      }
+    }
+  &__bottom{
+    &__text{
+      color: $color-text-base;
+      @include font-size($font-size-base);
+    }
+  }
+  }

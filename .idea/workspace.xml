@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="834087b9-47f2-4ed4-919e-10fe09d0316c" name="Default Changelist" comment="" />
+    <list default="true" id="834087b9-47f2-4ed4-919e-10fe09d0316c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/navigateTo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/navigateTo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/demo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/demo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/detail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/showAlert.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/showAlert.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -120,30 +134,12 @@
     <favorites_list name="taro-demo" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/pages/index/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/pages/demo/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/pages/detail/index.js">
+        <entry file="file://$PROJECT_DIR$/src/pages/detail/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+            <state relative-caret-position="459">
+              <caret line="164" column="19" selection-start-line="164" selection-start-column="19" selection-end-line="164" selection-end-column="19" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -152,25 +148,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/pages/curtain/index.js">
+        <entry file="file://$PROJECT_DIR$/src/components/latest-data-default-list/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="154">
+              <caret line="109" column="71" selection-start-line="109" selection-start-column="71" selection-end-line="109" selection-end-column="71" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/app.tsx">
+        <entry file="file://$PROJECT_DIR$/src/components/latest-data-default-list/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mock/data/topic_detail.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="14" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/detail/index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="75" column="25" lean-forward="true" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -181,6 +192,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="tsconfig.json" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -196,6 +208,11 @@
       <find>params</find>
       <find>GET_REPLIES</find>
       <find>ScrollView</find>
+      <find>topicReplies</find>
+      <find>GET_TOPICS</find>
+      <find>TOPIC_REPLIES_DATA</find>
+      <find>pages-detail-index__topic__bottom</find>
+      <find>pages-detail-index__topic__bottom__content</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,53 +221,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/index/index.tsx" />
-        <option value="$PROJECT_DIR$/src/helper/index.js" />
-        <option value="$PROJECT_DIR$/src/helper/navigateTo.ts" />
-        <option value="$PROJECT_DIR$/src/pages/curtain/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/curtain/index.scss" />
-        <option value="$PROJECT_DIR$/project.config.json" />
-        <option value="$PROJECT_DIR$/src/constants/latest.ts" />
         <option value="$PROJECT_DIR$/src/reducers/latest.ts" />
         <option value="$PROJECT_DIR$/src/store/index.ts" />
         <option value="$PROJECT_DIR$/src/actions/counter.ts" />
-        <option value="$PROJECT_DIR$/src/actions.js" />
         <option value="$PROJECT_DIR$/src/utils/ss.ts" />
         <option value="$PROJECT_DIR$/src/utils/navigateBack.ts" />
         <option value="$PROJECT_DIR$/src/utils/showLoading.ts" />
         <option value="$PROJECT_DIR$/src/utils/showToast.ts" />
-        <option value="$PROJECT_DIR$/src/utils/showAlert.ts" />
         <option value="$PROJECT_DIR$/src/utils/hideLoading.ts" />
         <option value="$PROJECT_DIR$/config/README.md" />
         <option value="$PROJECT_DIR$/config/index.js" />
         <option value="$PROJECT_DIR$/src/store.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/components/base/index.js" />
+        <option value="$PROJECT_DIR$/src/utils/api.ts" />
+        <option value="$PROJECT_DIR$/project.config.json" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/pages/demo/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/curtain/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/helper/navigateTo.ts" />
+        <option value="$PROJECT_DIR$/src/actions.js" />
+        <option value="$PROJECT_DIR$/src/utils/showAlert.ts" />
+        <option value="$PROJECT_DIR$/src/utils/diffTimeStamp.ts" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/app.tsx" />
         <option value="$PROJECT_DIR$/src/themes/default.scss" />
         <option value="$PROJECT_DIR$/src/theme.scss" />
-        <option value="$PROJECT_DIR$/src/pages/index/index.scss" />
-        <option value="$PROJECT_DIR$/src/utils/api.ts" />
+        <option value="$PROJECT_DIR$/src/utils/requireScss.ts" />
+        <option value="$PROJECT_DIR$/src/utils/requireScss.js" />
         <option value="$PROJECT_DIR$/src/app.tsx" />
-        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
+        <option value="$PROJECT_DIR$/src/utils/formatAvatarUrl.ts" />
+        <option value="$PROJECT_DIR$/src/mock/README.md" />
+        <option value="$PROJECT_DIR$/src/components/README.md" />
+        <option value="$PROJECT_DIR$/src/pages/README.md" />
+        <option value="$PROJECT_DIR$/src/themes/README.md" />
+        <option value="$PROJECT_DIR$/src/utils/README.md" />
+        <option value="$PROJECT_DIR$/src/mock/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/constants.js" />
         <option value="$PROJECT_DIR$/src/reducers.js" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
+        <option value="$PROJECT_DIR$/src/components/latest-data-list/index.scss" />
+        <option value="$PROJECT_DIR$/src/components/latest-data-list/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.scss" />
+        <option value="$PROJECT_DIR$/src/mock/data/topic_detail.json" />
+        <option value="$PROJECT_DIR$/src/utils/callAPI.ts" />
+        <option value="$PROJECT_DIR$/src/components/latest-data-default-list/index.js" />
+        <option value="$PROJECT_DIR$/src/components/latest-data-default-list/index.scss" />
+        <option value="$PROJECT_DIR$/src/pages/detail/index.scss" />
         <option value="$PROJECT_DIR$/src/pages/detail/index.js" />
-        <option value="$PROJECT_DIR$/../taro-v2ex/project.config.json" />
-        <option value="$PROJECT_DIR$/../taro-v2ex/README.md" />
-        <option value="$PROJECT_DIR$/../taro-v2ex/.gitignore" />
-        <option value="$PROJECT_DIR$/../taro-v2ex/package.json" />
-        <option value="$PROJECT_DIR$/../taro-v2ex/src/pages/index/index.js" />
-        <option value="$PROJECT_DIR$/../taro-v2ex/src/pages/demo/index.js" />
-        <option value="$PROJECT_DIR$/../taro-v2ex/src/pages/curtain/index.js" />
-        <option value="$PROJECT_DIR$/../taro-v2ex/src/app.tsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="3" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="798" />
+    <option name="width" value="1437" />
+    <option name="height" value="794" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -277,21 +306,40 @@
               <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
               <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="latest-data-default-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="latest-data-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mock" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
               <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="curtain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
@@ -299,13 +347,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="detail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,13 +370,17 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/base" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/reducers" />
+      <recent name="$PROJECT_DIR$/src/components/latest-data-list" />
+      <recent name="$PROJECT_DIR$/src/mock/data" />
+      <recent name="$PROJECT_DIR$/src/mock" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/mock/data" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/components/base" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -366,19 +411,29 @@
       <workItem from="1561177075434" duration="1140000" />
       <workItem from="1561468689709" duration="220000" />
       <workItem from="1561641203170" duration="8584000" />
-      <workItem from="1561740797700" duration="7585000" />
+      <workItem from="1561740797700" duration="7801000" />
+      <workItem from="1561751193983" duration="21124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24547000" />
+    <option name="totallyTimeSpent" value="45887000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49810606" visible="true" weight="0.24947146" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4964539" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" sideWeight="0.5035461" side_tool="true" weight="0.24947146" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50189394" side_tool="true" weight="0.24947146" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -387,10 +442,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.49036145" />
-      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.39759037" />
       <window_info anchor="bottom" id="Messages" order="12" />
@@ -403,6 +458,30 @@
     <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -419,309 +498,370 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/store/index.ts" />
-    <entry file="file://$PROJECT_DIR$/src/reducers/latest.ts" />
-    <entry file="file://$PROJECT_DIR$/src/constants/latest.ts" />
-    <entry file="file://$PROJECT_DIR$/src/actions/counter.ts" />
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/utils/navigateBack.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/utils/showLoading.ts">
+    <entry file="file://$PROJECT_DIR$/src/utils/showLoading.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/utils/showToast.ts">
+    <entry file="file://$PROJECT_DIR$/src/utils/showToast.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="165">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/config/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/config/prod.js">
+    <entry file="file://$PROJECT_DIR$/src/utils/showAlert.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="180">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/utils/hideLoading.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/store.js">
+    <entry file="file://$PROJECT_DIR$/src/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/app.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/themes/overwrite.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/themes/mixins/disabled.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/themes/mixins/active.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/themes/mixins/border.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/node_modules/taro-ui/dist/style/components/list.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1767" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/node_modules/taro-ui/dist/style/themes/purple.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/node_modules/taro-ui/dist/style/mixins/libs/flex.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/node_modules/taro-ui/dist/style/index.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/node_modules/taro-ui/dist/h5/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/themes/mixins/base.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/components/base/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/node_modules/taro-ui/@types/tag.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/node_modules/lodash/lodash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="9961" column="8" selection-start-line="9961" selection-start-column="8" selection-end-line="9961" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/node_modules/taro-ui/dist/style/variables/default.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="63" column="18" selection-start-line="63" selection-end-line="63" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/pages/demo/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/themes/default.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="45" column="13" selection-start-line="45" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/pages/index/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/helper/navigateTo.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/node_modules/@tarojs/taro/types/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="7634" column="12" selection-start-line="7634" selection-start-column="12" selection-end-line="7634" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/config/dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/utils/api.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/reducers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/README.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <first_editor relative-caret-position="60">
+            <caret line="4" selection-start-line="4" selection-end-line="4" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/themes/default.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="693">
+          <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/asserts/tabbar/hotest.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/asserts/tabbar/node_on.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/package.json">
+    <entry file="file://$PROJECT_DIR$/src/utils/hideLoading.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/project.config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/node_modules/@tarojs/components/types/ScrollView.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/utils/showAlert.ts">
+    <entry file="file://$PROJECT_DIR$/src/utils/navigateBack.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/pages/curtain/index.js">
+    <entry file="file://$PROJECT_DIR$/src/utils/navigateTo.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="90">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/pages/index/index.js">
+    <entry file="file://$PROJECT_DIR$/src/utils/diffTimeStamp.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        <state relative-caret-position="315">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/app.tsx">
+    <entry file="file://$PROJECT_DIR$/src/utils/requireScss.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@tarojs/taro-alipay/src/create-component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/pages/demo/index.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/taro-ui/dist/weapp/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79761" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mock/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/themes/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mock/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mock/data/topic_reply.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/demo/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/demo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1075">
           <caret line="5" selection-start-line="5" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../taro-v2ex/src/pages/detail/index.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/taro-ui/dist/weapp/components/avatar/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        <state relative-caret-position="-432">
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist_weapp_default/npm/taro-ui/dist/weapp/components/avatar/index.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist_weapp_default/npm/taro-ui/dist/weapp/components/avatar/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1180" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/taro-ui/dist/style/components/avatar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/global.d.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist_weapp_default/components/latest-data-list/index.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist_weapp_default/components/latest-data-list/index.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist_weapp_default/components/latest-data-list/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist_weapp_default/components/latest-data-list/index.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="65" lean-forward="true" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/themes/mixins/text.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/latest-data-list/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="154" column="34" lean-forward="true" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/latest-data-list/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/formatAvatarUrl.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/api.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/callAPI.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mock/data/latest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/latest-data-default-list/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="109" column="71" selection-start-line="109" selection-start-column="71" selection-end-line="109" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/latest-data-default-list/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mock/data/topic_detail.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/detail/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="75" column="25" lean-forward="true" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/detail/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="164" column="19" selection-start-line="164" selection-start-column="19" selection-end-line="164" selection-end-column="19" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
