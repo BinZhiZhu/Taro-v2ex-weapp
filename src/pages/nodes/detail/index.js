@@ -54,6 +54,7 @@ class Index extends Taro.Component{
   render() {
 
     const {getNodeInfo} = this.props;
+
     if(isEmpty(getNodeInfo)){
       return null;
     }

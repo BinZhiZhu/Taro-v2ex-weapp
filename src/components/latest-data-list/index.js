@@ -82,9 +82,9 @@ class LatestDataList extends Taro.Component{
 
   render() {
 
-    const {latestTopicList} = this.props;
+    const {hotTopics} = this.props;
 
-    if(isEmpty(latestTopicList)){
+    if(isEmpty(hotTopics)){
       return null;
     }
 
@@ -92,7 +92,7 @@ class LatestDataList extends Taro.Component{
       <ScrollView
         scrollY
       >
-        {latestTopicList && latestTopicList.length > 0 && latestTopicList.map((item,i)=>{
+        {hotTopics && hotTopics.length > 0 && hotTopics.map((item,i)=>{
           const avatar = formatAvatar(item.member.avatar_normal);
           const lastReplyText = getDiffTimeStamp(item.last_modified);
 
