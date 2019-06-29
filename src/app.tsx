@@ -32,7 +32,8 @@ class App extends Component {
       'pages/demo/index',
       'pages/detail/index',
       'pages/hot/index',
-      'pages/nodes/index',
+      'pages/nodes/index/index',
+      'pages/nodes/detail/index',
     ],
     tabBar: {
       'color': '#000',
@@ -53,7 +54,7 @@ class App extends Component {
         {
           "iconPath": "./asserts/tabbar/node.png",
           "selectedIconPath": "./asserts/tabbar/node_on.png",
-          "pagePath": "pages/nodes/index",
+          "pagePath": "pages/nodes/index/index",
           "text": "节点"
         }
       ],

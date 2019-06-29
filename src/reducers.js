@@ -3,7 +3,8 @@ import {
   LATEST_TOPIC_LIST,
   TOPIC_DETAIL_DATA,
   TOPIC_REPLIES_DATA,
-  HOT_TOPIC_DATA
+  HOT_TOPIC_DATA,
+  NODE_INFO_DATA
 } from "./constants";
 
 // getLatestTopic
@@ -38,6 +39,15 @@ function topicDetail(state = {},action) {
   }
 }
 
+function getNodeInfo(state = {},action) {
+  switch (action.type) {
+    case NODE_INFO_DATA:
+      return action.data;
+    default:
+      return state;
+  }
+}
+
 
 
 function hotTopics(state = {},action) {
@@ -55,5 +65,6 @@ export default combineReducers({
   latestTopicList,
   topicReplies,
   topicDetail,
-  hotTopics
+  hotTopics,
+  getNodeInfo
 })

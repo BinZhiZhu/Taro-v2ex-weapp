@@ -1,0 +1,68 @@
+@import "../../../theme";
+@import "~taro-ui/dist/style/components/float-layout.scss";
+@import "~taro-ui/dist/style/components/avatar.scss";
+
+
+.pages-nodes-index{
+  &__item{
+    @include padding-horizontal($spacing-md);
+    &__title{
+      background-color: $color-bg-grey;
+      justify-content: center;
+      @include display-flex;
+      @include margin-vertical($spacing-md);
+      @include padding-vertical($spacing-sm);
+      &__text{
+        color: $color-text-base;
+        @include font-size($font-size-base);
+      }
+    }
+    &__child{
+      color: $color-text-secondary;
+      @include font-size($font-size-base);
+      padding-right: $spacing-md;
+    }
+  }
+
+  &__layout{
+    &__info{
+      @include flex-direction(row);
+      align-items: center;
+      padding: $spacing-md;
+      justify-content: space-around;
+      &__left{
+        align-items: center;
+        @include flex-direction(row);
+        &__avatar{
+
+        }
+        &__header{
+          flex: 1;
+          @include flex-direction;
+          align-items: center;
+          &__title{
+            padding-left: $spacing-md;
+            color: $color-text-base;
+            @include font-size($font-size-base);
+          }
+          &__subtitle{
+
+          }
+
+        }
+      }
+      &__right{
+        flex: 1;
+        @include flex-direction;
+        align-items: center;
+        &__topics{
+        }
+        &__star{
+        }
+
+      }
+    }
+    &__content{
+    }
+  }
+}
