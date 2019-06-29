@@ -1,12 +1,13 @@
 import Taro, {navigateTo, showToast} from "@tarojs/taro"
 import {AtAvatar, AtFloatLayout} from "taro-ui";
 import {connect} from "@tarojs/redux";
-import {Text, View} from "@tarojs/components";
+import {RichText, Text, View} from "@tarojs/components";
 import allNodes from "../../../utils/allNodes";
 import './index.scss'
 import callAPI from "../../../utils/callAPI";
 import api from "../../../utils/api";
 import {NODE_INFO_DATA} from "../../../constants";
+import showLoading from "../../../utils/showLoading";
 
 @connect(
   state=>state
@@ -27,6 +28,7 @@ class Index extends Taro.Component{
   // }
 
   onShowLayout = (name)=>{
+    showLoading();
     this.getNodeDetail(name);
     this.setState({
       isShow: true
@@ -120,7 +122,12 @@ class Index extends Taro.Component{
                   <Text className='pages-nodes-index__layout__info__right__star'>收藏 {getNodeInfo.stars}</Text>
                 </View>
               </View>
-              <View className='pages-nodes-index__layout__content'>{getNodeInfo.header}</View>
+              <View className='pages-nodes-index__layout__content'>
+                <RichText
+                  className='pages-nodes-index__layout__content__header'
+                  nodes={getNodeInfo.header}
+                />
+              </View>
             </AtFloatLayout>
           </View>
         ) : null}
