@@ -11,7 +11,7 @@ import showLoading from "../../utils/showLoading";
 import showAlert from "../../utils/showAlert";
 import callAPI from "../../utils/callAPI";
 import api from "../../utils/api";
-import {LATEST_TOPIC_LIST} from "../../constants";
+import {HOT_TOPIC_DATA} from "../../constants";
 
 @connect(
   state=>state
@@ -59,14 +59,14 @@ class LatestDataList extends Taro.Component{
 
   getLatestTopic = () => {
     callAPI({
-      url: api.getLatestTopic()
+      url: api.getHotNodes()
     }).then((result) => {
       Taro.hideLoading();
-      console.log('获取最新节点', result);
+      console.log('获取最热节点', result);
       const {latestTopicsList} = this.props;
       console.log('LatestTopicsList', latestTopicsList)
       this.props.dispatch({
-        type: LATEST_TOPIC_LIST,
+        type: HOT_TOPIC_DATA,
         data: result.data
       });
     }).catch((error) => {
@@ -136,7 +136,7 @@ class LatestDataList extends Taro.Component{
 
                     {item.last_reply_by && (
                       <Text className='pages-index-index-homepage__block__left__info__subtitle__last_reply_by'>最新回复来自
-                        <Text className='pages-index-index-homepage__block__left__info__subtitle__last_reply_by__username'>{item.last_reply_by}</Text>
+                        <Text className='pages-index-index-homepage__block__left__info__subtitle__last_reply_by__username'> {item.last_reply_by}</Text>
                       </Text>
                     )}
 

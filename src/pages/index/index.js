@@ -1,6 +1,5 @@
 import Taro from '@tarojs/taro'
 import {View} from '@tarojs/components'
-import LatestDataList from "../../components/latest-data-list";
 import './index.scss'
 import LatestDataDefaultList from "../../components/latest-data-default-list";
 

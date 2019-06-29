@@ -31,6 +31,8 @@ class App extends Component {
       'pages/curtain/index',
       'pages/demo/index',
       'pages/detail/index',
+      'pages/hot/index',
+      'pages/nodes/index',
     ],
     tabBar: {
       'color': '#000',
@@ -45,13 +47,13 @@ class App extends Component {
         {
           "iconPath": "./asserts/tabbar/hotest.png",
           "selectedIconPath": "./asserts/tabbar/hotest_on.png",
-          "pagePath": "pages/curtain/index",
+          "pagePath": "pages/hot/index",
           "text": "热门"
         },
         {
           "iconPath": "./asserts/tabbar/node.png",
           "selectedIconPath": "./asserts/tabbar/node_on.png",
-          "pagePath": "pages/curtain/index",
+          "pagePath": "pages/nodes/index",
           "text": "节点"
         }
       ],
