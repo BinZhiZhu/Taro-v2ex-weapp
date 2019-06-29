@@ -42,7 +42,8 @@
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "taro-ui": "^2.2.1"
+    "taro-ui": "^2.2.1",
+    "taro_rich_text": "^1.0.7"
   },
   "devDependencies": {
     "@types/react": "^16.4.8",

@@ -72,6 +72,12 @@ class App extends Component {
       navigationBarTitleText: '首页',
       navigationBarTextStyle: 'black',
       enablePullDownRefresh: true,
+    },
+    plugins: {
+      "wxparserPlugin": {
+        "version": "0.1.0",
+        "provider": "wx9d4d4ffa781ff3ac"
+      }
     }
   }
 
