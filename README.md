@@ -98,9 +98,13 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 ### 感谢
 
-- v2ex  https://www.v2ex.com/p/7v9TEc53
+- v2ex  
 
-- taro  https://nervjs.github.io/taro/docs/GETTING-STARTED.html
+https://www.v2ex.com/p/7v9TEc53
+
+- taro  
+ 
+ https://nervjs.github.io/taro/docs/GETTING-STARTED.html
 
 ### License
 
