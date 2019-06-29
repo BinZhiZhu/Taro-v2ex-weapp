@@ -1,0 +1,43 @@
+@import "../../theme";
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/list.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/tag.scss";
+
+
+.pages-member-index{
+  &__avatar{
+    @include flex-direction;
+    justify-content: center;
+    align-items: center;
+    &__thumb{
+    }
+    &__status{
+
+    }
+
+  }
+  &__info{
+    padding: $spacing-xxl;
+    @include flex-direction;
+    &__inner{
+      @include flex-direction(row);
+      @include hairline-bottom;
+      @include padding-vertical($spacing-md);
+      &__title{
+        color: $color-text-base;
+        @include font-size($font-size-base);
+      }
+      &__value{
+        flex: 1;
+        text-align: right;
+        color: $color-text-base;
+        @include font-size($font-size-base);
+      }
+    }
+  }
+}
+
+.at-list{
+  background-color: $color-white !important;
+}

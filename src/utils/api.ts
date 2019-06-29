@@ -19,7 +19,7 @@ const GET_TOPICS = 'topics/show.json'
 // 获取回复 :topic_id (:page , :page_size)?
 const GET_REPLIES = 'replies/show.json'
 
-// 获取用户信息
+// 获取用户信息 :username
 const GET_USERINFO = 'members/show.json'
 
 function queryString (obj?: Object) {

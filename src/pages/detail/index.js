@@ -1,4 +1,4 @@
-import Taro, {showToast} from "@tarojs/taro"
+import Taro, {navigateTo, showToast} from "@tarojs/taro"
 import {AtAvatar, AtTag} from "taro-ui";
 import isEmpty from "lodash/isEmpty"
 import {RichText, Text, View} from "@tarojs/components";
@@ -105,6 +105,13 @@ class Index extends Taro.Component{
     });
   }
 
+
+  getMemberData = (username)=>{
+    navigateTo({
+      url:`/pages/member/index?username=${username}`
+    })
+  }
+
   render() {
 
     const {topicDetail,topicReplies} = this.props;
@@ -122,12 +129,15 @@ class Index extends Taro.Component{
       <View className='pages-detail-index'>
         <View className='pages-detail-index__topic'>
           <View className='pages-detail-index__topic__top'>
-          <View className='pages-detail-index__topic__top__left'>
-            {data.member.avatar_large ? (
+          <View
+            className='pages-detail-index__topic__top__left'
+            onClick={this.getMemberData.bind(this,data.member.username)}
+          >
+            {data.member.avatar_normal ? (
               <AtAvatar
                 size='small'
                 className='pages-detail-index__topic__top__left__thumb'
-                image={formatAvatar(data.member.avatar_large)}
+                image={formatAvatar(data.member.avatar_normal)}
               />
             ) : null}
 

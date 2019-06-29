@@ -86,10 +86,6 @@ class LatestDataDefaultList extends Taro.Component{
 
     const {latestTopicList} = this.props;
 
-    if(isEmpty(latestTopicList)){
-      return null;
-    }
-
     return (
       <ScrollView
         scrollY

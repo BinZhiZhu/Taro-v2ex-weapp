@@ -32,6 +32,7 @@ class App extends Component {
       'pages/hot/index',
       'pages/nodes/index/index',
       'pages/nodes/detail/index',
+      'pages/member/index',
     ],
     tabBar: {
       'color': '#000',
