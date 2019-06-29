@@ -41,9 +41,6 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 ### 开发时间线
 
-花了一天时间，一次提审，成功上线第一个版本
-
-
 1.首页最新主题
 
 2.主题详情
@@ -53,6 +50,17 @@ v2ex开放API支持(如果侵权请联系本人修正)
 4.节点
 
 5.节点详情
+
+### 截图
+
+ - 首页: ![](http://img.binzhizhu.top/imgs/2019/06/54b6624c1e3bf106.png)
+ 
+ - 热门: ![](http://img.binzhizhu.top/imgs/2019/06/03d291e0ea9fb45d.png)
+ 
+ - 节点: ![](http://img.binzhizhu.top/imgs/2019/06/b9e187a6a727d0ee.png)
+ 
+ - 节点详情: ![](http://img.binzhizhu.top/imgs/2019/06/85a2c7f481a50797.png)
+ 
 
 
 ### release
