@@ -64,7 +64,7 @@ v2ex开放API支持(如果侵权请联系本人修正)
  - 话题回复: ![](http://img.binzhizhu.top/imgs/2019/06/04b64c2985121708.png)
  
  - 个人主页: ![](http://img.binzhizhu.top/imgs/2019/06/29748a4f9195f604.png)
-
+ 
 
 ### release
 
@@ -79,6 +79,12 @@ v2ex开放API支持(如果侵权请联系本人修正)
 1.修复了查看帖子回复会提前加载一些文案的体验问题
 2.查看节点补充showLading
 
+-1.0.2
+
+- 支持查看个人信息
+
+- 支持markdown文本解析: ![](http://img.binzhizhu.top/imgs/2019/06/a4c8fe11315a88ee.png)
+
 
 ### TODO
 
@@ -86,13 +92,9 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 2.TypeScript 重构
 
-3.拆分组件
+3.H5版本
 
-4.H5版本
-
-5.用户信息
-
-6.TDD
+4.TDD
 
 
 ### 测试
