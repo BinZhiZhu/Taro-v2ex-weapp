@@ -1,6 +1,6 @@
 {
   "name": "taro-v2ex",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "demo版本",
   "templateInfo": {
@@ -20,7 +20,14 @@
     "dev:alipay": "npm run build:alipay -- --watch",
     "dev:tt": "npm run build:tt -- --watch",
     "dev:h5": "npm run build:h5 -- --watch",
-    "dev:rn": "npm run build:rn -- --watch"
+    "dev:rn": "npm run build:rn -- --watch",
+    "commit": "git-cz",
+    "release": "standard-version"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
   "author": "",
   "license": "MIT",
@@ -42,32 +49,35 @@
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
+    "standard-version": "^6.0.1",
     "taro-ui": "^2.2.1",
     "taro_rich_text": "^1.0.7"
   },
   "devDependencies": {
-    "@types/react": "^16.4.8",
-    "@types/webpack-env": "^1.13.6",
     "@tarojs/plugin-babel": "1.3.0",
     "@tarojs/plugin-csso": "1.3.0",
     "@tarojs/plugin-sass": "1.3.0",
     "@tarojs/plugin-uglifyjs": "1.3.0",
     "@tarojs/webpack-runner": "1.3.0",
+    "@types/react": "^16.4.8",
+    "@types/webpack-env": "^1.13.6",
+    "@typescript-eslint/parser": "^1.6.0",
+    "babel-eslint": "^8.2.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-jsx-stylesheet": "^0.6.5",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "babel-eslint": "^8.2.3",
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.16.0",
     "eslint-config-taro": "1.3.0",
-    "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-taro": "1.3.0",
     "stylelint": "9.3.0",
     "stylelint-config-taro-rn": "1.3.0",
     "stylelint-taro-rn": "1.3.0",
-    "eslint-plugin-taro": "1.3.0",
-    "@typescript-eslint/parser": "^1.6.0",
     "typescript": "^3.0.1"
   }
 }
