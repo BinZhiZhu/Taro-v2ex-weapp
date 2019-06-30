@@ -75,7 +75,7 @@ class App extends Component {
     },
     plugins: {
       "wxparserPlugin": {
-        "version": "0.1.0",
+        "version": "0.2.1",
         "provider": "wx9d4d4ffa781ff3ac"
       }
     }
