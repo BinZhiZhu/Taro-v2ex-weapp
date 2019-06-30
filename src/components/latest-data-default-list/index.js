@@ -1,4 +1,4 @@
-import Taro, {navigateTo, showToast} from "@tarojs/taro"
+import Taro, {hideLoading, navigateTo, showToast} from "@tarojs/taro"
 import {AtAvatar, AtIcon, AtTag} from "taro-ui";
 import {ScrollView, Text, View} from "@tarojs/components";
 import propTypes from "prop-types"
@@ -11,7 +11,7 @@ import showLoading from "../../utils/showLoading";
 import showAlert from "../../utils/showAlert";
 import callAPI from "../../utils/callAPI";
 import api from "../../utils/api";
-import {LATEST_TOPIC_LIST} from "../../constants";
+import {LATEST_MOCK_DATA, LATEST_TOPIC_LIST} from "../../constants";
 
 @connect(
   state=>state
@@ -51,7 +51,11 @@ class LatestDataDefaultList extends Taro.Component{
   getList = () => {
     switch (process.env.TARO_ENV) {
       case 'h5':
-        showAlert('暂不支持H5哦~');
+        this.props.dispatch({
+          type: LATEST_TOPIC_LIST,
+          data:null
+        });
+        hideLoading();
         break;
       case 'weapp':
         this.getLatestTopic();

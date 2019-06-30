@@ -1,0 +1,12 @@
+
+export const LATEST_TOPIC_LIST = 'LATEST_TOPIC_LIST';
+
+export const TOPIC_DETAIL_DATA = 'TOPIC_DETAIL_DATA';
+
+export const TOPIC_REPLIES_DATA = 'TOPIC_REPLIES_DATA';
+
+export const HOT_TOPIC_DATA = 'HOT_TOPIC_DATA';
+
+export const NODE_INFO_DATA = 'NODE_INFO_DATA';
+
+export const MEMBER_INFO_DATA = 'MEMBER_INFO_DATA';

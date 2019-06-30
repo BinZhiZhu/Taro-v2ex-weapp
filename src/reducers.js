@@ -5,17 +5,28 @@ import {
   TOPIC_REPLIES_DATA,
   HOT_TOPIC_DATA,
   NODE_INFO_DATA,
-  MEMBER_INFO_DATA
+  MEMBER_INFO_DATA,
 } from "./constants";
+import defaultState from "./defaultState";
 
-// getLatestTopic
 
-//获取最新的首页主题
+/**
+ * 获取最新的首页主题
+ * @param state
+ * @param action
+ * @returns {*}
+ */
 function latestTopicList (state = {}, action) {
   switch (action.type) {
     // 全部覆盖
     case LATEST_TOPIC_LIST:
-      return action.data;
+      switch (process.env.TARO_ENV) {
+        case "weapp":
+          return action.data;
+        case "h5":
+          return defaultState.latestMockData;
+      }
+      break;
     default:
       return state
   }
@@ -78,7 +89,12 @@ function getNodeInfo(state = {},action) {
 function hotTopics(state = {},action) {
   switch (action.type) {
     case HOT_TOPIC_DATA:
-      return action.data;
+      switch (process.env.TARO_ENV) {
+        case "weapp":
+          return action.data;
+        case "h5":
+          return defaultState.hotMockData
+      }
     default:
       return state;
   }
@@ -101,11 +117,12 @@ function memberInfo(state = {},action) {
 }
 
 
+
 export default combineReducers({
   latestTopicList,
   topicReplies,
   topicDetail,
   hotTopics,
   getNodeInfo,
-  memberInfo
+  memberInfo,
 })

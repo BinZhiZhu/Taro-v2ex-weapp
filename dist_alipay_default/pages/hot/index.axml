@@ -1,0 +1,5 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="pages-index-index-homepage">
+        <latest-data-list></latest-data-list>
+    </view>
+</block>

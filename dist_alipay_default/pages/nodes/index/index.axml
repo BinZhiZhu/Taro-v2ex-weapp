@@ -1,0 +1,30 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="pages-nodes-index">
+        <block a:if="{{allNodesList}}">
+            <view class="pages-nodes-index__item" a:key="$loopState__temp2" a:for="{{loopArray1}}" a:for-item="node" a:for-index="i">
+                <view class="pages-nodes-index__item__title"><text class="pages-nodes-index__item__title__text">{{node.$original.title}}</text>
+                </view>
+                <block a:if="{{node.$original.nodes}}"><text onTap="onShowLayout" class="pages-nodes-index__item__child" a:key="$loopState__temp4" a:for="{{node.$anonymousCallee__0}}" a:for-item="item" a:for-index="j" data-e-onTap-so="this" data-e-onTap-a-a="{{item.$original.short_name}}">{{item.$original.full_name}}</text>
+                </block>
+            </view>
+        </block>
+        <block a:if="{{getNodeInfo}}">
+            <view class="pages-nodes-index__layout">
+                <at-float-layout compid="{{$compid__4}}">
+                    <view class="pages-nodes-index__layout__info">
+                        <view class="pages-nodes-index__layout__info__left">
+                            <at-avatar compid="{{$compid__5}}"></at-avatar>
+                            <view class="pages-nodes-index__layout__info__left__header"><text class="pages-nodes-index__layout__info__left__header__title">{{getNodeInfo.title}}</text><text class="pages-nodes-index__layout__info__left__header__subtitle">{{getNodeInfo.title_alternative}}</text>
+                            </view>
+                        </view>
+                        <view class="pages-nodes-index__layout__info__right"><text class="pages-nodes-index__layout__info__right__topics">话题 {{getNodeInfo.topics}}</text><text class="pages-nodes-index__layout__info__right__star">收藏 {{getNodeInfo.stars}}</text>
+                        </view>
+                    </view>
+                    <view class="pages-nodes-index__layout__content">
+                        <rich-text class="pages-nodes-index__layout__content__header" nodes="{{getNodeInfo.header}}"></rich-text>
+                    </view>
+                </at-float-layout>
+            </view>
+        </block>
+    </view>
+</block>

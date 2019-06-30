@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "latest-data-default-list": "../../components/latest-data-default-list/index"
+  },
+  "defaultTitle": "首页"
+}

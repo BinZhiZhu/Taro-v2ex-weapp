@@ -1,0 +1,64 @@
+<block a:if="{{$taroCompReady}}">
+    <block a:if="{{isEmpty(topicDetail)}}">
+        <view></view>
+    </block>
+    <view class="pages-detail-index" a:else>
+        <view class="pages-detail-index__topic">
+            <view class="pages-detail-index__topic__top">
+                <view class="pages-detail-index__topic__top__left" onTap="getMemberData" data-e-onTap-so="this" data-e-onTap-a-a="{{data.member.username}}">
+                    <block a:if="{{data.member.avatar_normal}}">
+                        <at-avatar compid="{{$compid__1}}"></at-avatar>
+                    </block>
+                    <block a:if="{{data && difftime}}">
+                        <view class="pages-detail-index__topic__top__left__info"><text class="pages-detail-index__topic__top__left__info__username">{{data.member.username}}</text>
+                            <view class="pages-detail-index__topic__top__left__info__subtitle"><text class="pages-detail-index__topic__top__left__info__subtitle__text">at {{difftime}}，{{data.replies}}回复</text>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+                <view class="pages-detail-index__topic__top__right">
+                    <block a:if="{{data}}">
+                        <at-tag compid="{{$compid__2}}">{{data.node.title}}</at-tag>
+                    </block>
+                </view>
+            </view>
+            <block a:if="{{data}}">
+                <view class="pages-detail-index__topic__bottom">
+                    <view class="pages-detail-index__topic__bottom__title"><text class="pages-detail-index__topic__bottom__title__text">{{data.title}}</text>
+                    </view>
+                    <view class="pages-detail-index__topic__bottom__line"></view>
+                    <view class="pages-detail-index__topic__bottom__content">
+                        <taro-rich-text compid="{{$compid__3}}"></taro-rich-text>
+                        <block a:if="{{data.content}}">
+                            <view class="pages-detail-index__topic__bottom__content__line"></view>
+                        </block>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <block a:if="{{topicReplies && topicReplies.length > 0}}">
+            <view class="pages-detail-index__reply" a:key="$loopState__temp3" a:for="{{loopArray0}}" a:for-item="item" a:for-index="i">
+                <view class="pages-detail-index__reply__left">
+                    <view class="pages-detail-index__reply__left__thumb">
+                        <block a:if="{{item.avatar}}">
+                            <at-avatar compid="{{item.$compid__0}}"></at-avatar>
+                        </block>
+                    </view>
+                    <view class="pages-detail-index__reply__left__info">
+                        <view class="pages-detail-index__reply__left__info__top"><text class="pages-detail-index__reply__left__info__top__username">{{item.$original.member.username}}</text>
+                            <view class="pages-detail-index__reply__left__info__top__subtitle">
+                                <view class="pages-detail-index__reply__left__info__top__subtitle__time">{{item.lastReplyText}}</view><text class="pages-detail-index__reply__left__info__top__subtitle__count">#{{i + 1}}楼</text>
+                            </view>
+                        </view>
+                        <view class="pages-detail-index__reply__left__info__bottom">
+                            <rich-text nodes="{{item.$original.content}}" class="pages-detail-index__reply__left__info__bottom__content"></rich-text>
+                        </view>
+                    </view>
+                </view>
+                <view class="pages-detail-index__reply__right"></view>
+            </view>
+        </block>
+        <block a:if="{{topicReplies && topicReplies.length === 0}}"><text class="pages-detail-index__empty">该话题目前没有回复</text>
+        </block>
+    </view>
+</block>

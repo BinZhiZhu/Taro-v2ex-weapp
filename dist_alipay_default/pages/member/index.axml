@@ -1,0 +1,24 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="pages-member-index">
+        <view class="pages-member-index__avatar">
+            <at-avatar compid="{{$compid__6}}"></at-avatar>
+            <at-tag compid="{{$compid__7}}">ONELINE</at-tag>
+        </view>
+        <view class="pages-member-index__info">
+            <view class="pages-member-index__info__inner"><text class="pages-member-index__info__inner__title">用户名</text><text class="pages-member-index__info__inner__value">{{memberInfo.username}}</text>
+            </view>
+            <view class="pages-member-index__info__inner"><text class="pages-member-index__info__inner__title">城市</text><text class="pages-member-index__info__inner__value">{{memberInfo.location ? memberInfo.location : '未设置'}}</text>
+            </view>
+            <view class="pages-member-index__info__inner"><text class="pages-member-index__info__inner__title">座右铭</text><text class="pages-member-index__info__inner__value">{{memberInfo.tagline ? memberInfo.tagline : '未设置'}}</text>
+            </view>
+            <view class="pages-member-index__info__inner"><text class="pages-member-index__info__inner__title">GitHub</text><text class="pages-member-index__info__inner__value">{{memberInfo.github ? memberInfo.github : '未设置'}}</text>
+            </view>
+            <view class="pages-member-index__info__inner"><text class="pages-member-index__info__inner__title">博客</text><text class="pages-member-index__info__inner__value">{{memberInfo.website ? memberInfo.website : '未设置'}}</text>
+            </view>
+            <view class="pages-member-index__info__inner"><text class="pages-member-index__info__inner__title">twitter</text><text class="pages-member-index__info__inner__value">{{memberInfo.twitter ? memberInfo.twitter : '未设置'}}</text>
+            </view>
+            <view class="pages-member-index__info__inner"><text class="pages-member-index__info__inner__title">传送门</text><text class="pages-member-index__info__inner__value">{{memberInfo.url}}</text>
+            </view>
+        </view>
+    </view>
+</block>

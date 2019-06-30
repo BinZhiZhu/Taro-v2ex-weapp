@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "at-avatar": "../../npm/taro-ui/dist/weapp/components/avatar/index",
+    "at-tag": "../../npm/taro-ui/dist/weapp/components/tag/index"
+  },
+  "defaultTitle": "个人主页"
+}

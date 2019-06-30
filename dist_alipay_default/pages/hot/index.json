@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "latest-data-list": "../../components/latest-data-list/index"
+  },
+  "defaultTitle": "最热"
+}

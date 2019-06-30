@@ -1,0 +1,35 @@
+<block a:if="{{$taroCompReady}}">
+    <scroll-view scroll-y="{{true}}">
+        <block a:if="{{latestTopicList && latestTopicList.length > 0}}">
+            <view class="pages-index-index-homepage__block" a:key="$loopState__temp2" onTap="goDetail" a:for="{{loopArray2}}" a:for-item="item" a:for-index="i" data-e-onTap-so="this" data-e-onTap-a-a="{{item.$original.id}}">
+                <view class="pages-index-index-homepage__block__top">
+                    <view class="pages-index-index-homepage__block__top__left">
+                        <block a:if="{{item.avatar}}">
+                            <at-avatar compid="{{item.$compid__8}}"></at-avatar>
+                        </block>
+                        <view class="pages-index-index-homepage__block__top__left__info"><text class="pages-index-index-homepage__block__top__left__info__username">{{item.$original.member.username}}</text>
+                            <view class="pages-index-index-homepage__block__top__left__info__subtitle"><text class="pages-index-index-homepage__block__top__left__info__subtitle__time">{{item.lastReplyText}}</text>
+                                <block a:if="{{item.$original.last_reply_by}}"><text class="pages-index-index-homepage__block__top__left__info__subtitle__dot">•</text>
+                                </block>
+                                <block a:if="{{item.$original.last_reply_by}}"><text class="pages-index-index-homepage__block__top__left__info__subtitle__text">最后回复</text>
+                                </block>
+                                <block a:if="{{item.$original.last_reply_by}}"><text class="pages-index-index-homepage__block__top__left__info__subtitle__username">{{item.$original.last_reply_by}}</text>
+                                </block>
+                            </view>
+                        </view>
+                        <view class="pages-index-index-homepage__block__top__left__right">
+                            <view class="pages-index-index-homepage__block__top__left__right__top">
+                                <view class="pages-index-index-homepage__block__top__left__right__top__node">
+                                    <at-tag compid="{{item.$compid__9}}">{{item.$original.node.title}}</at-tag>
+                                </view>
+                                <at-icon compid="{{item.$compid__10}}"></at-icon><text class="pages-index-index-homepage__block__top__left__right__top__reply">{{item.$original.replies}}</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pages-index-index-homepage__block__bottom"><text class="pages-index-index-homepage__block__bottom__text">{{item.$original.title}}</text>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+</block>

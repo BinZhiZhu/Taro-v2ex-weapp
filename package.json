@@ -51,7 +51,14 @@
     "redux-thunk": "^2.3.0",
     "standard-version": "^6.0.1",
     "taro-ui": "^2.2.1",
-    "taro_rich_text": "^1.0.7"
+    "taro_rich_text": "^1.0.7",
+    "@tarojs/components-rn": "^1.3.0",
+    "@tarojs/taro-rn": "^1.3.0",
+    "@tarojs/taro-router-rn": "^1.3.0",
+    "@tarojs/taro-redux-rn": "^1.3.0",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "tslib": "^1.8.0"
   },
   "devDependencies": {
     "@tarojs/plugin-babel": "1.3.0",

@@ -11,3 +11,4 @@ export const HOT_TOPIC_DATA = 'HOT_TOPIC_DATA'
 export const NODE_INFO_DATA = 'NODE_INFO_DATA'
 
 export const MEMBER_INFO_DATA = 'MEMBER_INFO_DATA'
+

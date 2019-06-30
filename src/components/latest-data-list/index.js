@@ -1,14 +1,12 @@
-import Taro, {navigateTo, showToast} from "@tarojs/taro"
+import Taro, {hideLoading, navigateTo, showToast} from "@tarojs/taro"
 import {AtAvatar, AtTag} from "taro-ui";
 import {ScrollView, Text, View} from "@tarojs/components";
-import propTypes from "prop-types"
 import isEmpty from "lodash/isEmpty"
 import {connect} from "@tarojs/redux";
 import './index.scss'
 import formatAvatar from "../../utils/formatAvatarUrl";
 import getDiffTimeStamp from "../../utils/diffTimeStamp";
 import showLoading from "../../utils/showLoading";
-import showAlert from "../../utils/showAlert";
 import callAPI from "../../utils/callAPI";
 import api from "../../utils/api";
 import {HOT_TOPIC_DATA} from "../../constants";
@@ -51,7 +49,11 @@ class LatestDataList extends Taro.Component{
   getList = () => {
     switch (process.env.TARO_ENV) {
       case 'h5':
-        showAlert('暂不支持H5哦~');
+        this.props.dispatch({
+          type: HOT_TOPIC_DATA,
+          data:null
+        });
+        hideLoading();
         break;
       case 'weapp':
         this.getLatestTopic();
