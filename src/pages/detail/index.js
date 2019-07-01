@@ -204,6 +204,7 @@ class Index extends Taro.Component{
                   {avatar ? (
                     <AtAvatar
                       size='small'
+                      onClick={this.getMemberData.bind(this,data.member.username)}
                       image={item.member.avatar_normal}
                     />
                   ) : null}

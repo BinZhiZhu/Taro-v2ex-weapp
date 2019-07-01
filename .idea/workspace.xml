@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="834087b9-47f2-4ed4-919e-10fe09d0316c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/latest-data-default-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/latest-data-default-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/latest-data-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/latest-data-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mock/data/latest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mock/data/latest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/detail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -132,13 +125,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="396">
-                <caret line="72" column="70" selection-start-line="72" selection-start-column="70" selection-end-line="72" selection-end-column="70" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/pages/detail/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="206" column="82" selection-start-line="206" selection-start-column="82" selection-end-line="206" selection-end-column="82" />
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -219,7 +212,6 @@
         <option value="$PROJECT_DIR$/src/pages/nodes/index/index.js" />
         <option value="$PROJECT_DIR$/src/pages/member/index.js" />
         <option value="$PROJECT_DIR$/src/pages/nodes/detail/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/detail/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/project.config.json" />
@@ -235,10 +227,11 @@
         <option value="$PROJECT_DIR$/src/components/latest-data-list/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/pages/detail/index.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="3" />
     <option name="y" value="23" />
     <option name="width" value="1437" />
@@ -252,7 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,18 +268,13 @@
               <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="hot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="detail" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,12 +337,14 @@
       <workItem from="1561641203170" duration="8584000" />
       <workItem from="1561740797700" duration="7801000" />
       <workItem from="1561751193983" duration="31012000" />
-      <workItem from="1561904459260" duration="2051000" />
+      <workItem from="1561904459260" duration="2135000" />
+      <workItem from="1561907496735" duration="294000" />
+      <workItem from="1561996583132" duration="34000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70749000" />
+    <option name="totallyTimeSpent" value="71161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -367,7 +356,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4964539" visible="true" weight="0.24876674" />
@@ -382,10 +371,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.49036145" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.4900285" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.39759037" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3974359" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -613,16 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/detail/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="181" column="29" selection-start-line="181" selection-start-column="29" selection-end-line="181" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/prod.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -652,16 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -783,10 +752,30 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="396">
-            <caret line="72" column="70" selection-start-line="72" selection-start-column="70" selection-end-line="72" selection-end-column="70" />
+          <first_editor relative-caret-position="1545">
+            <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/detail/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="206" column="82" selection-start-line="206" selection-start-column="82" selection-end-line="206" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
