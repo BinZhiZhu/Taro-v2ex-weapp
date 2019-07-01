@@ -218,9 +218,14 @@ class Index extends Taro.Component{
                     </View>
                   </View>
                   <View className='pages-detail-index__reply__left__info__bottom'>
-                    <RichText
-                      nodes={item.content}
-                      className='pages-detail-index__reply__left__info__bottom__content'
+                    {/*<RichText*/}
+                      {/*nodes={item.content}*/}
+                      {/*className='pages-detail-index__reply__left__info__bottom__content'*/}
+                    {/*/>*/}
+                    <TaroRichText
+                      raw={false}
+                      type='markdown'
+                      richText={item.content}
                     />
                   </View>
                 </View>
