@@ -200,12 +200,15 @@ class Index extends Taro.Component{
               key={`${i}-${item.id}`}
             >
               <View className='pages-detail-index__reply__left'>
-                <View className='pages-detail-index__reply__left__thumb'>
+                <View
+                  className='pages-detail-index__reply__left__thumb'
+                  onClick={this.getMemberData.bind(this,item.member.username)}
+                >
                   {avatar ? (
                     <AtAvatar
                       size='small'
-                      onClick={this.getMemberData.bind(this,data.member.username)}
-                      image={item.member.avatar_normal}
+                      onClick={this.getMemberData.bind(this,item.member.username)}
+                      image={avatar}
                     />
                   ) : null}
                 </View>
@@ -218,15 +221,15 @@ class Index extends Taro.Component{
                     </View>
                   </View>
                   <View className='pages-detail-index__reply__left__info__bottom'>
-                    {/*<RichText*/}
-                      {/*nodes={item.content}*/}
-                      {/*className='pages-detail-index__reply__left__info__bottom__content'*/}
-                    {/*/>*/}
-                    <TaroRichText
-                      raw={false}
-                      type='markdown'
-                      richText={item.content}
+                    <RichText
+                      nodes={item.content}
+                      className='pages-detail-index__reply__left__info__bottom__content'
                     />
+                    {/*<TaroRichText*/}
+                      {/*raw={false}*/}
+                      {/*type='markdown'*/}
+                      {/*richText={item.content}*/}
+                    {/*/>*/}
                   </View>
                 </View>
               </View>
