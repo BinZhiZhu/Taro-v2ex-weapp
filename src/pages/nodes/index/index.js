@@ -1,4 +1,4 @@
-import Taro, {showToast} from "@tarojs/taro"
+import Taro, {navigateTo, showToast} from "@tarojs/taro"
 import {AtAvatar, AtFloatLayout} from "taro-ui";
 import {connect} from "@tarojs/redux";
 import {RichText, Text, View} from "@tarojs/components";
@@ -8,15 +8,6 @@ import callAPI from "../../../utils/callAPI";
 import api from "../../../utils/api";
 import {NODE_INFO_DATA} from "../../../constants";
 import showLoading from "../../../utils/showLoading";
-
-
-
-if (process.env.TARO_ENV === "weapp") {
-  require("taro-ui/dist/weapp/css/index.css")
-} else if (process.env.TARO_ENV === "h5") {
-  require("taro-ui/dist/h5/css/index.css")
-}
-
 
 @connect(
   state=>state

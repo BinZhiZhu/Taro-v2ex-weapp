@@ -1,7 +1,6 @@
 import Taro, {navigateTo, showToast} from "@tarojs/taro"
 import {AtAvatar, AtTag} from "taro-ui";
 import isEmpty from "lodash/isEmpty"
-import {TaroRichText} from 'taro_rich_text';
 import {RichText, Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
 import showLoading from "../../utils/showLoading";
@@ -11,13 +10,9 @@ import api from "../../utils/api";
 import {TOPIC_DETAIL_DATA, TOPIC_REPLIES_DATA} from "../../constants";
 import formatAvatar from "../../utils/formatAvatarUrl";
 import getDiffTimeStamp from "../../utils/diffTimeStamp";
+// import {TaroRichText} from 'taro_rich_text';
 import './index.scss'
 
-if (process.env.TARO_ENV === "weapp") {
-  require("taro-ui/dist/weapp/css/index.css")
-} else if (process.env.TARO_ENV === "h5") {
-  require("taro-ui/dist/h5/css/index.css")
-}
 @connect(
   state=>state
 )
@@ -180,15 +175,15 @@ class Index extends Taro.Component{
               </View>
               <View className='pages-detail-index__topic__bottom__line' />
               <View className='pages-detail-index__topic__bottom__content'>
-                {/*<RichText*/}
-                  {/*className='pages-detail-index__topic__bottom__content__text'*/}
-                  {/*nodes={data.content}*/}
-                {/*/>*/}
-                <TaroRichText
-                  raw={false}
-                  type='markdown'
-                  richText={data.content}
+                <RichText
+                  className='pages-detail-index__topic__bottom__content__text'
+                  nodes={data.content}
                 />
+                {/*<TaroRichText*/}
+                  {/*raw={false}*/}
+                  {/*type='markdown'*/}
+                  {/*richText={data.content}*/}
+                {/*/>*/}
                 {data.content && (
                   <View className='pages-detail-index__topic__bottom__content__line' />
                 )}

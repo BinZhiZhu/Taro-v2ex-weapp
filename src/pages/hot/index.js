@@ -1,13 +1,7 @@
 import Taro from '@tarojs/taro'
 import {View} from '@tarojs/components'
+import './index.scss'
 import LatestDataList from "../../components/latest-data-list";
-
-if (process.env.TARO_ENV === "weapp") {
-  require("taro-ui/dist/weapp/css/index.css")
-} else if (process.env.TARO_ENV === "h5") {
-  require("taro-ui/dist/h5/css/index.css")
-}
-
 
 class Index extends Taro.Component {
 

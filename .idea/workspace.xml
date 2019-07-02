@@ -2,68 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="834087b9-47f2-4ed4-919e-10fe09d0316c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/app_styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/asserts/tabbar/hotest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/asserts/tabbar/hotest_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/asserts/tabbar/lastest_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/asserts/tabbar/latest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/asserts/tabbar/member.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/asserts/tabbar/member_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/asserts/tabbar/node.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/asserts/tabbar/node_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/asserts/tabbar/spiner.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/components/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/components/base/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/components/latest-data-default-list/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/components/latest-data-default-list/index_styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/components/latest-data-list/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/components/latest-data-list/index_styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/mock/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/mock/data/hot.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/mock/data/latest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/mock/data/member.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/mock/data/node_info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/mock/data/topic_detail.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/mock/data/topic_reply.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/pages/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/pages/detail/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/pages/hot/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/pages/index/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/pages/member/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/pages/nodes/detail/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/pages/nodes/index/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/reducers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/themes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/allNodes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/callAPI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/diffTimeStamp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/formatAvatarUrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/hideLoading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/navigateBack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/navigateTo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/showAlert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/showLoading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn_temp/utils/showToast.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/detail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
+    </list>
+    <list id="211d7864-9f34-4152-9e69-d68e42cc17bb" name="Revert: style(scss): 精简样式" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/hot/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/nodes/detail/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/detail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/detail/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/hot/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/hot/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/hot/index.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/member/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/member/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/member/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/member/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/nodes/detail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nodes/detail/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/nodes/detail/index.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/nodes/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nodes/index/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/nodes/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nodes/index/index.scss" afterDir="false" />
     </list>
@@ -185,7 +139,50 @@
     <favorites_list name="taro-demo" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/detail/index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/detail/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="178" column="21" selection-start-line="178" selection-start-column="21" selection-end-line="178" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -252,8 +249,6 @@
         <option value="$PROJECT_DIR$/config/index.js" />
         <option value="$PROJECT_DIR$/src/mock/data/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/utils/api.ts" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app.tsx" />
         <option value="$PROJECT_DIR$/src/app.tsx" />
@@ -268,19 +263,39 @@
         <option value="$PROJECT_DIR$/project.config.json" />
         <option value="$PROJECT_DIR$/src/defaultState.js" />
         <option value="$PROJECT_DIR$/src/pages/index/index.scss" />
-        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/detail/index.scss" />
         <option value="$PROJECT_DIR$/src/pages/member/index.js" />
         <option value="$PROJECT_DIR$/src/pages/member/index.scss" />
         <option value="$PROJECT_DIR$/src/pages/nodes/detail/index.scss" />
         <option value="$PROJECT_DIR$/src/pages/nodes/detail/index.js" />
         <option value="$PROJECT_DIR$/src/pages/nodes/index/index.js" />
         <option value="$PROJECT_DIR$/src/pages/nodes/index/index.scss" />
-        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/detail/index.scss" />
         <option value="$PROJECT_DIR$/src/pages/hot/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/pages/detail/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
       </list>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/pages/index/index.js">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="3" changelist="211d7864-9f34-4152-9e69-d68e42cc17bb" />
+        <range start1="4" end1="10" start2="5" end2="5" changelist="211d7864-9f34-4152-9e69-d68e42cc17bb" />
+        <range start1="11" end1="13" start2="6" end2="7" changelist="834087b9-47f2-4ed4-919e-10fe09d0316c" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/pages/detail/index.js">
+      <ranges>
+        <range start1="3" end1="4" start2="3" end2="3" changelist="211d7864-9f34-4152-9e69-d68e42cc17bb" />
+        <range start1="13" end1="13" start2="12" end2="13" changelist="211d7864-9f34-4152-9e69-d68e42cc17bb" />
+        <range start1="15" end1="20" start2="15" end2="15" changelist="211d7864-9f34-4152-9e69-d68e42cc17bb" />
+        <range start1="182" end1="185" start2="177" end2="185" changelist="834087b9-47f2-4ed4-919e-10fe09d0316c" />
+        <range start1="186" end1="191" start2="186" end2="186" changelist="834087b9-47f2-4ed4-919e-10fe09d0316c" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="3" />
@@ -296,7 +311,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,10 +323,43 @@
               <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="detail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="hot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,7 +429,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73563000" />
+    <option name="totallyTimeSpent" value="74033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,6 +442,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4964539" visible="true" weight="0.24876674" />
       <window_info id="Structure" order="1" sideWeight="0.5035461" side_tool="true" weight="0.24947146" />
@@ -489,28 +537,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/asserts/tabbar/node.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/asserts/tabbar/node_on.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/asserts/tabbar/lastest_on.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/asserts/tabbar/latest.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/asserts/tabbar/member_default.png" />
-    <entry file="file://$PROJECT_DIR$/src/asserts/tabbar/hotest.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/asserts/tabbar/hotest_on.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/asserts/tabbar/member_on.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/asserts/tabbar/member.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -541,13 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -692,23 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rn_temp/pages/nodes/detail/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rn_temp/pages/hot/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#20#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/hot/index.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -742,30 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/hot/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/detail/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/nodes/detail/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -786,12 +764,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/taro-ui/dist/weapp/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42042" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/hot/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#20#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#20#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/index/index_styles.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/member/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/nodes/detail/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/nodes/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/nodes/index/index_styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/detail/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/detail/index_styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/hot/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/detail/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/detail/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="401">
+          <caret line="178" column="21" selection-start-line="178" selection-start-column="21" selection-end-line="178" selection-end-column="21" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
