@@ -2,7 +2,7 @@ var _dec, _class;
 
 import Taro from '@tarojs/taro-rn';
 import React from 'react';
-import { navigateTo, showToast } from "@tarojs/taro-rn";
+import { hideLoading, navigateTo, showToast } from "@tarojs/taro-rn";
 import { AtAvatar, AtIcon, AtTag } from "taro-ui";
 import { ScrollView, Text, View } from "@tarojs/components-rn";
 
@@ -11,7 +11,7 @@ import indexStyleSheet from "./index_styles";
 import formatAvatar from "../../utils/formatAvatarUrl";
 import getDiffTimeStamp from "../../utils/diffTimeStamp";
 import showLoading from "../../utils/showLoading";
-import showAlert from "../../utils/showAlert";
+
 import callAPI from "../../utils/callAPI";
 import api from "../../utils/api";
 import { LATEST_TOPIC_LIST } from "../../constants";
@@ -24,7 +24,11 @@ let LatestDataDefaultList = (_dec = connect(state => state), _dec(_class = class
     return _temp = super(...args), this.getList = () => {
       switch ("rn") {
         case 'h5':
-          showAlert('暂不支持H5哦~');
+          this.props.dispatch({
+            type: LATEST_TOPIC_LIST,
+            data: null
+          });
+          hideLoading();
           break;
         case 'weapp':
           this.getLatestTopic();

@@ -4,13 +4,12 @@ import Taro from '@tarojs/taro-rn';
 import React from 'react';
 
 import { View } from "@tarojs/components-rn";
-import indexStyleSheet from "./index_styles";
 import LatestDataDefaultList from "../../components/latest-data-default-list/index";
-var _styleSheet = indexStyleSheet;
+
 let Index = (_temp = _class = class Index extends Taro.Component {
 
   render() {
-    return <View style={_styleSheet["pages-index-index-homepage"]}>
+    return <View className="pages-index-index-homepage">
 
         {}
 

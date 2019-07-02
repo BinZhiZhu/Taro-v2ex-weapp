@@ -5,6 +5,7 @@ import React from 'react';
 import { navigateTo, showToast } from "@tarojs/taro-rn";
 import { AtAvatar, AtTag } from "taro-ui";
 import isEmpty from "lodash/isEmpty";
+import { TaroRichText } from 'taro_rich_text';
 import { RichText, Text, View } from "@tarojs/components-rn";
 import { connect } from "@tarojs/taro-redux-rn";
 import showLoading from "../../utils/showLoading";
@@ -14,7 +15,6 @@ import api from "../../utils/api";
 import { TOPIC_DETAIL_DATA, TOPIC_REPLIES_DATA } from "../../constants";
 import formatAvatar from "../../utils/formatAvatarUrl";
 import getDiffTimeStamp from "../../utils/diffTimeStamp";
-import { TaroRichText } from 'taro_rich_text';
 import indexStyleSheet from "./index_styles";
 
 var _styleSheet = indexStyleSheet;
@@ -165,8 +165,8 @@ let Index = (_dec = connect(state => state), _dec(_class = class Index extends T
         const lastReplyText = getDiffTimeStamp(item.last_modified);
         return <View key={`${i}-${item.id}`} style={_styleSheet["pages-detail-index__reply"]}>
               <View style={_styleSheet["pages-detail-index__reply__left"]}>
-                <View style={_styleSheet["pages-detail-index__reply__left__thumb"]}>
-                  {avatar ? <AtAvatar size="small" image={item.member.avatar_normal} /> : null}
+                <View onClick={this.getMemberData.bind(this, item.member.username)} style={_styleSheet["pages-detail-index__reply__left__thumb"]}>
+                  {avatar ? <AtAvatar size="small" onClick={this.getMemberData.bind(this, item.member.username)} image={avatar} /> : null}
                 </View>
                 <View style={_styleSheet["pages-detail-index__reply__left__info"]}>
                   <View style={_styleSheet["pages-detail-index__reply__left__info__top"]}>
@@ -178,6 +178,11 @@ let Index = (_dec = connect(state => state), _dec(_class = class Index extends T
                   </View>
                   <View style={_styleSheet["pages-detail-index__reply__left__info__bottom"]}>
                     <RichText nodes={item.content} style={_styleSheet["pages-detail-index__reply__left__info__bottom__content"]} />
+                    {}
+                      {}
+                      {}
+                      {}
+                    {}
                   </View>
                 </View>
               </View>
