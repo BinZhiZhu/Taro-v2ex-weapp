@@ -2,25 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="834087b9-47f2-4ed4-919e-10fe09d0316c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/detail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
-    </list>
-    <list id="211d7864-9f34-4152-9e69-d68e42cc17bb" name="Revert: style(scss): 精简样式" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/hot/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/nodes/detail/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/detail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/detail/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/hot/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/hot/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/hot/index.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/member/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/member/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/member/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/member/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/nodes/detail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nodes/detail/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/nodes/detail/index.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/nodes/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nodes/index/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/nodes/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nodes/index/index.scss" afterDir="false" />
     </list>
+    <list id="211d7864-9f34-4152-9e69-d68e42cc17bb" name="Revert: style(scss): 精简样式" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -141,40 +137,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/pages/member/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/detail/index.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/detail/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="178" column="21" selection-start-line="178" selection-start-column="21" selection-end-line="178" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
+        <entry file="file://$PROJECT_DIR$/src/pages/hot/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+            <state relative-caret-position="165">
+              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -225,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/helper/navigateTo.ts" />
         <option value="$PROJECT_DIR$/src/utils/showAlert.ts" />
         <option value="$PROJECT_DIR$/src/utils/diffTimeStamp.ts" />
         <option value="$PROJECT_DIR$/src/themes/default.scss" />
@@ -262,40 +236,23 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/project.config.json" />
         <option value="$PROJECT_DIR$/src/defaultState.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/pages/detail/index.scss" />
+        <option value="$PROJECT_DIR$/src/pages/detail/index.js" />
         <option value="$PROJECT_DIR$/src/pages/index/index.scss" />
-        <option value="$PROJECT_DIR$/src/pages/member/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
         <option value="$PROJECT_DIR$/src/pages/member/index.scss" />
+        <option value="$PROJECT_DIR$/src/pages/member/index.js" />
         <option value="$PROJECT_DIR$/src/pages/nodes/detail/index.scss" />
         <option value="$PROJECT_DIR$/src/pages/nodes/detail/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/nodes/index/index.js" />
         <option value="$PROJECT_DIR$/src/pages/nodes/index/index.scss" />
-        <option value="$PROJECT_DIR$/src/pages/detail/index.scss" />
+        <option value="$PROJECT_DIR$/src/pages/nodes/index/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/hot/index.scss" />
         <option value="$PROJECT_DIR$/src/pages/hot/index.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/pages/detail/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
       </list>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/pages/index/index.js">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="3" changelist="211d7864-9f34-4152-9e69-d68e42cc17bb" />
-        <range start1="4" end1="10" start2="5" end2="5" changelist="211d7864-9f34-4152-9e69-d68e42cc17bb" />
-        <range start1="11" end1="13" start2="6" end2="7" changelist="834087b9-47f2-4ed4-919e-10fe09d0316c" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/pages/detail/index.js">
-      <ranges>
-        <range start1="3" end1="4" start2="3" end2="3" changelist="211d7864-9f34-4152-9e69-d68e42cc17bb" />
-        <range start1="13" end1="13" start2="12" end2="13" changelist="211d7864-9f34-4152-9e69-d68e42cc17bb" />
-        <range start1="15" end1="20" start2="15" end2="15" changelist="211d7864-9f34-4152-9e69-d68e42cc17bb" />
-        <range start1="182" end1="185" start2="177" end2="185" changelist="834087b9-47f2-4ed4-919e-10fe09d0316c" />
-        <range start1="186" end1="191" start2="186" end2="186" changelist="834087b9-47f2-4ed4-919e-10fe09d0316c" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="3" />
@@ -339,13 +296,6 @@
               <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="detail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="hot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -353,6 +303,36 @@
               <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes" type="462c0819:PsiDirectoryNode" />
+              <item name="detail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taro-v2ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taro-v2ex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -429,7 +409,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74033000" />
+    <option name="totallyTimeSpent" value="74708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,7 +439,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.4900285" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.6650602" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.413253" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -711,72 +691,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/hot/index.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index/index.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/nodes/detail/index.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/member/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/member/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/nodes/index/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/nodes/detail/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/nodes/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/taro-ui/dist/weapp/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-42042" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rn_temp/pages/hot/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#20#55#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rn_temp/pages/index/index.js">
@@ -820,58 +737,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rn_temp/pages/detail/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rn_temp/pages/detail/index_styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/hot/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/detail/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/detail/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/detail/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="178" column="21" selection-start-line="178" selection-start-column="21" selection-end-line="178" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/nodes/detail/index.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/nodes/detail/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/nodes/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/nodes/index/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/detail/index_styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/member/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/hot/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rn_temp/pages/hot/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/member/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/hot/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

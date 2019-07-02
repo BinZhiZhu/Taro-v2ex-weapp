@@ -1,4 +1,6 @@
-import Taro, {navigateTo, showToast} from "@tarojs/taro"
+import Taro, {showToast} from "@tarojs/taro"
+import "taro-ui/dist/style/components/float-layout.scss";
+import "taro-ui/dist/style/components/avatar.scss";
 import {AtAvatar, AtFloatLayout} from "taro-ui";
 import {connect} from "@tarojs/redux";
 import {RichText, Text, View} from "@tarojs/components";

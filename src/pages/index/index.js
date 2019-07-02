@@ -1,6 +1,9 @@
 import Taro from '@tarojs/taro'
 import {View} from '@tarojs/components'
-import './index.scss'
+import "taro-ui/dist/style/components/avatar.scss";
+import "taro-ui/dist/style/components/tag.scss";
+import "taro-ui/dist/style/components/icon.scss";
+import "taro-ui/dist/style/components/divider.scss";
 import LatestDataDefaultList from "../../components/latest-data-default-list";
 
 class Index extends Taro.Component {

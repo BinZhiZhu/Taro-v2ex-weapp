@@ -1,5 +1,7 @@
 import Taro, {navigateTo, showToast} from "@tarojs/taro"
 import {AtAvatar, AtTag} from "taro-ui";
+import "taro-ui/dist/style/components/avatar.scss";
+import "taro-ui/dist/style/components/tag.scss";
 import isEmpty from "lodash/isEmpty"
 import {RichText, Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";

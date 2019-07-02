@@ -1,6 +1,10 @@
 import Taro, {showToast} from "@tarojs/taro"
 import {AtAvatar, AtTag} from "taro-ui";
-import {Image, Text, View} from "@tarojs/components";
+import "taro-ui/dist/style/components/avatar.scss";
+import "taro-ui/dist/style/components/list.scss";
+import "taro-ui/dist/style/components/icon.scss";
+import "taro-ui/dist/style/components/tag.scss";
+import {Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
 import callAPI from "../../utils/callAPI";
 import api from "../../utils/api";
