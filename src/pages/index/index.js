@@ -4,6 +4,7 @@ import "taro-ui/dist/style/components/avatar.scss";
 import "taro-ui/dist/style/components/tag.scss";
 import "taro-ui/dist/style/components/icon.scss";
 import "taro-ui/dist/style/components/divider.scss";
+import "./index.scss"
 import LatestDataDefaultList from "../../components/latest-data-default-list";
 
 class Index extends Taro.Component {

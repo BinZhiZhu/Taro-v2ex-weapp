@@ -103,57 +103,57 @@ class LatestDataList extends Taro.Component{
 
           return (
             <View
-              className='pages-index-index-homepage__block'
+              className='pages-hot-index-homepage__block'
               key={`${i}-${item.id}`}
               onClick={this.goDetail.bind(this,item.id)}
             >
-              <View className='pages-index-index-homepage__block__left'>
-                <View className='pages-index-index-homepage__block__left__thumb'>
+              <View className='pages-hot-index-homepage__block__left'>
+                <View className='pages-hot-index-homepage__block__left__thumb'>
                   <AtAvatar
-                    className='pages-index-index-homepage__block__left__thumb__img'
+                    className='pages-hot-index-homepage__block__left__thumb__img'
                     image={avatar}
                     size='small'
                   />
                 </View>
-                <View className='pages-index-index-homepage__block__left__info'>
-                  <Text className='pages-index-index-homepage__block__left__info__title'>{item.title}</Text>
-                  <View className='pages-index-index-homepage__block__left__info__subtitle'>
+                <View className='pages-hot-index-homepage__block__left__info'>
+                  <Text className='pages-hot-index-homepage__block__left__info__title'>{item.title}</Text>
+                  <View className='pages-hot-index-homepage__block__left__info__subtitle'>
                     {/*<Text className='pages-index-index__block__left__info__subtitle__node-title'>{item.node.title}</Text>*/}
                     <AtTag
                       // active
-                      className='pages-index-index-homepage__block__left__info__subtitle__node-title'
+                      className='pages-hot-index-homepage__block__left__info__subtitle__node-title'
                       size='small'
                       type='primary'
                     >
                       {item.node.title}
                     </AtTag>
-                    <View className='pages-index-index-homepage__block__left__info__subtitle__dot'>
-                      <Text className='pages-index-index-homepage__block__left__info__subtitle__dot__inner'>•</Text>
+                    <View className='pages-hot-index-homepage__block__left__info__subtitle__dot'>
+                      <Text className='pages-hot-index-homepage__block__left__info__subtitle__dot__inner'>•</Text>
                     </View>
-                    <Text className='pages-index-index-homepage__block__left__info__subtitle__username'>{item.member.username}</Text>
+                    <Text className='pages-hot-index-homepage__block__left__info__subtitle__username'>{item.member.username}</Text>
                     {item.last_reply_by ? (
-                      <View className='pages-index-index-homepage__block__left__info__subtitle__last_reply_icon'>
-                        <Text className='pages-index-index-homepage__block__left__info__subtitle__last_reply_icon__inner'>•</Text>
-                        <Text className='pages-index-index-homepage__block__left__info__subtitle__last_reply_icon__username'>{lastReplyText}</Text>
-                        <Text className='pages-index-index-homepage__block__left__info__subtitle__last_reply_icon__inner'>•</Text>
+                      <View className='pages-hot-index-homepage__block__left__info__subtitle__last_reply_icon'>
+                        <Text className='pages-hot-index-homepage__block__left__info__subtitle__last_reply_icon__inner'>•</Text>
+                        <Text className='pages-hot-index-homepage__block__left__info__subtitle__last_reply_icon__username'>{lastReplyText}</Text>
+                        <Text className='pages-hot-index-homepage__block__left__info__subtitle__last_reply_icon__inner'>•</Text>
                       </View>
                     ) : null}
 
                     {item.last_reply_by && (
-                      <Text className='pages-index-index-homepage__block__left__info__subtitle__last_reply_by'>最新回复来自
-                        <Text className='pages-index-index-homepage__block__left__info__subtitle__last_reply_by__username'> {item.last_reply_by}</Text>
+                      <Text className='pages-hot-index-homepage__block__left__info__subtitle__last_reply_by'>最新回复来自
+                        <Text className='pages-hot-index-homepage__block__left__info__subtitle__last_reply_by__username'> {item.last_reply_by}</Text>
                       </Text>
                     )}
 
                   </View>
                 </View>
               </View>
-              <View className='pages-index-index-homepage__block__right'>
+              <View className='pages-hot-index-homepage__block__right'>
 
-                <View className='pages-index-index-homepage__block__right__inner'>
+                <View className='pages-hot-index-homepage__block__right__inner'>
                   <AtTag
                     active
-                    className='pages-index-index-homepage__block__right__inner__tag'
+                    className='pages-hot-index-homepage__block__right__inner__tag'
                     size='small'
                     type='primary'
                   >

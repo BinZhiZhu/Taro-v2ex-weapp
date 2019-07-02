@@ -17,7 +17,7 @@ class Index extends Taro.Component {
 
   render() {
     return (
-      <View className='pages-index-index-homepage'>
+      <View className='pages-hot-index-homepage'>
 
         <LatestDataList />
 
