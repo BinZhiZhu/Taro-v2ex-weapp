@@ -1,9 +1,4 @@
 import Taro, {showToast} from "@tarojs/taro"
-import {AtAvatar, AtTag} from "taro-ui";
-import "taro-ui/dist/style/components/avatar.scss";
-import "taro-ui/dist/style/components/list.scss";
-import "taro-ui/dist/style/components/icon.scss";
-import "taro-ui/dist/style/components/tag.scss";
 import {Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
 import callAPI from "../../utils/callAPI";
@@ -11,6 +6,8 @@ import api from "../../utils/api";
 import {MEMBER_INFO_DATA} from "../../constants";
 import showLoading from "../../utils/showLoading";
 import './index.scss'
+import AtTag from "../../taro-ui/components/tag1";
+import AtAvatar from "../../taro-ui/components/avatar";
 
 @connect(
   state=>state

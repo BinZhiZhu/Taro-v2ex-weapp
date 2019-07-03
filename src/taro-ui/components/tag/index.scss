@@ -1,0 +1,52 @@
+@import '../../../theme';
+
+.at-tag {
+  display: flex;
+  padding: 0 $spacing-xl;
+  height: 60px;
+  color: $color-grey-1;
+  font-size: $font-size-base;
+  text-align: center;
+  line-height: 60px - 2px;
+  border: $one-pixel-width solid $color-grey-6;
+  border-radius: $border-radius-md;
+  background-color: $color-bg-grey;
+
+  /*postcss-pxtransform rn eject enable*/
+  vertical-align: middle;
+  box-sizing: border-box;
+  /*postcss-pxtransform rn eject disable*/
+
+  &--active {
+    color: $color-brand-base;
+    border: $one-pixel-width solid $color-brand-base;
+    background-color: $color-bg;
+  }
+
+  &--disabled {
+    opacity: $opacity-disabled;
+  }
+
+  &--small {
+    padding: 0 $spacing-md;
+    height: 40px;
+    font-size: $font-size-xs;
+    line-height: 40px - 2px;
+  }
+
+  &--circle {
+    border-radius: 30px;
+    overflow: hidden;
+    /*postcss-pxtransform rn eject enable*/
+    background-clip: border-box;
+    /*postcss-pxtransform rn eject disable*/
+  }
+
+  &--primary {
+    &--active {
+      color: $color-text-base-inverse;
+      border: $one-pixel-width solid $color-brand-base;
+      background-color: $color-brand-base;
+    }
+  }
+}

@@ -1,8 +1,8 @@
 import Taro, {showToast} from "@tarojs/taro"
-import isEmpty from "lodash/isEmpty"
-import "taro-ui/dist/style/components/article.scss";
 import {View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
+import isEmpty from "lodash/isEmpty"
+import "./index.scss"
 import callAPI from "../../../utils/callAPI";
 import api from "../../../utils/api";
 import { NODE_INFO_DATA} from "../../../constants";

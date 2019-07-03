@@ -1,8 +1,5 @@
 import Taro from '@tarojs/taro'
 import {View} from '@tarojs/components'
-import "taro-ui/dist/style/components/avatar.scss";
-import "taro-ui/dist/style/components/tag.scss";
-import "taro-ui/dist/style/components/icon.scss";
 import "./index.scss"
 import LatestDataList from "../../components/latest-data-list";
 
@@ -20,8 +17,6 @@ class Index extends Taro.Component {
       <View className='pages-hot-index-homepage'>
 
         <LatestDataList />
-
-        {/*<LatestDataDefaultList />*/}
 
       </View>
     )

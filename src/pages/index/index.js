@@ -1,9 +1,5 @@
 import Taro from '@tarojs/taro'
 import {View} from '@tarojs/components'
-import "taro-ui/dist/style/components/avatar.scss";
-import "taro-ui/dist/style/components/tag.scss";
-import "taro-ui/dist/style/components/icon.scss";
-import "taro-ui/dist/style/components/divider.scss";
 import "./index.scss"
 import LatestDataDefaultList from "../../components/latest-data-default-list";
 
@@ -52,16 +48,7 @@ class Index extends Taro.Component {
     return (
       <View className='pages-index-index-homepage'>
 
-        {/*<LatestDataList />*/}
-
         <LatestDataDefaultList />
-
-        {/*<AtDivider*/}
-          {/*className='pages-index-index-homepage__divider'*/}
-          {/*content='我是一个有底线的人'*/}
-          {/*fontColor='#2d8cf0'*/}
-          {/*lineColor='#2d8cf0'*/}
-        {/*/>*/}
 
       </View>
     )

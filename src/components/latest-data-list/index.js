@@ -1,5 +1,4 @@
 import Taro, {hideLoading, navigateTo, showToast} from "@tarojs/taro"
-import {AtAvatar, AtTag} from "taro-ui";
 import {ScrollView, Text, View} from "@tarojs/components";
 import isEmpty from "lodash/isEmpty"
 import {connect} from "@tarojs/redux";
@@ -10,6 +9,8 @@ import showLoading from "../../utils/showLoading";
 import callAPI from "../../utils/callAPI";
 import api from "../../utils/api";
 import {HOT_TOPIC_DATA} from "../../constants";
+import AtAvatar from "../../taro-ui/components/avatar";
+import AtTag from "../../taro-ui/components/tag1";
 
 @connect(
   state=>state

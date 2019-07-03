@@ -1,45 +1,22 @@
 import Taro, {hideLoading, navigateTo, showToast} from "@tarojs/taro"
-import {AtAvatar, AtIcon, AtTag} from "taro-ui";
 import {ScrollView, Text, View} from "@tarojs/components";
-import propTypes from "prop-types"
-import isEmpty from "lodash/isEmpty"
 import {connect} from "@tarojs/redux";
 import './index.scss'
 import formatAvatar from "../../utils/formatAvatarUrl";
 import getDiffTimeStamp from "../../utils/diffTimeStamp";
 import showLoading from "../../utils/showLoading";
-import showAlert from "../../utils/showAlert";
 import callAPI from "../../utils/callAPI";
 import api from "../../utils/api";
-import {LATEST_MOCK_DATA, LATEST_TOPIC_LIST} from "../../constants";
+import {LATEST_TOPIC_LIST} from "../../constants";
+import AtTag from "../../taro-ui/components/tag1";
+import AtAvatar from "../../taro-ui/components/avatar";
+import AtIcon from "../../taro-ui/components/icon";
 
 @connect(
   state=>state
 )
 class LatestDataDefaultList extends Taro.Component{
 
-  // static defaultProps = {
-  //   latestTopicList: [
-  //     {
-  //       last_reply_by: '',//最新回复者
-  //       last_modified: '', //最新回复时间戳
-  //       replies: 0, //回复数
-  //       title: '',
-  //       member: {
-  //         avatar_normal: '', //默认头像
-  //         username: '',//昵称
-  //       },
-  //       node: {
-  //         title: '',  //节点
-  //       }
-  //     }
-  //   ]
-  // }
-  //
-  //
-  // static propTypes = {
-  //   latestTopicList: propTypes.array
-  // }
 
 
   componentWillMount() {
