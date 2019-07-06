@@ -106,12 +106,6 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 
 
-### FAQ
-
-- 计算时间戳时分秒func来源于v2er封装 原贴 https://www.v2ex.com/t/578465#reply6
-
-- utils下的api.ts封装来源于 taro官方taro-v2ex-hook repo里的简单封装
-
 ### 感谢
 
 - v2ex  
