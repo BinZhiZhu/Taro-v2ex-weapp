@@ -59,6 +59,9 @@ class LatestDataList extends Taro.Component{
       case 'weapp':
         this.getLatestTopic();
         break;
+      case 'alipay':
+        this.getLatestTopic();
+        break;
     }
   }
 
@@ -91,7 +94,7 @@ class LatestDataList extends Taro.Component{
     const {hotTopics} = this.props;
 
     if(isEmpty(hotTopics)){
-      return null;
+      return <View />;
     }
 
     return (

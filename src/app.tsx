@@ -55,13 +55,7 @@ class App extends Component {
           "selectedIconPath": "./asserts/tabbar/node_on.png",
           "pagePath": "pages/nodes/index/index",
           "text": "节点"
-        },
-        // {
-        //   "iconPath": "./asserts/tabbar/member.png",
-        //   "selectedIconPath": "./asserts/tabbar/member_on.png",
-        //   "pagePath": "pages/member/index",
-        //   "text": "自己"
-        // }
+        }
       ],
       'backgroundColor': '#fff',
       'borderStyle': 'white'
@@ -73,12 +67,12 @@ class App extends Component {
       navigationBarTextStyle: 'black',
       enablePullDownRefresh: true,
     },
-    plugins: {
-      "wxparserPlugin": {
-        "version": "0.2.1",
-        "provider": "wx9d4d4ffa781ff3ac"
-      }
-    }
+    // plugins: {
+    //   "wxparserPlugin": {
+    //     "version": "0.2.1",
+    //     "provider": "wx9d4d4ffa781ff3ac"
+    //   }
+    // }
   }
 
   componentDidMount() {

@@ -1,4 +1,5 @@
 dist_weapp_default/
+dist_alipay_default/
 deploy_versions/
 .temp/
 rn_temp/

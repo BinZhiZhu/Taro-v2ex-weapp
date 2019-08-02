@@ -23,6 +23,8 @@ function latestTopicList (state = {}, action) {
       switch (process.env.TARO_ENV) {
         case "weapp":
           return action.data;
+        case "alipay":
+          return action.data;
         case "h5":
           return defaultState.latestMockData;
       }
@@ -91,6 +93,8 @@ function hotTopics(state = {},action) {
     case HOT_TOPIC_DATA:
       switch (process.env.TARO_ENV) {
         case "weapp":
+          return action.data;
+        case "alipay":
           return action.data;
         case "h5":
           return defaultState.hotMockData

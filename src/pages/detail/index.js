@@ -9,10 +9,10 @@ import api from "../../utils/api";
 import {TOPIC_DETAIL_DATA, TOPIC_REPLIES_DATA} from "../../constants";
 import formatAvatar from "../../utils/formatAvatarUrl";
 import getDiffTimeStamp from "../../utils/diffTimeStamp";
-import {TaroRichText} from 'taro_rich_text';
 import './index.scss'
 import AtAvatar from "../../taro-ui/components/avatar";
 import AtTag from "../../taro-ui/components/tag1";
+import {TaroRichText} from 'taro_rich_text';
 
 @connect(
   state=>state
@@ -31,6 +31,7 @@ class Index extends Taro.Component{
 
     const params = this.$router.params;
     console.log('params',params)
+
     if(params.topic_id){
       this.setState({
         topic_id:params.topic_id
@@ -60,6 +61,12 @@ class Index extends Taro.Component{
       case 'weapp':
         this.getTopicReplies();
         this.getTopicDetail();
+        break;
+      case 'alipay':
+        this.getTopicReplies();
+        this.getTopicDetail();
+        break;
+      default:
         break;
     }
   }
@@ -122,13 +129,15 @@ class Index extends Taro.Component{
     const {topicDetail,topicReplies} = this.props;
 
     if(isEmpty(topicDetail)){
-      return null;
+      return <View />;
     }
 
-    const data = topicDetail[0];
+
+    const data = topicDetail && topicDetail[0];
 
     const difftime = getDiffTimeStamp(data.last_modified);
 
+    console.log('render topicReplies',topicReplies)
 
     return (
       <View className='pages-detail-index'>
@@ -176,15 +185,17 @@ class Index extends Taro.Component{
               </View>
               <View className='pages-detail-index__topic__bottom__line' />
               <View className='pages-detail-index__topic__bottom__content'>
-                <RichText
-                  className='pages-detail-index__topic__bottom__content__text'
-                  nodes={data.content}
-                />
-                <TaroRichText
-                  raw={false}
-                  type='markdown'
-                  richText={data.content}
-                />
+                {/*<RichText*/}
+                  {/*className='pages-detail-index__topic__bottom__content__text'*/}
+                  {/*nodes={data.content}*/}
+                {/*/>*/}
+                {process.env.TARO_ENV ==='weapp' && (
+                  <TaroRichText
+                    raw={false}
+                    type='markdown'
+                    richText={data.content}
+                  />
+                )}
                 {/*{data.content && (*/}
                   {/*<View className='pages-detail-index__topic__bottom__content__line' />*/}
                 {/*)}*/}

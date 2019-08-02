@@ -17,8 +17,6 @@ import AtIcon from "../../taro-ui/components/icon";
 )
 class LatestDataDefaultList extends Taro.Component{
 
-
-
   componentWillMount() {
     showLoading();
     this.getList();
@@ -35,6 +33,9 @@ class LatestDataDefaultList extends Taro.Component{
         hideLoading();
         break;
       case 'weapp':
+        this.getLatestTopic();
+        break;
+      case 'alipay':
         this.getLatestTopic();
         break;
     }

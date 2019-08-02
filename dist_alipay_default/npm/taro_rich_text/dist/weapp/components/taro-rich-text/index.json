@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "taro-rich-text-no-wx-parse": "../taro-rich-text-no-wxparse/index",
-    "wxparser": "plugin://wxparserPlugin/wxparser"
-  }
-}

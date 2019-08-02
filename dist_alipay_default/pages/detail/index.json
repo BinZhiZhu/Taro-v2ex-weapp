@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "at-avatar": "../../npm/taro-ui/dist/weapp/components/avatar/index",
-    "at-tag": "../../npm/taro-ui/dist/weapp/components/tag/index",
-    "taro-rich-text": "../../npm/taro_rich_text/dist/weapp/components/taro-rich-text/index"
-  }
-}

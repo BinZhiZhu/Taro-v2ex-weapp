@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "at-float-layout": "../../../npm/taro-ui/dist/weapp/components/float-layout/index",
-    "at-avatar": "../../../npm/taro-ui/dist/weapp/components/avatar/index"
-  },
-  "defaultTitle": "节点"
-}
