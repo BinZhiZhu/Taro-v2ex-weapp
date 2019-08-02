@@ -1,7 +1,6 @@
 ## V2EX小程序
 
-基于Taro实现的v2ex小程序
-
+基于Taro实现的v2ex小程序,目前支持编译适配微信小程序、h5、支付宝小程序
 
 ### 目录结构
 
@@ -35,9 +34,9 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 - 安装Taro(参考官方)
 
-- dev环境: npm run dev:weapp
+- dev环境: npm run dev:weapp/h5/apliay
 
-- 打包： npm run build:weapp
+- 打包： npm run build:weapp/h5/apliay
 
 ### 开发时间线
 
@@ -71,6 +70,13 @@ v2ex开放API支持(如果侵权请联系本人修正)
  - 首页: ![](http://img.binzhizhu.top/imgs/2019/06/f40382d6240bbdc8.jpg)
  - 热门: ![](http://img.binzhizhu.top/imgs/2019/06/7bdea439e6db9f65.jpg)
  - 节点: ![](http://img.binzhizhu.top/imgs/2019/06/58a217abf6146bc1.jpg)
+ 
+ 
+### 支付宝小程序[TODO]
+
+ - 首页: ![](http://img.binzhizhu.top/imgs/2019/08/9e9f81572db8c500.png)
+
+
 ### release
 
 发布版本
@@ -99,7 +105,15 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 3.H5版本
 
-4.TDD
+4.支付宝小程序
+
+5.QQ小程序
+
+6.百度小程序
+
+7.头条小程序
+
+8.快应用
 
 
 ### 测试
