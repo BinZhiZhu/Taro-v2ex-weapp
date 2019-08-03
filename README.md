@@ -64,7 +64,12 @@ v2ex开放API支持(如果侵权请联系本人修正)
 ### 支付宝小程序[TODO]
 
  - 首页: ![](http://img.binzhizhu.top/imgs/2019/08/9e9f81572db8c500.png)
-
+ 
+ - 最新: ![](http://img.binzhizhu.top/imgs/2019/08/a670d7ab4050dbfb.jpeg)
+ 
+ - 最热: ![](http://img.binzhizhu.top/imgs/2019/08/c9527756a2737776.jpeg)
+ 
+ - 节点: ![](http://img.binzhizhu.top/imgs/2019/08/d8af01b1f5cd5582.jpeg)
 
 ### release
 
@@ -94,7 +99,7 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 3. ~~H5 Mock 版本~~
 
-4. 支付宝小程序
+4. ~~支付宝小程序~~
 
 5. QQ小程序
 
