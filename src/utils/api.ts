@@ -1,5 +1,9 @@
 const HOST_URI = 'https://www.v2ex.com/api/'
 
+
+// 登录接口
+const LOGIN_URL = 'https://www.v2ex.com/signin'
+
 // 获取节点
 // 所有的节点
 const ALL_NODE = 'nodes/all.json'
@@ -59,6 +63,11 @@ function getUserinfo (o?) {
   return HOST_URI + GET_USERINFO + queryString(o)
 }
 
+
+function getMemberLoginUrl(): string {
+  return LOGIN_URL;
+}
+
 export default {
   getAllNode,
   getNodeInfo,
@@ -67,5 +76,6 @@ export default {
   getHotNodes,
   queryString,
   getTopics,
-  getUserinfo
+  getUserinfo,
+  getMemberLoginUrl
 }

@@ -19,11 +19,11 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 - 安装Taro(参考官方)
 
-- dev环境: npm run dev:ENV
+- dev环境: v2ex:dev:ENV
 
-- 打包: npm run build:ENV
+- 打包环境: v2ex:build:ENV
 
-- 测试: npm run cypress:open
+- 测试环境: v2ex:test:run
 
 注意：ENV 为具体端的环境 例如：微信小程序 weapp、支付宝alipay
 

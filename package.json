@@ -2,35 +2,42 @@
 	"name": "taro-v2ex",
 	"version": "1.2.0",
 	"private": true,
-	"description": "demo版本",
+	"description": "多端小程序",
 	"templateInfo": {
 		"name": "redux",
 		"typescript": true,
 		"css": "sass"
 	},
 	"scripts": {
-		"build:weapp": "taro build --type weapp",
+		"v2ex:build:weapp": "cross-env PROJECT_NAME=v2ex TARO_BUILD_TYPE=weapp taro build --type weapp",
+		"v2ex:dev:weapp": "cross-env PROJECT_NAME=v2ex npm run dev:weapp -- --watch",
+		"v2ex:build:alipay": "cross-env PROJECT_NAME=v2ex TARO_BUILD_TYPE=alipay taro build --type alipay",
+		"v2ex:dev:alipay": "cross-env PROJECT_NAME=v2ex npm run build:alipay -- --watch",
+		"v2ex:dev:h5": "cross-env PROJECT_NAME=v2ex npm run build:h5 -- --watch",
+		"v2ex:build:h5": "cross-env PROJECT_NAME=v2ex TARO_BUILD_TYPE=h5 taro build --type h5",
+		"v2ex:test:run": "cross-env PROJECT_NAME=v2ex npm run cypress:open",
+		"dev:alipay": "npm run build:alipay -- --watch",
+    "dev:weapp": "npm run build:weapp -- --watch",
+    "dev:h5": "npm run build:h5 -- --watch",
+    "dev:rn": "npm run build:rn -- --watch",
+    "dev:tt": "npm run build:tt -- --watch",
+    "dev:swan": "npm run build:swan -- --watch",
+    "build:weapp": "cross-env TARO_BUILD_TYPE=weapp taro build --type weapp",
+    "build:h5": "cross-env TARO_BUILD_TYPE=h5 taro build --type h5",
 		"build:swan": "taro build --type swan",
 		"build:alipay": "taro build --type alipay",
 		"build:tt": "taro build --type tt",
-		"build:h5": "taro build --type h5",
 		"build:rn": "taro build --type rn",
-		"dev:weapp": "npm run build:weapp -- --watch",
-		"dev:swan": "npm run build:swan -- --watch",
-		"dev:alipay": "npm run build:alipay -- --watch",
-		"dev:tt": "npm run build:tt -- --watch",
-		"dev:h5": "npm run build:h5 -- --watch",
-		"dev:rn": "npm run build:rn -- --watch",
 		"commit": "git-cz",
 		"release": "standard-version",
-    "cypress:open": "cypress open"
-  },
+		"cypress:open": "cypress open"
+	},
 	"config": {
 		"commitizen": {
 			"path": "node_modules/cz-conventional-changelog"
 		}
 	},
-	"author": "",
+	"author": "BinZhiZhu",
 	"license": "MIT",
 	"dependencies": {
 		"@tarojs/async-await": "1.3.11",
@@ -77,6 +84,7 @@
 		"babel-plugin-transform-object-rest-spread": "^6.26.0",
 		"babel-preset-env": "^1.6.1",
 		"commitizen": "^3.1.1",
+		"cross-env": "^5.2.0",
 		"cypress": "^3.4.1",
 		"cz-conventional-changelog": "^2.1.0",
 		"eslint": "^5.16.0",
@@ -87,6 +95,7 @@
 		"stylelint": "9.3.0",
 		"stylelint-config-taro-rn": "1.3.11",
 		"stylelint-taro-rn": "1.3.11",
-		"typescript": "^3.0.1"
+		"typescript": "^3.0.1",
+		"webpack-cli": "^3.3.6"
 	}
 }

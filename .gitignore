@@ -7,3 +7,5 @@ node_modules/
 .DS_Store
 .idea/
 project.config.json
+dist_tt_default/
+dist_v2ex_weapp/

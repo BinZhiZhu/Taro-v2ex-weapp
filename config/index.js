@@ -5,6 +5,8 @@ console.log(
   '  ---------------------\n'
 );
 
+const path = require('path');
+
 const projectName = process.env.PROJECT_NAME || process.env.TARO_ENV ;
 const buildType = process.env.TARO_BUILD_TYPE || 'default';
 
@@ -19,6 +21,9 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: `dist_${projectName}_${buildType}`,
+  alias: {
+    '@/modules': path.resolve(__dirname, '..', 'src/modules'),
+  },
   plugins: {
     babel: {
       sourceMap: true,
