@@ -34,9 +34,12 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 - 安装Taro(参考官方)
 
-- dev环境: npm run dev:weapp/h5/apliay
+- dev环境: npm run dev:ENV
 
-- 打包： npm run build:weapp/h5/apliay
+- 打包： npm run build:ENV
+
+
+注意：ENV 为具体端的环境 例如：微信小程序 weapp、支付宝alipay
 
 ### 开发时间线
 
@@ -99,21 +102,21 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 ### TODO
 
-1.下拉加载
+1. ~~最新、最热页面下拉加载~~
 
-2.TypeScript 重构
+2. TypeScript 重构
 
-3.H5版本
+3. ~~H5 Mock 版本~~
 
-4.支付宝小程序
+4. 支付宝小程序
 
-5.QQ小程序
+5. QQ小程序
 
-6.百度小程序
+6. 百度小程序
 
-7.头条小程序
+7. 头条小程序
 
-8.快应用
+8. 快应用
 
 
 ### 测试
