@@ -21,8 +21,9 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 - dev环境: npm run dev:ENV
 
-- 打包： npm run build:ENV
+- 打包: npm run build:ENV
 
+- 测试: npm run cypress:open
 
 注意：ENV 为具体端的环境 例如：微信小程序 weapp、支付宝alipay
 
