@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/BinZhiZhu/Taro-components-Demo/compare/v1.0.0-lw...v1.1.0) (2019-08-03)
+
+
+### Bug Fixes
+
+* **defaultState:** 小程序编译报错 ([9f1dcd6](https://github.com/BinZhiZhu/Taro-components-Demo/commit/9f1dcd6))
+
+
+### Features
+
+* **detail:** 回复的内容也使用wxparase解析 ([10a04f8](https://github.com/BinZhiZhu/Taro-components-Demo/commit/10a04f8))
+* **detail:** 回复的用户点击该头像也可以查看信息 ([ad510a7](https://github.com/BinZhiZhu/Taro-components-Demo/commit/ad510a7))
+* **README:** 增加支付宝小程序适配图 ([c38b316](https://github.com/BinZhiZhu/Taro-components-Demo/commit/c38b316))
+* **增加下拉刷新:** 最新、最热页面增加下拉刷新 ([8d01a69](https://github.com/BinZhiZhu/Taro-components-Demo/commit/8d01a69))
+* **适配支付宝小程序:** 升级Taro版本、简单适配支付宝小程序 ([cb241d3](https://github.com/BinZhiZhu/Taro-components-Demo/commit/cb241d3))
+
+
+
 ## 1.1.0 (2019-06-30)
 
 
