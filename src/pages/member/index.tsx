@@ -1,13 +1,13 @@
 import Taro, {ComponentClass, Config, showToast} from "@tarojs/taro"
 import {Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
-import callAPI from "../../utils/callAPI";
-import api from "../../utils/api";
-import {MEMBER_INFO_DATA} from "../../constants";
-import showLoading from "../../utils/showLoading";
+import callAPI from "@/utils/callAPI";
+import api from "@/utils/api";
+import {MEMBER_INFO_DATA} from "@/constants";
+import showLoading from "@/utils/showLoading";
+import AtTag from "@/taro-ui/components/tag1";
+import AtAvatar from "@/taro-ui/components/avatar";
 import './index.scss'
-import AtTag from "../../taro-ui/components/tag1";
-import AtAvatar from "../../taro-ui/components/avatar";
 
 
 type pageState = {

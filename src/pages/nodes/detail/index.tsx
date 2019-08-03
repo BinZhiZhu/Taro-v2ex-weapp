@@ -2,11 +2,12 @@ import Taro, {ComponentClass, showToast} from "@tarojs/taro"
 import {View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
 import isEmpty from "lodash/isEmpty"
+import callAPI from "@/utils/callAPI";
+import api from "@/utils/api";
+import { NODE_INFO_DATA} from "@/constants";
+import showLoading from "@/utils/showLoading";
 import "./index.scss"
-import callAPI from "../../../utils/callAPI";
-import api from "../../../utils/api";
-import { NODE_INFO_DATA} from "../../../constants";
-import showLoading from "../../../utils/showLoading";
+
 
 type pageState = {
   name :string

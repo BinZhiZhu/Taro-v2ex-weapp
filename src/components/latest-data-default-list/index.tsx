@@ -1,15 +1,15 @@
 import Taro, {ComponentClass, hideLoading, navigateTo, showToast} from "@tarojs/taro"
 import {ScrollView, Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
-import formatAvatar from "../../utils/formatAvatarUrl";
-import getDiffTimeStamp from "../../utils/diffTimeStamp";
-import showLoading from "../../utils/showLoading";
-import callAPI from "../../utils/callAPI";
-import api from "../../utils/api";
-import {LATEST_TOPIC_LIST} from "../../constants";
-import AtTag from "../../taro-ui/components/tag1";
-import AtAvatar from "../../taro-ui/components/avatar";
-import AtIcon from "../../taro-ui/components/icon";
+import formatAvatar from "@/utils/formatAvatarUrl";
+import getDiffTimeStamp from "@/utils/diffTimeStamp";
+import showLoading from "@/utils/showLoading";
+import callAPI from "@/utils/callAPI";
+import api from "@/utils/api";
+import {LATEST_TOPIC_LIST} from "@/constants";
+import AtTag from "@/taro-ui/components/tag1";
+import AtAvatar from "@/taro-ui/components/avatar";
+import AtIcon from "@/taro-ui/components/icon";
 import './index.scss'
 
 type pageProps = {

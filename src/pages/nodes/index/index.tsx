@@ -4,12 +4,12 @@ import "taro-ui/dist/style/components/avatar.scss";
 import {AtAvatar, AtFloatLayout} from "taro-ui";
 import {connect} from "@tarojs/redux";
 import {RichText, Text, View} from "@tarojs/components";
-import allNodes from "../../../utils/allNodes";
+import allNodes from "@/utils/allNodes";
+import callAPI from "@/utils/callAPI";
+import api from "@/utils/api";
+import {NODE_INFO_DATA} from "@/constants";
+import showLoading from "@/utils/showLoading";
 import './index.scss'
-import callAPI from "../../../utils/callAPI";
-import api from "../../../utils/api";
-import {NODE_INFO_DATA} from "../../../constants";
-import showLoading from "../../../utils/showLoading";
 
 type pageState = {
   isShow: boolean

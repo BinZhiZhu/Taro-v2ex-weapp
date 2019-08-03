@@ -2,17 +2,17 @@ import Taro, {ComponentClass, navigateTo, showToast} from "@tarojs/taro"
 import isEmpty from "lodash/isEmpty"
 import {RichText, Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
-import showLoading from "../../utils/showLoading";
-import showAlert from "../../utils/showAlert";
-import callAPI from "../../utils/callAPI";
-import api from "../../utils/api";
-import {TOPIC_DETAIL_DATA, TOPIC_REPLIES_DATA} from "../../constants";
-import formatAvatar from "../../utils/formatAvatarUrl";
-import getDiffTimeStamp from "../../utils/diffTimeStamp";
-import './index.scss'
-import AtAvatar from "../../taro-ui/components/avatar";
-import AtTag from "../../taro-ui/components/tag1";
+import showLoading from "@/utils/showLoading";
+import showAlert from "@/utils/showAlert";
+import callAPI from "@/utils/callAPI";
+import api from "@/utils/api";
+import AtAvatar from "@/taro-ui/components/avatar";
+import formatAvatar from "@/utils/formatAvatarUrl";
+import getDiffTimeStamp from "@/utils/diffTimeStamp";
+import AtTag from "@/taro-ui/components/tag1";
+import {TOPIC_DETAIL_DATA, TOPIC_REPLIES_DATA} from "@/constants";
 import {TaroRichText} from 'taro_rich_text';
+import './index.scss'
 
 
 type pageState = {

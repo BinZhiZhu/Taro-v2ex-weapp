@@ -22,7 +22,10 @@ const config = {
   sourceRoot: 'src',
   outputRoot: `dist_${projectName}_${buildType}`,
   alias: {
-    '@/modules': path.resolve(__dirname, '..', 'src/modules'),
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/utils': path.resolve(__dirname, '..', 'src/utils'),
+    '@/taro-ui': path.resolve(__dirname, '..', 'src/taro-ui'),
+    '@/constants': path.resolve(__dirname, '..', 'src/constants'),
   },
   plugins: {
     babel: {

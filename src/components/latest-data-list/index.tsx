@@ -2,15 +2,15 @@ import Taro, {ComponentClass, hideLoading, navigateTo, showToast} from "@tarojs/
 import {ScrollView, Text, View} from "@tarojs/components";
 import isEmpty from "lodash/isEmpty"
 import {connect} from "@tarojs/redux";
+import formatAvatar from "@/utils/formatAvatarUrl";
+import getDiffTimeStamp from "@/utils/diffTimeStamp";
+import callAPI from "@/utils/callAPI";
+import showLoading from "@/utils/showLoading";
+import api from "@/utils/api";
+import {HOT_TOPIC_DATA} from "@/constants";
+import AtAvatar from "@/taro-ui/components/avatar";
+import AtTag from "@/taro-ui/components/tag1";
 import './index.scss'
-import formatAvatar from "../../utils/formatAvatarUrl";
-import getDiffTimeStamp from "../../utils/diffTimeStamp";
-import callAPI from "../../utils/callAPI";
-import showLoading from "../../utils/showLoading";
-import api from "../../utils/api";
-import {HOT_TOPIC_DATA} from "../../constants";
-import AtAvatar from "../../taro-ui/components/avatar";
-import AtTag from "../../taro-ui/components/tag1";
 
 type pageProps = {
   dispatch: any,

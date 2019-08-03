@@ -1,9 +1,9 @@
 import Taro, {ComponentClass, Config} from '@tarojs/taro'
 import {View} from '@tarojs/components'
 import LatestDataDefaultList from "../../components/latest-data-default-list";
+import callAPI from "@/utils/callAPI";
+import api from "@/utils/api";
 import "./index.scss"
-import callAPI from "../../utils/callAPI";
-import api from "../../utils/api";
 
 type pageState = {
   isPullRefresh: boolean
@@ -28,16 +28,6 @@ class LatestPage extends Taro.Component<{},pageState> {
 
   componentWillMount(): void{
     Taro.clearStorage();
-
-    callAPI({
-      url: api.getMemberLoginUrl(),
-    }).then((res)=>{
-      console.log('res',res)
-    }).catch((error)=>{
-      console.warn('error',error)
-    })
-
-    return
   }
 
 

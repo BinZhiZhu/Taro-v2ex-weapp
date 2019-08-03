@@ -1,7 +1,7 @@
 import Taro, {ComponentClass, Config} from '@tarojs/taro'
 import {View} from '@tarojs/components'
+import LatestDataList from "@/components/latest-data-list";
 import "./index.scss"
-import LatestDataList from "../../components/latest-data-list";
 
 type pageState = {
   isPullRefresh: boolean
