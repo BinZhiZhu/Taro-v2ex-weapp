@@ -1,4 +1,4 @@
-import Taro, {hideLoading, navigateTo, showToast} from "@tarojs/taro"
+import Taro, {ComponentClass, hideLoading, navigateTo, showToast} from "@tarojs/taro"
 import {ScrollView, Text, View} from "@tarojs/components";
 import isEmpty from "lodash/isEmpty"
 import {connect} from "@tarojs/redux";
@@ -12,12 +12,37 @@ import {HOT_TOPIC_DATA} from "../../constants";
 import AtAvatar from "../../taro-ui/components/avatar";
 import AtTag from "../../taro-ui/components/tag1";
 
+type pageProps = {
+  dispatch: any,
+  hotTopics: Array<detailData>
+}
+
+type detailData = {
+  last_modified: number,
+  member: {
+    avatar_normal: string,
+    username: string,
+  },
+  id: string,
+  last_reply_by: string,
+  node: {
+    title: string
+  },
+  replies: string,
+  title: string
+}
+
+
+interface apiData {
+  data:  Array<detailData>
+}
+
 @connect(
   state=>state
 )
-class LatestDataList extends Taro.Component{
+class LatestDataList extends Taro.Component<pageProps,{}>{
 
-  componentWillMount() {
+  componentWillMount(): void {
     showLoading();
     this.getList();
     //监听首页下拉刷新事件
@@ -25,7 +50,7 @@ class LatestDataList extends Taro.Component{
   }
 
 
-  componentWillUnmount() {
+  componentWillUnmount(): void{
     Taro.eventCenter.off('LATEST_DATA_REFRESH')
   }
 
@@ -50,11 +75,8 @@ class LatestDataList extends Taro.Component{
   getLatestTopic = () => {
     callAPI({
       url: api.getHotNodes()
-    }).then((result) => {
+    }).then((result: apiData) => {
       Taro.hideLoading();
-      if(result.status === 'error'){
-        showToast(result.message);
-      }
       console.log('获取最热节点', result);
       this.props.dispatch({
         type: HOT_TOPIC_DATA,
@@ -163,4 +185,4 @@ class LatestDataList extends Taro.Component{
   }
 }
 
-export default LatestDataList
+export default LatestDataList as ComponentClass

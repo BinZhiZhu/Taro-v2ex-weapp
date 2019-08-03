@@ -1,4 +1,4 @@
-import Taro, {hideLoading, navigateTo, showToast} from "@tarojs/taro"
+import Taro, {ComponentClass, hideLoading, navigateTo, showToast} from "@tarojs/taro"
 import {ScrollView, Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
 import formatAvatar from "../../utils/formatAvatarUrl";
@@ -12,19 +12,44 @@ import AtAvatar from "../../taro-ui/components/avatar";
 import AtIcon from "../../taro-ui/components/icon";
 import './index.scss'
 
+type pageProps = {
+  dispatch: any,
+  latestTopicList: Array<detailData>
+}
+
+type detailData = {
+  last_modified: number,
+  member: {
+    avatar_normal: string,
+    username: string,
+  },
+  id: string,
+  last_reply_by: string,
+  node: {
+    title: string
+  },
+  replies: string,
+  title: string
+}
+
+
+interface apiData {
+  data:  Array<detailData>
+}
+
 @connect(
   state=>state
 )
-class LatestDataDefaultList extends Taro.Component{
+class LatestDataDefaultList extends Taro.Component<pageProps,{}>{
 
-  componentWillMount() {
+  componentWillMount(): void {
     this.getList();
     //监听首页下拉刷新事件
     Taro.eventCenter.on('LATEST_DATA_REFRESH',this.getList)
   }
 
 
-  componentWillUnmount() {
+  componentWillUnmount(): void {
     Taro.eventCenter.off('LATEST_DATA_REFRESH')
   }
 
@@ -51,11 +76,8 @@ class LatestDataDefaultList extends Taro.Component{
   getLatestTopic = () => {
     callAPI({
       url: api.getLatestTopic()
-    }).then((result) => {
+    }).then((result: apiData) => {
       Taro.hideLoading();
-      if(result.status === 'error'){
-        showToast(result.message);
-      }
       console.log('获取最新节点', result);
       this.props.dispatch({
         type: LATEST_TOPIC_LIST,
@@ -74,7 +96,7 @@ class LatestDataDefaultList extends Taro.Component{
     });
   }
 
-  goDetail = (topic_id)=>{
+  goDetail = (topic_id: string| number)=>{
     navigateTo({
       url:`/pages/detail/index?topic_id=${topic_id}`
     })
@@ -158,4 +180,4 @@ class LatestDataDefaultList extends Taro.Component{
   }
 }
 
-export default LatestDataDefaultList
+export default LatestDataDefaultList as ComponentClass

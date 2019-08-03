@@ -1,4 +1,4 @@
-import Taro, {showToast} from "@tarojs/taro"
+import Taro, {ComponentClass, showToast} from "@tarojs/taro"
 import {View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
 import isEmpty from "lodash/isEmpty"
@@ -8,20 +8,39 @@ import api from "../../../utils/api";
 import { NODE_INFO_DATA} from "../../../constants";
 import showLoading from "../../../utils/showLoading";
 
+type pageState = {
+  name :string
+}
+
+type pageProps = {
+  dispatch: any,
+  getNodeInfo: nodeData
+}
+
+type nodeData = {
+  title: string,
+  header: string
+}
+
+interface nodeDetail {
+  data: nodeData
+}
 @connect(
   state=>state
 )
-class Index extends Taro.Component{
+class NodeDetailPage extends Taro.Component<pageProps,pageState>{
 
   config = {
     navigationBarTitleText: '节点'
   }
 
-
-  state = {
-    name: ''
+  constructor(props){
+    super(props)
+    this.state = {
+      name: ''
+    }
   }
-  componentWillMount() {
+  componentWillMount(): void {
     showLoading();
     const params = this.$router.params;
     if(params.name){
@@ -39,11 +58,8 @@ class Index extends Taro.Component{
       url: api.getNodeInfo({
         name
       })
-    }).then((result) => {
+    }).then((result: nodeDetail) => {
       Taro.hideLoading();
-      if(result.status === 'error'){
-        showToast(result.message);
-      }
       console.log('获取节点信息', result);
       this.props.dispatch({
         type: NODE_INFO_DATA,
@@ -77,4 +93,4 @@ class Index extends Taro.Component{
   }
 }
 
-export default Index
+export default NodeDetailPage as ComponentClass

@@ -1,12 +1,16 @@
-import Taro from '@tarojs/taro'
+import Taro, {ComponentClass, Config} from '@tarojs/taro'
 import {View} from '@tarojs/components'
 import "./index.scss"
 import LatestDataList from "../../components/latest-data-list";
 
-class Index extends Taro.Component {
+type pageState = {
+  isPullRefresh: boolean
+}
+
+class HotPage extends Taro.Component<{},pageState> {
 
 
-  config = {
+  config: Config = {
     navigationBarTitleText: '最热',
     enablePullDownRefresh: true,
     backgroundTextStyle: 'light'
@@ -15,36 +19,50 @@ class Index extends Taro.Component {
 
   constructor(props){
     super(props);
-    this.isPullRefresh = false;
+    this.state = {
+      isPullRefresh: false
+    }
   }
 
 
-  componentWillMount() {
+  componentWillMount(): void {
     Taro.clearStorage();
   }
 
 
   // 下拉刷新
-  onPullDownRefresh() {
+  onPullDownRefresh(): void{
+    const {isPullRefresh} = this.state
     console.log('监听下拉刷新')
-    if(this.isPullRefresh){
+    if(isPullRefresh){
       return
     }
-    this.isPullRefresh = true;
-    this.onRefresh();
+    this.setState({
+      isPullRefresh: true
+    },()=>{
+      this.onRefresh();
+    })
   }
+
 
   onRefresh = ()=>{
     Taro.startPullDownRefresh().then((result) => {
+      const {isPullRefresh} = this.state
       console.log('onPullDownRefresh',result)
       Taro.setStorageSync('IS_LATEST_DATA_REFRESH',true);
-      Taro.eventCenter.trigger('LATEST_DATA_REFRESH',this.isPullRefresh)
-      this.isPullRefresh = false;
-      Taro.stopPullDownRefresh();
+      Taro.eventCenter.trigger('LATEST_DATA_REFRESH',isPullRefresh)
+      this.setState({
+        isPullRefresh: false
+      },()=>{
+        Taro.stopPullDownRefresh();
+      })
     }).catch((failResullt) => {
       console.log('failResullt', failResullt);
-      Taro.stopPullDownRefresh();
-      this.isPullRefresh = false;
+      this.setState({
+        isPullRefresh: false
+      },()=>{
+        Taro.stopPullDownRefresh();
+      })
     });
   }
 
@@ -60,4 +78,4 @@ class Index extends Taro.Component {
   }
 }
 
-export default Index
+export default HotPage as ComponentClass

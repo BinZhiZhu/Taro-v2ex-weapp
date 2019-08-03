@@ -1,4 +1,4 @@
-import Taro, {showToast} from "@tarojs/taro"
+import Taro, {ComponentClass, showToast} from "@tarojs/taro"
 import "taro-ui/dist/style/components/float-layout.scss";
 import "taro-ui/dist/style/components/avatar.scss";
 import {AtAvatar, AtFloatLayout} from "taro-ui";
@@ -11,25 +11,55 @@ import api from "../../../utils/api";
 import {NODE_INFO_DATA} from "../../../constants";
 import showLoading from "../../../utils/showLoading";
 
+type pageState = {
+  isShow: boolean
+}
+
+type nodeDetail = {
+  title: string,
+  avatar_normal: string,
+  title_alternative: string,
+  topics: string,
+  stars: string,
+  header: string
+}
+
+type pageProps = {
+  dispatch: any,
+  getNodeInfo: nodeDetail
+}
+
+type nodes = {
+  short_name: string,
+  full_name :string
+}
+
+interface allNodes {
+  id: string,
+  title: string,
+  nodes: Array<nodes>
+}
+
+interface nodeList {
+  data: nodeDetail
+}
 @connect(
   state=>state
 )
-class Index extends Taro.Component{
+class NodePage extends Taro.Component<pageProps,pageState>{
 
   config = {
     navigationBarTitleText: '节点'
   }
 
-  state = {
-    isShow: false
+  constructor(props){
+    super(props)
+    this.state = {
+      isShow: false
+    }
   }
-  // goDetail = (name)=>{
-  //   navigateTo({
-  //     url:`/pages/nodes/detail/index?name=${name}`
-  //   });
-  // }
 
-  onShowLayout = (name)=>{
+  onShowLayout = (name: string)=>{
     showLoading();
     this.getNodeDetail(name);
     this.setState({
@@ -48,16 +78,13 @@ class Index extends Taro.Component{
     })
   }
 
-  getNodeDetail = (name)=>{
+  getNodeDetail = (name: string)=>{
     callAPI({
       url: api.getNodeInfo({
         name
       })
-    }).then((result) => {
+    }).then((result: nodeList) => {
       Taro.hideLoading();
-      if(result.status === 'error'){
-        showToast(result.message);
-      }
       console.log('获取节点信息', result);
       this.props.dispatch({
         type: NODE_INFO_DATA,
@@ -79,7 +106,7 @@ class Index extends Taro.Component{
 
     return (
       <View className='pages-nodes-index'>
-        {allNodesList && allNodesList.map((node,i)=>{
+        {allNodesList && allNodesList.map((node: allNodes,i)=>{
           return (
             <View
               className='pages-nodes-index__item'
@@ -141,4 +168,4 @@ class Index extends Taro.Component{
   }
 }
 
-export default Index
+export default NodePage as ComponentClass

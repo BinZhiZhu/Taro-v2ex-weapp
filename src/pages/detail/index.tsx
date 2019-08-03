@@ -1,4 +1,4 @@
-import Taro, {navigateTo, showToast} from "@tarojs/taro"
+import Taro, {ComponentClass, navigateTo, showToast} from "@tarojs/taro"
 import isEmpty from "lodash/isEmpty"
 import {RichText, Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
@@ -14,29 +14,63 @@ import AtAvatar from "../../taro-ui/components/avatar";
 import AtTag from "../../taro-ui/components/tag1";
 import {TaroRichText} from 'taro_rich_text';
 
+
+type pageState = {
+  topic_id: string | number
+}
+
+type pageProps = {
+  dispatch: any,
+  topicDetail: any,
+  topicReplies: Array<replyList>
+}
+
+type replyList = {
+  id: string,
+  member: {
+    username: string,
+    avatar_normal: string,
+  },
+  last_modified: number,
+  content: string
+}
+
+type detailList = {
+  member: {
+    username: string
+  },
+  title: string,
+  content: string
+}
+
+
+interface replyData {
+  data: Array<replyList>
+}
+
+interface detailData {
+  status: string,
+  data: Array<detailList>
+}
+
 @connect(
   state=>state
 )
-class Index extends Taro.Component{
+class DetailPage extends Taro.Component<pageProps,pageState>{
 
   state = {
     topic_id: 0
   }
 
-  componentWillMount() {
-
-    showLoading();
-
-    this.clearData();
-
-    const params = this.$router.params;
-    console.log('params',params)
-
+  componentWillMount(): void {
+    showLoading()
+    this.clearData()
+    const params = this.$router.params
     if(params.topic_id){
       this.setState({
         topic_id:params.topic_id
       },()=>{
-        this.getList();
+        this.getList()
       })
     }
   }
@@ -45,11 +79,11 @@ class Index extends Taro.Component{
     this.props.dispatch({
       type: TOPIC_REPLIES_DATA,
       data: null
-    });
+    })
     this.props.dispatch({
       type: TOPIC_DETAIL_DATA,
       data: null
-    });
+    })
   }
 
 
@@ -80,7 +114,7 @@ class Index extends Taro.Component{
       url: api.getReplies({
         topic_id
       }),
-    }).then((result) => {
+    }).then((result: replyData) => {
       Taro.hideLoading();
       console.log('获取帖子回复', result);
       this.props.dispatch({
@@ -102,11 +136,8 @@ class Index extends Taro.Component{
       url: api.getTopics({
         id:topic_id
       }),
-    }).then((result) => {
+    }).then((result: detailData) => {
       Taro.hideLoading();
-      if(result.status === 'error'){
-        showToast(result.message);
-      }
       console.log('获取帖子详情', result);
       this.props.dispatch({
         type: TOPIC_DETAIL_DATA,
@@ -118,7 +149,7 @@ class Index extends Taro.Component{
   }
 
 
-  getMemberData = (username)=>{
+  getMemberData = (username: string)=>{
     navigateTo({
       url:`/pages/member/index?username=${username}`
     })
@@ -185,20 +216,19 @@ class Index extends Taro.Component{
               </View>
               <View className='pages-detail-index__topic__bottom__line' />
               <View className='pages-detail-index__topic__bottom__content'>
-                {/*<RichText*/}
-                  {/*className='pages-detail-index__topic__bottom__content__text'*/}
-                  {/*nodes={data.content}*/}
-                {/*/>*/}
-                {process.env.TARO_ENV ==='weapp' && (
+                 {/*小程序才使用解析markdown的插件*/}
+                {process.env.TARO_ENV ==='weapp' ? (
                   <TaroRichText
                     raw={false}
                     type='markdown'
                     richText={data.content}
                   />
+                ) : (
+                  <RichText
+                    className='pages-detail-index__topic__bottom__content__text'
+                    nodes={data.content}
+                  />
                 )}
-                {/*{data.content && (*/}
-                  {/*<View className='pages-detail-index__topic__bottom__content__line' />*/}
-                {/*)}*/}
               </View>
             </View>
           )}
@@ -258,4 +288,4 @@ class Index extends Taro.Component{
   }
 }
 
-export default Index
+export default DetailPage as ComponentClass

@@ -1,20 +1,17 @@
-import Taro, {ComponentClass} from '@tarojs/taro'
+import Taro, {ComponentClass, Config} from '@tarojs/taro'
 import {View} from '@tarojs/components'
-import "./index.scss"
 import LatestDataDefaultList from "../../components/latest-data-default-list";
+import "./index.scss"
 
 type pageState = {
   isPullRefresh: boolean
 }
 
+class LatestPage extends Taro.Component<{},pageState> {
 
-class hotPage extends Taro.Component<{},pageState> {
-
-  config = {
+  config: Config = {
     navigationBarTitleText: '首页',
-    // 开启所有页面的下拉刷新功能，需要做下拉刷新的页面里写onPullDownRefresh方法，
-    // 再调用Taro.startPullDownRefresh 、Taro.stopPullDownRefresh
-    enablePullDownRefresh: true,// 下拉刷新
+    enablePullDownRefresh: true,
     backgroundTextStyle: 'light'
   }
 
@@ -27,7 +24,7 @@ class hotPage extends Taro.Component<{},pageState> {
   }
 
 
-  componentWillMount() {
+  componentWillMount(): void{
     Taro.clearStorage();
   }
 
@@ -80,4 +77,4 @@ class hotPage extends Taro.Component<{},pageState> {
   }
 }
 
-export default hotPage as ComponentClass
+export default LatestPage as ComponentClass

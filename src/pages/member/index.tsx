@@ -1,4 +1,4 @@
-import Taro, {showToast} from "@tarojs/taro"
+import Taro, {ComponentClass, Config, showToast} from "@tarojs/taro"
 import {Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
 import callAPI from "../../utils/callAPI";
@@ -9,28 +9,54 @@ import './index.scss'
 import AtTag from "../../taro-ui/components/tag1";
 import AtAvatar from "../../taro-ui/components/avatar";
 
+
+type pageState = {
+  username: string
+}
+
+type memberInfo = {
+  username: string,
+  location: string,
+  tagline: string,
+  github: string,
+  website: string
+  twitter: string,
+  url: string,
+  avatar_normal: string
+}
+
+type pageProps = {
+  dispatch: any,
+  memberInfo: memberInfo
+}
+
+interface memberData {
+  data: Array<memberInfo>
+}
 @connect(
   state=>state
 )
-class Index extends Taro.Component{
+class MemberPage extends Taro.Component<pageProps,pageState>{
 
-
-  config = {
+  config: Config = {
     navigationBarTitleText: '个人主页'
   }
 
-  state = {
-    username: ''
+  constructor(props){
+    super(props)
+    this.state = {
+      username: ''
+    }
   }
 
   componentWillMount() {
-    showLoading();
+    showLoading()
     const params = this.$router.params;
     if(params.username){
       this.setState({
         username:params.username || ''
       },()=>{
-        this.getMemberInfo();
+        this.getMemberInfo()
       })
     }
   }
@@ -49,7 +75,7 @@ class Index extends Taro.Component{
       url: api.getUserinfo({
         username
       })
-    }).then((result) => {
+    }).then((result: memberData) => {
       Taro.hideLoading();
       console.log('获取用户信息', result);
       this.props.dispatch({
@@ -75,10 +101,6 @@ class Index extends Taro.Component{
             image={avatar}
             className='pages-member-index__avatar__thumb'
           />
-          {/*<Image*/}
-            {/*src={avatar}*/}
-            {/*className='pages-member-index__avatar__thumb'*/}
-          {/*/>*/}
           <AtTag
             active
             className='pages-member-index__avatar__thumb__status'
@@ -123,4 +145,4 @@ class Index extends Taro.Component{
   }
 }
 
-export default Index
+export default MemberPage as ComponentClass

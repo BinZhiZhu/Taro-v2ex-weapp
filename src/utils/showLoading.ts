@@ -2,7 +2,7 @@ import Taro from "@tarojs/taro";
 
 const showLoading = (obj: any = null): void => {
   Taro.showLoading(obj ? obj : {
-    title: '加载中',
+    title: '努力加载中~',
   })
 };
 
