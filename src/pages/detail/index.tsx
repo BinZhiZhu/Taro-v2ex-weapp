@@ -217,18 +217,25 @@ class DetailPage extends Taro.Component<pageProps,pageState>{
               <View className='pages-detail-index__topic__bottom__line' />
               <View className='pages-detail-index__topic__bottom__content'>
                  {/*小程序才使用解析markdown的插件*/}
-                {process.env.TARO_ENV ==='weapp' ? (
+                {process.env.TARO_ENV ==='weapp' && (
                   <TaroRichText
                     raw={false}
                     type='markdown'
                     richText={data.content}
                   />
-                ) : (
+                )}
+
+                {process.env.TARO_ENV === 'alipay' && (
+                  <Text className='pages-detail-index__topic__bottom__content__text'>{data.content}</Text>
+                )}
+
+                {process.env.TARO_ENV !== 'alipay' && process.env.TARO_ENV !== 'weapp' &&  (
                   <RichText
                     className='pages-detail-index__topic__bottom__content__text'
                     nodes={data.content}
                   />
                 )}
+
               </View>
             </View>
           )}
@@ -263,10 +270,15 @@ class DetailPage extends Taro.Component<pageProps,pageState>{
                     </View>
                   </View>
                   <View className='pages-detail-index__reply__left__info__bottom'>
-                    <RichText
-                      nodes={item.content}
-                      className='pages-detail-index__reply__left__info__bottom__content'
-                    />
+                    {process.env.TARO_ENV !=='alipay' && (
+                      <RichText
+                        nodes={item.content}
+                        className='pages-detail-index__reply__left__info__bottom__content'
+                      />
+                    )}
+                    {process.env.TARO_ENV === 'alipay' && (
+                      <Text className='pages-detail-index__reply__left__info__bottom__content'>{item.content}</Text>
+                    )}
                     {/*<TaroRichText*/}
                       {/*raw={false}*/}
                       {/*type='markdown'*/}

@@ -26,9 +26,9 @@
           @include line(1);
           color: $color-border-grey;
           align-items: center;
-          @include font-size($font-size-sm);
+          @include font-size($font-size-xs);
           &__node-title{
-
+            @include font-size($font-size-xs);
           }
           &__username{
             font-weight: bold;
@@ -38,10 +38,11 @@
             align-items: center;
             @include padding-horizontal($spacing-xs);
             &__inner{
-              @include font-size(12px);
+              @include font-size($font-size-xs);
             }
             &__username{
               color: $color-text-placeholder;
+              @include font-size($font-size-xs);
             }
           }
           &__text{
@@ -55,10 +56,12 @@
             @include text-overflow-ellipsis;
             @include white-space-nowrap;
             @include overflow-hidden;
+            @include flex-direction(row);
             color: $color-text-placeholder;
             &__username{
               padding-left: $spacing-xs;
               color: $color-text-base;
+              @include font-size($font-size-xs)
             }
           }
         }

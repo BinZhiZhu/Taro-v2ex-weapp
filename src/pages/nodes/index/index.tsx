@@ -155,10 +155,14 @@ class NodePage extends Taro.Component<pageProps,pageState>{
                 </View>
               </View>
               <View className='pages-nodes-index__layout__content'>
-                <RichText
-                  className='pages-nodes-index__layout__content__header'
-                  nodes={getNodeInfo.header}
-                />
+                {process.env.TARO_ENV === 'alipay' ? (
+                  <Text className='pages-nodes-index__layout__content__header'>{getNodeInfo.header}</Text>
+                ): (
+                  <RichText
+                    className='pages-nodes-index__layout__content__header'
+                    nodes={getNodeInfo.header}
+                  />
+                )}
               </View>
             </AtFloatLayout>
           </View>

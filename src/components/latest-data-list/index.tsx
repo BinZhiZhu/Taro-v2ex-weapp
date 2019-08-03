@@ -37,6 +37,10 @@ interface apiData {
   data:  Array<detailData>
 }
 
+type commonStyle =  {
+  width?: string
+}
+
 @connect(
   state=>state
 )
@@ -109,6 +113,18 @@ class LatestDataList extends Taro.Component<pageProps,{}>{
       return <View />;
     }
 
+    const leftStyle: commonStyle ={}
+
+    const rightStyle: commonStyle = {}
+
+    if(process.env.TARO_ENV ==='alipay'){
+      leftStyle.width = '86%'
+    }
+
+    if(process.env.TARO_ENV ==='alipay'){
+      rightStyle.width = '14%'
+    }
+
     return (
       <ScrollView
         scrollY
@@ -123,7 +139,10 @@ class LatestDataList extends Taro.Component<pageProps,{}>{
               key={`${i}-${item.id}`}
               onClick={this.goDetail.bind(this,item.id)}
             >
-              <View className='pages-hot-index-homepage__block__left'>
+              <View
+                className='pages-hot-index-homepage__block__left'
+                style={leftStyle}
+              >
                 <View className='pages-hot-index-homepage__block__left__thumb'>
                   <AtAvatar
                     className='pages-hot-index-homepage__block__left__thumb__img'
@@ -164,7 +183,10 @@ class LatestDataList extends Taro.Component<pageProps,{}>{
                   </View>
                 </View>
               </View>
-              <View className='pages-hot-index-homepage__block__right'>
+              <View
+                className='pages-hot-index-homepage__block__right'
+                style={rightStyle}
+              >
 
                 <View className='pages-hot-index-homepage__block__right__inner'>
                   <AtTag

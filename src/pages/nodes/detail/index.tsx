@@ -76,7 +76,7 @@ class NodeDetailPage extends Taro.Component<pageProps,pageState>{
     const {getNodeInfo} = this.props;
 
     if(isEmpty(getNodeInfo)){
-      return null;
+      return <View />;
     }
 
     return (
