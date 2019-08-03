@@ -5,8 +5,8 @@ import {connect} from "@tarojs/redux";
 import './index.scss'
 import formatAvatar from "../../utils/formatAvatarUrl";
 import getDiffTimeStamp from "../../utils/diffTimeStamp";
-import showLoading from "../../utils/showLoading";
 import callAPI from "../../utils/callAPI";
+import showLoading from "../../utils/showLoading";
 import api from "../../utils/api";
 import {HOT_TOPIC_DATA} from "../../constants";
 import AtAvatar from "../../taro-ui/components/avatar";
@@ -42,12 +42,18 @@ class LatestDataList extends Taro.Component{
 
 
   componentWillMount() {
-    showLoading();
     this.getList();
+    //监听首页下拉刷新事件
+    Taro.eventCenter.on('LATEST_DATA_REFRESH',this.getList)
   }
 
 
+  componentWillUnmount() {
+    Taro.eventCenter.off('LATEST_DATA_REFRESH')
+  }
+
   getList = () => {
+    showLoading();
     switch (process.env.TARO_ENV) {
       case 'h5':
         this.props.dispatch({
@@ -78,6 +84,14 @@ class LatestDataList extends Taro.Component{
         type: HOT_TOPIC_DATA,
         data: result.data
       });
+      const isRefresh = Taro.getStorageSync('IS_LATEST_DATA_REFRESH')
+      if(isRefresh){
+        showToast({
+          title:'刷新成功',
+          icon:'success'
+        });
+        Taro.setStorageSync('IS_LATEST_DATA_REFRESH',false)
+      }
     }).catch((error) => {
       showToast(error.message)
     });

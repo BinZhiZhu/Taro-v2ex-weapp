@@ -1,7 +1,6 @@
 import Taro, {hideLoading, navigateTo, showToast} from "@tarojs/taro"
 import {ScrollView, Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
-import './index.scss'
 import formatAvatar from "../../utils/formatAvatarUrl";
 import getDiffTimeStamp from "../../utils/diffTimeStamp";
 import showLoading from "../../utils/showLoading";
@@ -11,6 +10,7 @@ import {LATEST_TOPIC_LIST} from "../../constants";
 import AtTag from "../../taro-ui/components/tag1";
 import AtAvatar from "../../taro-ui/components/avatar";
 import AtIcon from "../../taro-ui/components/icon";
+import './index.scss'
 
 @connect(
   state=>state
@@ -18,12 +18,19 @@ import AtIcon from "../../taro-ui/components/icon";
 class LatestDataDefaultList extends Taro.Component{
 
   componentWillMount() {
-    showLoading();
     this.getList();
+    //监听首页下拉刷新事件
+    Taro.eventCenter.on('LATEST_DATA_REFRESH',this.getList)
+  }
+
+
+  componentWillUnmount() {
+    Taro.eventCenter.off('LATEST_DATA_REFRESH')
   }
 
 
   getList = () => {
+    showLoading();
     switch (process.env.TARO_ENV) {
       case 'h5':
         this.props.dispatch({
@@ -54,6 +61,14 @@ class LatestDataDefaultList extends Taro.Component{
         type: LATEST_TOPIC_LIST,
         data: result.data
       });
+      const isRefresh = Taro.getStorageSync('IS_LATEST_DATA_REFRESH')
+      if(isRefresh){
+        showToast({
+          title:'刷新成功',
+          icon:'success'
+        });
+        Taro.setStorageSync('IS_LATEST_DATA_REFRESH',false)
+      }
     }).catch((error) => {
       showToast(error.message)
     });

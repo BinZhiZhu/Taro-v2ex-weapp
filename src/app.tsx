@@ -67,12 +67,12 @@ class App extends Component {
       navigationBarTextStyle: 'black',
       enablePullDownRefresh: true,
     },
-    // plugins: {
-    //   "wxparserPlugin": {
-    //     "version": "0.2.1",
-    //     "provider": "wx9d4d4ffa781ff3ac"
-    //   }
-    // }
+    plugins: {
+      "wxparserPlugin": {
+        "version": "0.2.1",
+        "provider": "wx9d4d4ffa781ff3ac"
+      }
+    }
   }
 
   componentDidMount() {
