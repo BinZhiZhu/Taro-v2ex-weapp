@@ -4,8 +4,8 @@ import {connect} from "@tarojs/redux";
 import isEmpty from "lodash/isEmpty"
 import callAPI from "@/utils/callAPI";
 import api from "@/utils/api";
-import { NODE_INFO_DATA} from "@/constants";
 import showLoading from "@/utils/showLoading";
+import { NODE_INFO_DATA} from "../../../constants";
 import "./index.scss"
 
 

@@ -1,4 +1,4 @@
-import Taro, {ComponentClass, showToast} from "@tarojs/taro"
+import Taro, {ComponentClass, Config, showToast} from "@tarojs/taro"
 import "taro-ui/dist/style/components/float-layout.scss";
 import "taro-ui/dist/style/components/avatar.scss";
 import {AtAvatar, AtFloatLayout} from "taro-ui";
@@ -7,8 +7,8 @@ import {RichText, Text, View} from "@tarojs/components";
 import allNodes from "@/utils/allNodes";
 import callAPI from "@/utils/callAPI";
 import api from "@/utils/api";
-import {NODE_INFO_DATA} from "@/constants";
 import showLoading from "@/utils/showLoading";
+import {NODE_INFO_DATA} from "../../../constants";
 import './index.scss'
 
 type pageState = {
@@ -48,7 +48,7 @@ interface nodeList {
 )
 class NodePage extends Taro.Component<pageProps,pageState>{
 
-  config = {
+  config: Config = {
     navigationBarTitleText: '节点'
   }
 

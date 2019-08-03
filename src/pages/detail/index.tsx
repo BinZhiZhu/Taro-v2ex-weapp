@@ -1,4 +1,4 @@
-import Taro, {ComponentClass, navigateTo, showToast} from "@tarojs/taro"
+import Taro, {ComponentClass, Config, navigateTo, showToast} from "@tarojs/taro"
 import isEmpty from "lodash/isEmpty"
 import {RichText, Text, View} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
@@ -10,8 +10,8 @@ import AtAvatar from "@/taro-ui/components/avatar";
 import formatAvatar from "@/utils/formatAvatarUrl";
 import getDiffTimeStamp from "@/utils/diffTimeStamp";
 import AtTag from "@/taro-ui/components/tag1";
-import {TOPIC_DETAIL_DATA, TOPIC_REPLIES_DATA} from "@/constants";
 import {TaroRichText} from 'taro_rich_text';
+import {TOPIC_DETAIL_DATA, TOPIC_REPLIES_DATA} from "../../constants";
 import './index.scss'
 
 
@@ -58,8 +58,15 @@ interface detailData {
 )
 class DetailPage extends Taro.Component<pageProps,pageState>{
 
-  state = {
-    topic_id: 0
+  config: Config = {
+    navigationBarTitleText: '话题详情'
+  }
+
+  constructor(props){
+    super(props)
+    this.state = {
+      topic_id: 0
+    }
   }
 
   componentWillMount(): void {

@@ -19,6 +19,12 @@
     "jsxFactory": "Taro.createElement",
     "allowJs": true,
     "resolveJsonModule": true,
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/taro-ui/*": ["./src/taro-ui/*"],
+      "@/constants/*": ["./src/constants/*"]
+    },
     "typeRoots": [
       "node_modules/@types"
     ]

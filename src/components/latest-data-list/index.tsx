@@ -7,9 +7,9 @@ import getDiffTimeStamp from "@/utils/diffTimeStamp";
 import callAPI from "@/utils/callAPI";
 import showLoading from "@/utils/showLoading";
 import api from "@/utils/api";
-import {HOT_TOPIC_DATA} from "@/constants";
 import AtAvatar from "@/taro-ui/components/avatar";
 import AtTag from "@/taro-ui/components/tag1";
+import {HOT_TOPIC_DATA} from "../../constants";
 import './index.scss'
 
 type pageProps = {

@@ -1,8 +1,6 @@
 import Taro, {ComponentClass, Config} from '@tarojs/taro'
 import {View} from '@tarojs/components'
-import LatestDataDefaultList from "../../components/latest-data-default-list";
-import callAPI from "@/utils/callAPI";
-import api from "@/utils/api";
+import LatestDataDefaultList from "@/components/latest-data-default-list";
 import "./index.scss"
 
 type pageState = {
@@ -12,7 +10,7 @@ type pageState = {
 class LatestPage extends Taro.Component<{},pageState> {
 
   config: Config = {
-    navigationBarTitleText: '首页',
+    navigationBarTitleText: '最新',
     enablePullDownRefresh: true,
     backgroundTextStyle: 'light'
   }
