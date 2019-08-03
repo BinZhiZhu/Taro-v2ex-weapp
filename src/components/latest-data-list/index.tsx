@@ -17,31 +17,8 @@ import AtTag from "../../taro-ui/components/tag1";
 )
 class LatestDataList extends Taro.Component{
 
-  // static defaultProps = {
-  //   latestTopicList: [
-  //     {
-  //       last_reply_by: '',//最新回复者
-  //       last_modified: '', //最新回复时间戳
-  //       replies: 0, //回复数
-  //       title: '',
-  //       member: {
-  //         avatar_normal: '', //默认头像
-  //         username: '',//昵称
-  //       },
-  //       node: {
-  //         title: '',  //节点
-  //       }
-  //     }
-  //   ]
-  // }
-  //
-  //
-  // static propTypes = {
-  //   latestTopicList: propTypes.array
-  // }
-
-
   componentWillMount() {
+    showLoading();
     this.getList();
     //监听首页下拉刷新事件
     Taro.eventCenter.on('LATEST_DATA_REFRESH',this.getList)
@@ -53,7 +30,6 @@ class LatestDataList extends Taro.Component{
   }
 
   getList = () => {
-    showLoading();
     switch (process.env.TARO_ENV) {
       case 'h5':
         this.props.dispatch({

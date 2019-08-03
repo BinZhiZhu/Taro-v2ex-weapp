@@ -1,9 +1,14 @@
-import Taro from '@tarojs/taro'
+import Taro, {ComponentClass} from '@tarojs/taro'
 import {View} from '@tarojs/components'
 import "./index.scss"
 import LatestDataDefaultList from "../../components/latest-data-default-list";
 
-class Index extends Taro.Component {
+type pageState = {
+  isPullRefresh: boolean
+}
+
+
+class hotPage extends Taro.Component<{},pageState> {
 
   config = {
     navigationBarTitleText: '首页',
@@ -16,7 +21,9 @@ class Index extends Taro.Component {
 
   constructor(props){
     super(props);
-    this.isPullRefresh = false;
+    this.state = {
+      isPullRefresh: false
+    }
   }
 
 
@@ -27,25 +34,37 @@ class Index extends Taro.Component {
 
   // 下拉刷新
   onPullDownRefresh() {
+    const {isPullRefresh} = this.state
     console.log('监听下拉刷新')
-    if(this.isPullRefresh){
+    if(isPullRefresh){
       return
     }
-    this.isPullRefresh = true;
-    this.onRefresh();
+    this.setState({
+      isPullRefresh: true
+    },()=>{
+      this.onRefresh();
+    })
   }
+
 
   onRefresh = ()=>{
     Taro.startPullDownRefresh().then((result) => {
+      const {isPullRefresh} = this.state
       console.log('onPullDownRefresh',result)
       Taro.setStorageSync('IS_LATEST_DATA_REFRESH',true);
-      Taro.eventCenter.trigger('LATEST_DATA_REFRESH',this.isPullRefresh)
-      this.isPullRefresh = false;
-      Taro.stopPullDownRefresh();
+      Taro.eventCenter.trigger('LATEST_DATA_REFRESH',isPullRefresh)
+      this.setState({
+        isPullRefresh: false
+      },()=>{
+        Taro.stopPullDownRefresh();
+      })
     }).catch((failResullt) => {
       console.log('failResullt', failResullt);
-      Taro.stopPullDownRefresh();
-      this.isPullRefresh = false;
+      this.setState({
+        isPullRefresh: false
+      },()=>{
+        Taro.stopPullDownRefresh();
+      })
     });
   }
 
@@ -61,4 +80,4 @@ class Index extends Taro.Component {
   }
 }
 
-export default Index
+export default hotPage as ComponentClass
