@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/BinZhiZhu/Taro-components-Demo/compare/v1.2.0...v1.3.0) (2019-12-18)
+
+
+### Bug Fixes
+
+* **.idea:** 移除一些未知IDE生成的文件 ([e7cdc01](https://github.com/BinZhiZhu/Taro-components-Demo/commit/e7cdc01))
+
+
+### Features
+
+* **cypress:** 上Cypress来简单维护项目:主要是断言页面接口数据、UI样式等 ([24cbe61](https://github.com/BinZhiZhu/Taro-components-Demo/commit/24cbe61))
+* **cypress:** 新增cypress测试框架、项目计划使用cypress来简单维护一下测试用例 ([7caf461](https://github.com/BinZhiZhu/Taro-components-Demo/commit/7caf461))
+* **share:** 增加页面转发功能 ([23c49cf](https://github.com/BinZhiZhu/Taro-components-Demo/commit/23c49cf))
+* **tsconfig:** 增加path 识别alias ([351ba8b](https://github.com/BinZhiZhu/Taro-components-Demo/commit/351ba8b))
+
+
+
 ## [1.2.0](https://github.com/BinZhiZhu/Taro-components-Demo/compare/v1.0.0-lw...v1.2.0) (2019-08-03)
 
 
