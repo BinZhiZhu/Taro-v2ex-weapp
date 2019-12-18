@@ -90,6 +90,10 @@ v2ex开放API支持(如果侵权请联系本人修正)
 
 - 支持markdown文本解析: ![](http://img.binzhizhu.top/imgs/2019/06/a4c8fe11315a88ee.png)
 
+-1.0.3
+
+- 增加页面转发功能
+
 
 ### TODO
 
