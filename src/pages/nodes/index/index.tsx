@@ -10,6 +10,7 @@ import api from "@/utils/api";
 import showLoading from "@/utils/showLoading";
 import {NODE_INFO_DATA} from "../../../constants";
 import './index.scss'
+import withShare from "@/utils/withShare";
 
 type pageState = {
   isShow: boolean
@@ -43,6 +44,7 @@ interface allNodes {
 interface nodeList {
   data: nodeDetail
 }
+@withShare()
 @connect(
   state=>state
 )
@@ -58,6 +60,19 @@ class NodePage extends Taro.Component<pageProps,pageState>{
       isShow: false
     }
   }
+
+  $setSharePath = () => {
+    return 'pages/nodes/index';
+  };
+
+  $setShareDesc = ()=>{
+    return '为您呈上V2EX全部节点~';
+  }
+
+  $setShareTitle = () => {
+    return '全部节点'
+  };
+
 
   onShowLayout = (name: string)=>{
     showLoading();

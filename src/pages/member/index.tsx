@@ -8,6 +8,7 @@ import AtTag from "@/taro-ui/components/tag1";
 import AtAvatar from "@/taro-ui/components/avatar";
 import {MEMBER_INFO_DATA} from "../../constants";
 import './index.scss'
+import withShare from "@/utils/withShare";
 
 
 type pageState = {
@@ -33,6 +34,7 @@ type pageProps = {
 interface memberData {
   data: Array<memberInfo>
 }
+@withShare()
 @connect(
   state=>state
 )
@@ -48,6 +50,21 @@ class MemberPage extends Taro.Component<pageProps,pageState>{
       username: ''
     }
   }
+
+  $setSharePath = () => {
+    const {memberInfo} = this.props
+    return `pages/member/index?username=${memberInfo.username}`;
+  };
+
+  $setShareDesc = ()=>{
+    const {memberInfo} = this.props
+    return memberInfo.username ? memberInfo.username :''
+  }
+
+  $setShareTitle = () => {
+    return this.config.navigationBarTitleText
+  };
+
 
   componentWillMount() {
     showLoading()

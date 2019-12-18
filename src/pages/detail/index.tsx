@@ -13,6 +13,7 @@ import AtTag from "@/taro-ui/components/tag1";
 import {TaroRichText} from 'taro_rich_text';
 import {TOPIC_DETAIL_DATA, TOPIC_REPLIES_DATA} from "../../constants";
 import './index.scss'
+import withShare from "@/utils/withShare";
 
 
 type pageState = {
@@ -53,6 +54,7 @@ interface detailData {
   data: Array<detailList>
 }
 
+@withShare()
 @connect(
   state=>state
 )
@@ -68,6 +70,25 @@ class DetailPage extends Taro.Component<pageProps,pageState>{
       topic_id: 0
     }
   }
+
+  $setSharePath = () => {
+    const {topicDetail} = this.props
+    const data = topicDetail && topicDetail[0];
+    return `pages/detail/index?topic_id=${data.id}`;
+  };
+
+  $setShareDesc = ()=>{
+    const {topicDetail} = this.props
+    const data = topicDetail && topicDetail[0];
+    return data.node.title ? data.node.title : '';
+  }
+
+  $setShareTitle = () => {
+    const {topicDetail} = this.props
+    const data = topicDetail && topicDetail[0];
+    return data.title ? data.title : this.config.navigationBarTitleText
+  };
+
 
   componentWillMount(): void {
     showLoading()

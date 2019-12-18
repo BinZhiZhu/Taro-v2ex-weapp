@@ -2,11 +2,12 @@ import Taro, {ComponentClass, Config} from '@tarojs/taro'
 import {View} from '@tarojs/components'
 import LatestDataList from "@/components/latest-data-list";
 import "./index.scss"
+import withShare from "@/utils/withShare";
 
 type pageState = {
   isPullRefresh: boolean
 }
-
+@withShare()
 class HotPage extends Taro.Component<{},pageState> {
 
 
@@ -23,6 +24,18 @@ class HotPage extends Taro.Component<{},pageState> {
       isPullRefresh: false
     }
   }
+
+  $setSharePath = () => {
+    return 'pages/hot/index';
+  };
+
+  $setShareDesc = ()=>{
+    return '为您呈上V2EX最热的帖子~';
+  }
+
+  $setShareTitle = () => {
+    return '最热帖子'
+  };
 
 
   componentWillMount(): void {

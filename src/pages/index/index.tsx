@@ -2,11 +2,13 @@ import Taro, {ComponentClass, Config} from '@tarojs/taro'
 import {View} from '@tarojs/components'
 import LatestDataDefaultList from "@/components/latest-data-default-list";
 import "./index.scss"
+import withShare from "@/utils/withShare";
 
 type pageState = {
   isPullRefresh: boolean
 }
 
+@withShare()
 class LatestPage extends Taro.Component<{},pageState> {
 
   config: Config = {
@@ -14,6 +16,19 @@ class LatestPage extends Taro.Component<{},pageState> {
     enablePullDownRefresh: true,
     backgroundTextStyle: 'light'
   }
+
+
+  $setSharePath = () => {
+    return 'pages/index/index';
+  };
+
+  $setShareDesc = ()=>{
+    return '为您呈上V2EX最新的帖子~';
+  }
+
+  $setShareTitle = () => {
+    return '最新'
+  };
 
 
   constructor(props){
