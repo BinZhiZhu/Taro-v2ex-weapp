@@ -1,16 +1,17 @@
 import Taro, {ComponentClass, Config, showToast} from "@tarojs/taro"
 import "taro-ui/dist/style/components/float-layout.scss";
 import "taro-ui/dist/style/components/avatar.scss";
-import {AtAvatar, AtFloatLayout} from "taro-ui";
 import {connect} from "@tarojs/redux";
 import {RichText, Text, View} from "@tarojs/components";
 import allNodes from "@/utils/allNodes";
 import callAPI from "@/utils/callAPI";
 import api from "@/utils/api";
 import showLoading from "@/utils/showLoading";
+import AtAvatar from "@/taro-ui/components/avatar";
 import {NODE_INFO_DATA} from "../../../constants";
 import './index.scss'
 import withShare from "@/utils/withShare";
+import AtFloatLayout from "@/taro-ui/components/float-layout";
 
 type pageState = {
   isShow: boolean

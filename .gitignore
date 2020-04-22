@@ -6,6 +6,7 @@ rn_temp/
 node_modules/
 .DS_Store
 .idea/
+ios/
 project.config.json
 dist_tt_default/
 dist_v2ex_weapp/

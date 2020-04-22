@@ -1,5 +1,5 @@
 import Taro, {ComponentClass} from '@tarojs/taro'
-import {AtActivityIndicator} from "taro-ui";
+import AtActivityIndicator from '@/taro-ui/components/activity-indicator';
 
 type pageProps = {
   content: string,

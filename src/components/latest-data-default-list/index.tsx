@@ -8,7 +8,7 @@ import callAPI from "@/utils/callAPI";
 import api from "@/utils/api";
 import AtTag from "@/taro-ui/components/tag1";
 import AtAvatar from "@/taro-ui/components/avatar";
-import AtIcon from "@/taro-ui/components/icon";
+// import AtIcon from "@/taro-ui/components/icon";
 import {LATEST_TOPIC_LIST} from "@/constants";
 import './index.scss'
 
@@ -158,12 +158,14 @@ class LatestDataDefaultList extends Taro.Component<pageProps,{}>{
                           {item.node.title}
                         </AtTag>
                       </View>
-                      <AtIcon
-                        className='pages-index-index-homepage__block__top__left__right__top__icon'
-                        value='message'
-                        color='#666'
-                        size={12}
-                      />
+                      {process.env.TARO_ENV !=='rn' && (
+                        {/*<AtIcon*/}
+                          {/*className='pages-index-index-homepage__block__top__left__right__top__icon'*/}
+                          {/*value='message'*/}
+                          {/*color='#666'*/}
+                          {/*size={12}*/}
+                        {/*/>*/}
+                      )}
                       <Text className='pages-index-index-homepage__block__top__left__right__top__reply'> {item.replies}</Text>
                     </View>
                   </View>

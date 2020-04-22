@@ -109,7 +109,12 @@ const config = {
         }
       }
     }
-  }
+  },
+  rn: {
+    appJson: {
+      name: "taroDemo",
+    }
+  },
 }
 
 module.exports = function (merge) {
