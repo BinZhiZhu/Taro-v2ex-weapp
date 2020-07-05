@@ -1,5 +1,5 @@
 import Taro, {ComponentClass, hideLoading, navigateTo, showToast} from "@tarojs/taro"
-import {ScrollView, Text, View} from "@tarojs/components";
+import {ScrollView, Text, View,Image} from "@tarojs/components";
 import isEmpty from "lodash/isEmpty"
 import {connect} from "@tarojs/redux";
 import formatAvatar from "@/utils/formatAvatarUrl";
@@ -130,7 +130,7 @@ class LatestDataList extends Taro.Component<pageProps,{}>{
         scrollY
       >
         {hotTopics && hotTopics.length > 0 && hotTopics.map((item,i)=>{
-          const avatar = formatAvatar(item.member.avatar_normal);
+          const avatar = item.member.avatar_normal;
           const lastReplyText = getDiffTimeStamp(item.last_modified);
 
           return (
@@ -144,10 +144,9 @@ class LatestDataList extends Taro.Component<pageProps,{}>{
                 style={leftStyle}
               >
                 <View className='pages-hot-index-homepage__block__left__thumb'>
-                  <AtAvatar
+                  <Image
                     className='pages-hot-index-homepage__block__left__thumb__img'
-                    image={avatar}
-                    size='small'
+                    src={avatar}
                   />
                 </View>
                 <View className='pages-hot-index-homepage__block__left__info'>

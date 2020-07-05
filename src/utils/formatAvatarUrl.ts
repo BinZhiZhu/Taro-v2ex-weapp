@@ -4,7 +4,8 @@
  * @param url
  */
 const formatAvatar = (url: string): string => {
-  return `https:${url}`;
+  return url;
+  // return `https:${url}`;
 }
 
 export default formatAvatar

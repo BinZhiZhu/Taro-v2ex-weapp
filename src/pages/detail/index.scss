@@ -16,7 +16,8 @@
         @include flex-direction(row);
         align-items: center;
         &__thumb{
-
+          width: 60px;
+          height: 60px;
         }
         &__info{
           @include flex-direction;
@@ -76,7 +77,10 @@
       width: 90%;
       @include flex-direction(row);
       &__thumb{
-
+        &__img{
+          width: 60px;
+          height: 60px;
+        }
       }
       &__info{
         @include flex-direction;

@@ -1,4 +1,4 @@
-import '@tarojs/async-await'
+// import '@tarojs/async-await'
 import Taro, {Component, Config} from '@tarojs/taro'
 import {Provider} from '@tarojs/redux'
 
@@ -69,7 +69,7 @@ class App extends Component {
     },
     plugins: {
       "wxparserPlugin": {
-        "version": "0.2.1",
+        "version": "0.3.0",
         "provider": "wx9d4d4ffa781ff3ac"
       }
     }

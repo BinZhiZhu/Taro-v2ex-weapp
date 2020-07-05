@@ -1,6 +1,6 @@
 import Taro, {ComponentClass, Config, navigateTo, showToast} from "@tarojs/taro"
 import isEmpty from "lodash/isEmpty"
-import {RichText, Text, View} from "@tarojs/components";
+import {RichText, Text, View,Image} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
 import showLoading from "@/utils/showLoading";
 import showAlert from "@/utils/showAlert";
@@ -10,7 +10,7 @@ import AtAvatar from "@/taro-ui/components/avatar";
 import formatAvatar from "@/utils/formatAvatarUrl";
 import getDiffTimeStamp from "@/utils/diffTimeStamp";
 import AtTag from "@/taro-ui/components/tag1";
-import {TaroRichText} from 'taro_rich_text';
+// import {TaroRichText} from 'taro_rich_text';
 import {TOPIC_DETAIL_DATA, TOPIC_REPLIES_DATA} from "../../constants";
 import './index.scss'
 import withShare from "@/utils/withShare";
@@ -206,11 +206,10 @@ class DetailPage extends Taro.Component<pageProps,pageState>{
             className='pages-detail-index__topic__top__left'
             onClick={this.getMemberData.bind(this,data.member.username)}
           >
-            {data.member.avatar_normal ? (
-              <AtAvatar
-                size='small'
+            {!!data.member.avatar_normal ? (
+              <Image
                 className='pages-detail-index__topic__top__left__thumb'
-                image={formatAvatar(data.member.avatar_normal)}
+                src={data.member.avatar_normal}
               />
             ) : null}
 
@@ -245,31 +244,35 @@ class DetailPage extends Taro.Component<pageProps,pageState>{
               <View className='pages-detail-index__topic__bottom__line' />
               <View className='pages-detail-index__topic__bottom__content'>
                  {/*小程序才使用解析markdown的插件*/}
-                {process.env.TARO_ENV ==='weapp' && (
-                  <TaroRichText
-                    raw={false}
-                    type='markdown'
-                    richText={data.content}
-                  />
-                )}
-
-                {process.env.TARO_ENV === 'alipay' && (
-                  <Text className='pages-detail-index__topic__bottom__content__text'>{data.content}</Text>
-                )}
-
-                {process.env.TARO_ENV !== 'alipay' && process.env.TARO_ENV !== 'weapp' &&  (
+                {/*{process.env.TARO_ENV ==='weapp' && (*/}
+                  {/*<TaroRichText*/}
+                    {/*raw={false}*/}
+                    {/*type='markdown'*/}
+                    {/*richText={data.content}*/}
+                  {/*/>*/}
+                {/*)}*/}
+                {process.env.TARO_ENV === 'weapp' && (
                   <RichText
                     className='pages-detail-index__topic__bottom__content__text'
                     nodes={data.content}
                   />
                 )}
+                {/*{process.env.TARO_ENV === 'alipay' && (*/}
+                  {/*<Text className='pages-detail-index__topic__bottom__content__text'>{data.content}</Text>*/}
+                {/*)}*/}
 
+                {/*{process.env.TARO_ENV !== 'alipay' && process.env.TARO_ENV !== 'weapp' &&  (*/}
+                  {/*<RichText*/}
+                    {/*className='pages-detail-index__topic__bottom__content__text'*/}
+                    {/*nodes={data.content}*/}
+                  {/*/>*/}
+                {/*)}*/}
               </View>
             </View>
           )}
         </View>
         {topicReplies && topicReplies.length > 0 && topicReplies.map((item,i)=>{
-          const avatar = formatAvatar(item.member.avatar_normal);
+          const avatar = item.member.avatar_normal;
           const lastReplyText = getDiffTimeStamp(item.last_modified);
           return (
             <View
@@ -281,11 +284,11 @@ class DetailPage extends Taro.Component<pageProps,pageState>{
                   className='pages-detail-index__reply__left__thumb'
                   onClick={this.getMemberData.bind(this,item.member.username)}
                 >
-                  {avatar ? (
-                    <AtAvatar
-                      size='small'
+                  {!!avatar ? (
+                    <Image
                       onClick={this.getMemberData.bind(this,item.member.username)}
-                      image={avatar}
+                      className='pages-detail-index__reply__left__thumb__img'
+                      src={avatar}
                     />
                   ) : null}
                 </View>
@@ -304,9 +307,9 @@ class DetailPage extends Taro.Component<pageProps,pageState>{
                         className='pages-detail-index__reply__left__info__bottom__content'
                       />
                     )}
-                    {process.env.TARO_ENV === 'alipay' && (
-                      <Text className='pages-detail-index__reply__left__info__bottom__content'>{item.content}</Text>
-                    )}
+                    {/*{process.env.TARO_ENV === 'alipay' && (*/}
+                      {/*<Text className='pages-detail-index__reply__left__info__bottom__content'>{item.content}</Text>*/}
+                    {/*)}*/}
                     {/*<TaroRichText*/}
                       {/*raw={false}*/}
                       {/*type='markdown'*/}

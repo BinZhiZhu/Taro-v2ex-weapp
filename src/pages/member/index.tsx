@@ -1,5 +1,5 @@
 import Taro, {ComponentClass, Config, showToast} from "@tarojs/taro"
-import {Text, View} from "@tarojs/components";
+import {Text, View,Image} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
 import callAPI from "@/utils/callAPI";
 import api from "@/utils/api";
@@ -114,8 +114,8 @@ class MemberPage extends Taro.Component<pageProps,pageState>{
     return (
       <View className='pages-member-index'>
         <View className='pages-member-index__avatar'>
-          <AtAvatar
-            image={avatar}
+          <Image
+            src={avatar}
             className='pages-member-index__avatar__thumb'
           />
           <AtTag

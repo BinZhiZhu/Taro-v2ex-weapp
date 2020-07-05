@@ -1,5 +1,5 @@
 import Taro, {ComponentClass, hideLoading, navigateTo, showToast} from "@tarojs/taro"
-import {ScrollView, Text, View} from "@tarojs/components";
+import {ScrollView, Text, View,Image} from "@tarojs/components";
 import {connect} from "@tarojs/redux";
 import formatAvatar from "@/utils/formatAvatarUrl";
 import getDiffTimeStamp from "@/utils/diffTimeStamp";
@@ -9,7 +9,7 @@ import api from "@/utils/api";
 import AtTag from "@/taro-ui/components/tag1";
 import AtAvatar from "@/taro-ui/components/avatar";
 // import AtIcon from "@/taro-ui/components/icon";
-import {LATEST_TOPIC_LIST} from "@/constants";
+import {LATEST_TOPIC_LIST} from "../../constants";
 import './index.scss'
 
 type pageProps = {
@@ -111,9 +111,7 @@ class LatestDataDefaultList extends Taro.Component<pageProps,{}>{
         scrollY
       >
         {latestTopicList && latestTopicList.length > 0 && latestTopicList.map((item,i)=>{
-          const avatar = formatAvatar(item.member.avatar_normal);
           const lastReplyText = getDiffTimeStamp(item.last_modified);
-
           return (
             <View
               className='pages-index-index-homepage__block'
@@ -122,11 +120,10 @@ class LatestDataDefaultList extends Taro.Component<pageProps,{}>{
             >
               <View className='pages-index-index-homepage__block__top'>
                 <View className='pages-index-index-homepage__block__top__left'>
-                  {avatar ? (
-                    <AtAvatar
+                  {!!item.member.avatar_normal ? (
+                    <Image
                       className='pages-index-index-homepage__block__top__left__thumb'
-                      size='small'
-                      image={avatar}
+                      src={item.member.avatar_normal}
                     />
                   ) : null}
                     <View className='pages-index-index-homepage__block__top__left__info'>
@@ -158,14 +155,14 @@ class LatestDataDefaultList extends Taro.Component<pageProps,{}>{
                           {item.node.title}
                         </AtTag>
                       </View>
-                      {process.env.TARO_ENV !=='rn' && (
+                      {/*{process.env.TARO_ENV !=='rn' && (*/}
                         {/*<AtIcon*/}
                           {/*className='pages-index-index-homepage__block__top__left__right__top__icon'*/}
                           {/*value='message'*/}
                           {/*color='#666'*/}
                           {/*size={12}*/}
                         {/*/>*/}
-                      )}
+                      {/*)}*/}
                       <Text className='pages-index-index-homepage__block__top__left__right__top__reply'> {item.replies}</Text>
                     </View>
                   </View>
