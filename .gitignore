@@ -14,3 +14,6 @@ dist_tt_default/
 dist_v2ex_weapp/
 dist_weapp_weapp/
 v2ex_dist_weapp/
+rn_temp/*
+.rn_temp/*
+dist_*/
